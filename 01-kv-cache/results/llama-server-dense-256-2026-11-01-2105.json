@@ -1,0 +1,328 @@
+{
+  "date": "2026-11-01T21:04:06+09:00",
+  "label": "dense-256",
+  "server_build": "b10964-b29c606e2",
+  "model_path": "~/.ollama/models/blobs/sha256-a9d0a3e1d8c91732a3812becd31f8d4a8ff57414903f226306069f0437e2ac50",
+  "repeats": 5,
+  "load_log": [],
+  "blocks": [
+    {
+      "position": 0.0,
+      "kind": "position",
+      "marker_token_start": 3,
+      "prompt_tokens": 3047,
+      "uptime": "21:04  up 10 days, 10:42, 18 users, load averages: 2.44 3.59 3.90",
+      "warmup": {
+        "ttft_ms": 3114.8,
+        "cache_n": 0,
+        "prompt_n": 3047,
+        "prompt_ms": 3095.4
+      },
+      "runs": [
+        {
+          "ttft_ms": 3113.6,
+          "cache_n": 0,
+          "prompt_n": 3044,
+          "prompt_ms": 3094.3
+        },
+        {
+          "ttft_ms": 3114.2,
+          "cache_n": 0,
+          "prompt_n": 3043,
+          "prompt_ms": 3094.5
+        },
+        {
+          "ttft_ms": 3121.1,
+          "cache_n": 0,
+          "prompt_n": 3050,
+          "prompt_ms": 3102.3
+        },
+        {
+          "ttft_ms": 3111.5,
+          "cache_n": 0,
+          "prompt_n": 3047,
+          "prompt_ms": 3091.8
+        },
+        {
+          "ttft_ms": 3135.4,
+          "cache_n": 0,
+          "prompt_n": 3049,
+          "prompt_ms": 3116.3
+        }
+      ],
+      "uptime_after": "21:04  up 10 days, 10:42, 18 users, load averages: 2.10 3.44 3.83",
+      "ttft_ms": {
+        "median": 3114.2,
+        "p10": 3112.34,
+        "p90": 3129.6800000000003
+      },
+      "prompt_n": 3047,
+      "cache_n": 0
+    },
+    {
+      "position": 0.25,
+      "kind": "position",
+      "marker_token_start": 739,
+      "prompt_tokens": 3044,
+      "uptime": "21:04  up 10 days, 10:42, 18 users, load averages: 2.10 3.44 3.83",
+      "warmup": {
+        "ttft_ms": 3154.4,
+        "cache_n": 0,
+        "prompt_n": 3044,
+        "prompt_ms": 3135.4
+      },
+      "runs": [
+        {
+          "ttft_ms": 3182.0,
+          "cache_n": 0,
+          "prompt_n": 3049,
+          "prompt_ms": 3163.6
+        },
+        {
+          "ttft_ms": 3158.8,
+          "cache_n": 0,
+          "prompt_n": 3046,
+          "prompt_ms": 3140.1
+        },
+        {
+          "ttft_ms": 3141.4,
+          "cache_n": 0,
+          "prompt_n": 3047,
+          "prompt_ms": 3122.2
+        },
+        {
+          "ttft_ms": 3138.2,
+          "cache_n": 0,
+          "prompt_n": 3045,
+          "prompt_ms": 3119.5
+        },
+        {
+          "ttft_ms": 3133.2,
+          "cache_n": 0,
+          "prompt_n": 3045,
+          "prompt_ms": 3114.8
+        }
+      ],
+      "uptime_after": "21:04  up 10 days, 10:42, 18 users, load averages: 2.24 3.38 3.80",
+      "ttft_ms": {
+        "median": 3141.4,
+        "p10": 3135.2,
+        "p90": 3172.7200000000003
+      },
+      "prompt_n": 3046,
+      "cache_n": 0
+    },
+    {
+      "position": 0.5,
+      "kind": "position",
+      "marker_token_start": 1510,
+      "prompt_tokens": 3045,
+      "uptime": "21:04  up 10 days, 10:42, 18 users, load averages: 2.24 3.38 3.80",
+      "warmup": {
+        "ttft_ms": 3125.2,
+        "cache_n": 0,
+        "prompt_n": 3045,
+        "prompt_ms": 3107.0
+      },
+      "runs": [
+        {
+          "ttft_ms": 3123.6,
+          "cache_n": 0,
+          "prompt_n": 3046,
+          "prompt_ms": 3104.4
+        },
+        {
+          "ttft_ms": 3177.3,
+          "cache_n": 0,
+          "prompt_n": 3047,
+          "prompt_ms": 3158.3
+        },
+        {
+          "ttft_ms": 3281.3,
+          "cache_n": 0,
+          "prompt_n": 3047,
+          "prompt_ms": 3258.3
+        },
+        {
+          "ttft_ms": 3123.1,
+          "cache_n": 0,
+          "prompt_n": 3048,
+          "prompt_ms": 3107.7
+        },
+        {
+          "ttft_ms": 3125.0,
+          "cache_n": 0,
+          "prompt_n": 3044,
+          "prompt_ms": 3106.4
+        }
+      ],
+      "uptime_after": "21:05  up 10 days, 10:43, 18 users, load averages: 2.24 3.33 3.78",
+      "ttft_ms": {
+        "median": 3125.0,
+        "p10": 3123.3,
+        "p90": 3239.7000000000003
+      },
+      "prompt_n": 3047,
+      "cache_n": 0
+    },
+    {
+      "position": 0.75,
+      "kind": "position",
+      "marker_token_start": 2274,
+      "prompt_tokens": 3048,
+      "uptime": "21:05  up 10 days, 10:43, 18 users, load averages: 2.24 3.33 3.78",
+      "warmup": {
+        "ttft_ms": 3141.2,
+        "cache_n": 0,
+        "prompt_n": 3048,
+        "prompt_ms": 3129.6
+      },
+      "runs": [
+        {
+          "ttft_ms": 3147.1,
+          "cache_n": 0,
+          "prompt_n": 3046,
+          "prompt_ms": 3144.8
+        },
+        {
+          "ttft_ms": 3156.3,
+          "cache_n": 0,
+          "prompt_n": 3045,
+          "prompt_ms": 3153.2
+        },
+        {
+          "ttft_ms": 3175.8,
+          "cache_n": 0,
+          "prompt_n": 3048,
+          "prompt_ms": 3173.4
+        },
+        {
+          "ttft_ms": 3147.0,
+          "cache_n": 0,
+          "prompt_n": 3049,
+          "prompt_ms": 3144.6
+        },
+        {
+          "ttft_ms": 3147.0,
+          "cache_n": 0,
+          "prompt_n": 3048,
+          "prompt_ms": 3144.0
+        }
+      ],
+      "uptime_after": "21:05  up 10 days, 10:43, 18 users, load averages: 1.76 3.14 3.70",
+      "ttft_ms": {
+        "median": 3147.1,
+        "p10": 3147.0,
+        "p90": 3168.0000000000005
+      },
+      "prompt_n": 3048,
+      "cache_n": 0
+    },
+    {
+      "position": 1.0,
+      "kind": "position",
+      "marker_token_start": 2997,
+      "prompt_tokens": 3047,
+      "uptime": "21:05  up 10 days, 10:43, 18 users, load averages: 1.76 3.14 3.70",
+      "warmup": {
+        "ttft_ms": 3305.8,
+        "cache_n": 0,
+        "prompt_n": 3047,
+        "prompt_ms": 3303.9
+      },
+      "runs": [
+        {
+          "ttft_ms": 354.9,
+          "cache_n": 2791,
+          "prompt_n": 255,
+          "prompt_ms": 352.6
+        },
+        {
+          "ttft_ms": 379.0,
+          "cache_n": 2791,
+          "prompt_n": 257,
+          "prompt_ms": 376.7
+        },
+        {
+          "ttft_ms": 347.8,
+          "cache_n": 2792,
+          "prompt_n": 255,
+          "prompt_ms": 345.4
+        },
+        {
+          "ttft_ms": 335.4,
+          "cache_n": 2792,
+          "prompt_n": 251,
+          "prompt_ms": 331.4
+        },
+        {
+          "ttft_ms": 329.8,
+          "cache_n": 2792,
+          "prompt_n": 253,
+          "prompt_ms": 327.4
+        }
+      ],
+      "uptime_after": "21:05  up 10 days, 10:43, 18 users, load averages: 1.70 3.11 3.68",
+      "ttft_ms": {
+        "median": 347.8,
+        "p10": 332.04,
+        "p90": 369.36
+      },
+      "prompt_n": 255,
+      "cache_n": 2792
+    },
+    {
+      "position": null,
+      "kind": "identical",
+      "marker_token_start": 2997,
+      "prompt_tokens": 3048,
+      "uptime": "21:05  up 10 days, 10:43, 18 users, load averages: 1.70 3.11 3.68",
+      "warmup": {
+        "ttft_ms": 325.9,
+        "cache_n": 2792,
+        "prompt_n": 256,
+        "prompt_ms": 323.8
+      },
+      "runs": [
+        {
+          "ttft_ms": 43.3,
+          "cache_n": 3044,
+          "prompt_n": 4,
+          "prompt_ms": 41.0
+        },
+        {
+          "ttft_ms": 43.5,
+          "cache_n": 3044,
+          "prompt_n": 4,
+          "prompt_ms": 41.3
+        },
+        {
+          "ttft_ms": 43.2,
+          "cache_n": 3044,
+          "prompt_n": 4,
+          "prompt_ms": 41.0
+        },
+        {
+          "ttft_ms": 43.2,
+          "cache_n": 3044,
+          "prompt_n": 4,
+          "prompt_ms": 40.9
+        },
+        {
+          "ttft_ms": 43.5,
+          "cache_n": 3044,
+          "prompt_n": 4,
+          "prompt_ms": 41.2
+        }
+      ],
+      "uptime_after": "21:05  up 10 days, 10:43, 18 users, load averages: 1.70 3.11 3.68",
+      "ttft_ms": {
+        "median": 43.3,
+        "p10": 43.2,
+        "p90": 43.5
+      },
+      "prompt_n": 4,
+      "cache_n": 3044
+    }
+  ]
+}

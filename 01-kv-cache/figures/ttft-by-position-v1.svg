@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 260" width="460" height="260" role="img">
+<title>Time to first token by position of the changed line</title>
+<desc>qwen3.5:4b-q4_K_M on Ollama 0.40.8, a prompt of about 3,050 tokens with one changed line, median of 5 runs. Default: 0% 3082 ms, 25% 3142 ms, 50% 3135 ms, 75% 1108 ms, 100% 1094 ms. Primed with a request that ends just before the line: 0% 3128 ms, 25% 2439 ms, 50% 1760 ms, 75% 880 ms, 100% 178 ms. Identical prompt: 73 ms.</desc>
+<style>
+  .bg{fill:#FAFAFA} .ink{fill:#17171A} .mut{fill:#71717A}
+  .grid{stroke:#E4E4E7;stroke-width:1} .ref{stroke:#8A8A93;stroke-width:1;stroke-dasharray:4 3}
+  .ln{fill:none;stroke-width:2} .dl{stroke:#8A8A93} .pl{stroke:#7C3AED}
+  .wh{stroke:#17171A;stroke-width:1.5}
+  .pt{stroke:#FAFAFA;stroke-width:2} .d{fill:#71717A} .p{fill:#7C3AED}
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+  .h{font-size:14px;font-weight:600}
+  @media (prefers-color-scheme: dark) {
+    .bg{fill:#18181B} .ink{fill:#F4F4F5} .mut{fill:#A1A1AA}
+    .grid{stroke:#3F3F46} .ref{stroke:#71717A} .dl{stroke:#71717A} .pl{stroke:#9061F9}
+    .wh{stroke:#F4F4F5} .pt{stroke:#18181B} .d{fill:#A1A1AA} .p{fill:#9061F9}
+  }
+</style>
+<rect class="bg" width="460" height="260"/>
+<text class="ink h" x="16" y="24">Time to first token vs. where the line changed</text>
+<text class="mut" x="16" y="42">milliseconds · qwen3.5:4b-q4_K_M, Ollama 0.40.8</text>
+<line class="grid" x1="56" x2="368" y1="194.0" y2="194.0"/><text class="mut" x="50" y="198.0" text-anchor="end">0</text><line class="grid" x1="56" x2="368" y1="160.0" y2="160.0"/><text class="mut" x="50" y="164.0" text-anchor="end">1,000</text><line class="grid" x1="56" x2="368" y1="126.0" y2="126.0"/><text class="mut" x="50" y="130.0" text-anchor="end">2,000</text><line class="grid" x1="56" x2="368" y1="92.0" y2="92.0"/><text class="mut" x="50" y="96.0" text-anchor="end">3,000</text><line class="grid" x1="56" x2="368" y1="58.0" y2="58.0"/><text class="mut" x="50" y="62.0" text-anchor="end">4,000</text><line class="ref" x1="56" x2="368" y1="191.5" y2="191.5"/><text class="mut" x="56" y="186.5">identical prompt: 73 ms</text><polyline class="ln dl" points="64.0,89.2 138.0,87.2 212.0,87.4 286.0,156.3 360.0,156.8"/><line class="wh" x1="64.0" x2="64.0" y1="89.6" y2="87.5"/><circle class="pt d" cx="64.0" cy="89.2" r="4.5"/><text class="ink" x="64.0" y="79.2" text-anchor="middle">3,082</text><line class="wh" x1="138.0" x2="138.0" y1="87.2" y2="86.9"/><circle class="pt d" cx="138.0" cy="87.2" r="4.5"/><text class="ink" x="138.0" y="77.2" text-anchor="middle">3,142</text><line class="wh" x1="212.0" x2="212.0" y1="88.0" y2="86.8"/><circle class="pt d" cx="212.0" cy="87.4" r="4.5"/><text class="ink" x="212.0" y="77.4" text-anchor="middle">3,135</text><line class="wh" x1="286.0" x2="286.0" y1="157.1" y2="154.2"/><circle class="pt d" cx="286.0" cy="156.3" r="4.5"/><text class="ink" x="293.0" y="148.3" text-anchor="start">1,108</text><line class="wh" x1="360.0" x2="360.0" y1="157.1" y2="156.5"/><circle class="pt d" cx="360.0" cy="156.8" r="4.5"/><text class="ink" x="360.0" y="146.8" text-anchor="middle">1,094</text><text class="ink" x="374" y="160.8">default</text><polyline class="ln pl" points="64.0,87.6 138.0,111.1 212.0,134.2 286.0,164.1 360.0,187.9"/><line class="wh" x1="64.0" x2="64.0" y1="88.9" y2="87.3"/><circle class="pt p" cx="64.0" cy="87.6" r="4.5"/><line class="wh" x1="138.0" x2="138.0" y1="111.2" y2="108.9"/><circle class="pt p" cx="138.0" cy="111.1" r="4.5"/><text class="ink" x="138.0" y="128.1" text-anchor="middle">2,439</text><line class="wh" x1="212.0" x2="212.0" y1="134.8" y2="133.5"/><circle class="pt p" cx="212.0" cy="134.2" r="4.5"/><text class="ink" x="212.0" y="151.2" text-anchor="middle">1,760</text><line class="wh" x1="286.0" x2="286.0" y1="165.7" y2="158.6"/><circle class="pt p" cx="286.0" cy="164.1" r="4.5"/><text class="ink" x="286.0" y="181.1" text-anchor="middle">880</text><line class="wh" x1="360.0" x2="360.0" y1="188.4" y2="187.3"/><circle class="pt p" cx="360.0" cy="187.9" r="4.5"/><text class="ink" x="351.0" y="191.9" text-anchor="end">178</text><text class="ink" x="374" y="191.9">primed</text><text class="ink" x="64.0" y="214" text-anchor="middle">0%</text><text class="ink" x="138.0" y="214" text-anchor="middle">25%</text><text class="ink" x="212.0" y="214" text-anchor="middle">50%</text><text class="ink" x="286.0" y="214" text-anchor="middle">75%</text><text class="ink" x="360.0" y="214" text-anchor="middle">100%</text>
+<text class="mut" x="16" y="236">x: where the changed line sits · p10–p90 ≤ 207 ms</text>
+<text class="mut" x="16" y="252">primed: a request ending at the line went first</text>
+</svg>
