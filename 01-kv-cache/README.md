@@ -34,11 +34,27 @@ For `bench_llama_server.py`, start a server on a spare port with the model
 blob Ollama already downloaded (the path is in
 the first `FROM` line of `ollama show --modelfile qwen3.5:4b-q4_K_M`):
 
+These are the exact commands behind the three `results/llama-server-*.json`
+files (Homebrew `llama-server` 0.4.1, build 10964). Stop the server between runs.
+
 ```bash
-# flags Ollama 0.40.8 uses for its own runner
-llama-server --model <blob> --port 18181 -c 8192 -np 1 --no-jinja \
-  --chat-template chatml --flash-attn auto -b 1024 -ub 1024 --keep 4
+# 1) ollama-like: the flags Ollama 0.40.8 uses for its own runner
+llama-server --model <blob> --port 18181 --host 127.0.0.1 --no-webui --offline \
+  -c 8192 -np 1 --no-jinja --chat-template chatml --flash-attn auto \
+  -b 1024 -ub 1024 --keep 4
 uv run python bench_llama_server.py --port 18181 --label ollama-like
+
+# 2) dense-256: 256-token micro-batch and checkpoint spacing
+llama-server --model <blob> --port 18181 --host 127.0.0.1 --no-webui --offline \
+  -c 8192 -np 1 --no-jinja --chat-template chatml --flash-attn auto \
+  -b 256 -ub 256 --keep 4 --ctx-checkpoints 32 --checkpoint-min-step 256 \
+  --log-verbosity 4
+uv run python bench_llama_server.py --port 18181 --label dense-256
+
+# 3) ollama-like-primed: same flags as 1), verbose log to see each checkpoint
+llama-server --model <blob> --port 18181 --host 127.0.0.1 --no-webui --offline \
+  -c 8192 -np 1 --no-jinja --chat-template chatml --flash-attn auto \
+  -b 1024 -ub 1024 --keep 4 --log-verbosity 4
 uv run python bench_llama_server.py --port 18181 --label ollama-like-primed --prime
 ```
 

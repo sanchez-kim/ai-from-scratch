@@ -1,4 +1,4 @@
-"""Write figures/ttft-by-position-v1.svg from two bench_ollama.py result files.
+"""Write figures/ttft-by-position-v2.svg from two bench_ollama.py result files.
 
     python figures/make_ttft_chart.py results/ollama-<model>-<stamp>.json \
         results/ollama-<model>-primed-<stamp>.json
@@ -14,6 +14,8 @@ from pathlib import Path
 
 # Text is 13px or larger so it stays legible at 370 px wide. Grey marks are
 # #8A8A93 (3.3:1 on #FAFAFA) and #71717A (3.7:1 on #18181B).
+# Footer lines stay <= 46 characters: at 358 px wide and a fallback monospace
+# font ~10% wider than SF Mono they still end >= 24 px before the right edge.
 W, H = 460, 260
 LEFT, RIGHT, TOP, BOTTOM = 64, 360, 58, 194
 YMAX = 4000
@@ -58,6 +60,8 @@ def main():
                          f'y1="{y(t["p10"]):.1f}" y2="{y(t["p90"]):.1f}"/>')
             parts.append(f'<circle class="pt {cls}" cx="{x(i):.1f}" cy="{y(t["median"]):.1f}" r="4.5"/>')
             # Label every point except where the two series sit on top of each other.
+            # The primed 0% value has no free spot next to its dot (the default label,
+            # the y-axis label and both lines crowd it), so the footer carries it.
             if not above and i == 0:
                 continue
             last_point = i == len(blocks) - 1
@@ -102,14 +106,14 @@ def main():
 <desc>{default["model"]} on Ollama {version}, a prompt of about 3,050 tokens with one changed line, median of {default["repeats"]} runs. Default: {desc_of(d_blocks)}. Primed with a request that ends just before the line: {desc_of(p_blocks)}. Identical prompt: {same:.0f} ms.</desc>
 <style>{css}</style>
 <rect class="bg" width="{W}" height="{H}"/>
-<text class="ink h" x="16" y="24">Time to first token vs. where the line changed</text>
+<text class="ink h" x="16" y="24">Time to first token by changed-line position</text>
 <text class="mut" x="16" y="42">milliseconds · {default["model"]}, Ollama {version}</text>
 {"".join(parts)}
-<text class="mut" x="16" y="{H - 24}">x: where the changed line sits · p10–p90 ≤ {spread:.0f} ms</text>
-<text class="mut" x="16" y="{H - 8}">primed: a request ending at the line went first</text>
+<text class="mut" x="16" y="{H - 24}">x: where the line changed · p10–p90 ≤ {spread:.0f} ms</text>
+<text class="mut" x="16" y="{H - 8}">primed: prefix sent first · primed 0%: {p_blocks[0]["ttft_ms"]["median"]:,.0f}</text>
 </svg>
 """
-    out = Path(__file__).resolve().parent / "ttft-by-position-v1.svg"
+    out = Path(__file__).resolve().parent / "ttft-by-position-v2.svg"
     out.write_text(svg)
     print("wrote", out, len(svg.encode()), "bytes")
 
