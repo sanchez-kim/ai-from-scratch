@@ -1,0 +1,15 @@
+[project]
+name = "mlp-from-scratch"
+version = "0.1.0"
+description = "A character-level MLP in plain Python: init scale, stable cross-entropy, and where the naive one breaks"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+# numpy is used only as a reference: the tests and measure_overflow.py feed it
+# the same logits to show what a float library does where plain Python raises.
+dev = ["pytest>=8", "numpy>=2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

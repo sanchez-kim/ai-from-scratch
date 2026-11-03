@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 560" width="460" height="560" role="img">
+<title>Hidden activations at init by scale, and naive vs stable loss at lr 100</title>
+<desc>Top: histogram of hidden tanh values at init over the dev set, 20 bins from -1 to 1, one colour per init scale (std 1/sqrt(fan_in) blue, std 1.0 orange, std 0.01 aqua). Shaded bands mark the outer bins beyond plus or minus 0.9. std 1.0: 56.6% of values above 0.99 in size, loss at init 14.16; std 0.01: 0.0% of values above 0.99 in size, loss at init 3.30; std 1/√fan_in: 0.6% of values above 0.99 in size, loss at init 3.46. Bottom: training loss for steps 1 to 20 at lr 100. The stable loss (blue) stays finite. The naive loss in numpy float64 (orange) is inf at step 4 and NaN from step 6.</desc>
+<style>
+  .bg{fill:#fcfcfb} .ink{fill:#0b0b0b} .sec{fill:#52514e} .mut{fill:#898781}
+  .s1{fill:#2a78d6} .s2{fill:#eb6834} .s3{fill:#1baf7a}
+  .band{fill:#e1e0d9;opacity:.55} .base{stroke:#c3c2b7;stroke-width:1} .grid{stroke:#e1e0d9;stroke-width:1}
+  .ln{fill:none;stroke-width:2.5;stroke-dasharray:1;stroke-linejoin:round} .l1{stroke:#2a78d6} .l2{stroke:#eb6834;stroke-width:3.5}
+  .mark{stroke:#eb6834;stroke-width:1;stroke-dasharray:3 3} .dot{stroke:#fcfcfb;stroke-width:2}
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+  .h{font-size:15px;font-weight:600}
+  .a{animation-duration:9.0s;animation-iteration-count:infinite;animation-timing-function:ease-in-out}
+  #p0{animation-name:p0} #p1{animation-name:p1} #p2{animation-name:p2} #sl,#nl{animation-name:draw} #mi,#nlab{animation-name:r10} #mn{animation-name:r21}
+  @keyframes p0 { 0.00% { opacity:1 } 25.00% { opacity:1 } 33.33% { opacity:0 } 91.67% { opacity:0 } 100.00% { opacity:1 } } @keyframes p1 { 0.00% { opacity:0 } 25.00% { opacity:0 } 33.33% { opacity:1 } 58.33% { opacity:1 } 66.67% { opacity:0 } 100.00% { opacity:0 } } @keyframes p2 { 0.00% { opacity:0 } 58.33% { opacity:0 } 66.67% { opacity:1 } 91.67% { opacity:1 } 100.00% { opacity:0 } } @keyframes draw { 0.00% { stroke-dashoffset:1 } 70.00% { stroke-dashoffset:0 } 100.00% { stroke-dashoffset:0 } } @keyframes r10 { 0.00% { opacity:0 } 10.00% { opacity:0 } 13.00% { opacity:1 } 100.00% { opacity:1 } } @keyframes r21 { 0.00% { opacity:0 } 21.00% { opacity:0 } 24.00% { opacity:1 } 100.00% { opacity:1 } }
+  @media (prefers-color-scheme: dark) {
+    .bg{fill:#1a1a19} .ink{fill:#f0efec} .sec{fill:#c3c2b7} .mut{fill:#898781}
+    .s1{fill:#3987e5} .s2{fill:#d95926} .s3{fill:#199e70}
+    .band{fill:#2c2c2a;opacity:1} .base{stroke:#383835} .grid{stroke:#2c2c2a}
+    .l1{stroke:#3987e5} .l2{stroke:#d95926} .mark{stroke:#d95926} .dot{stroke:#1a1a19}
+  }
+  @media (prefers-reduced-motion: reduce) { .a{animation:none} }
+</style>
+<rect class="bg" width="460" height="560"/>
+<text class="mut" x="22" y="26">hidden tanh values at init (dev set)</text>
+<rect class="band" x="22" y="78" width="20.8" height="160"/>
+<rect class="band" x="417.2" y="78" width="20.8" height="160"/>
+<text class="sec" x="438" y="72" text-anchor="end">shaded: beyond ±0.9</text>
+<g id="p0" class="a" opacity="0"><rect class="s2" x="22" y="42" width="14" height="14" rx="2"/><text class="ink h" x="44" y="54">init std 1.0</text><g class="s2"><rect x="23.0" y="127.6" width="18.8" height="110.4"/><rect x="43.8" y="228.7" width="18.8" height="9.3"/><rect x="64.6" y="231.4" width="18.8" height="6.6"/><rect x="85.4" y="234.4" width="18.8" height="3.6"/><rect x="106.2" y="235.2" width="18.8" height="2.8"/><rect x="127.0" y="234.9" width="18.8" height="3.1"/><rect x="147.8" y="235.0" width="18.8" height="3.0"/><rect x="168.6" y="236.0" width="18.8" height="2.0"/><rect x="189.4" y="235.4" width="18.8" height="2.6"/><rect x="210.2" y="236.0" width="18.8" height="2.0"/><rect x="231.0" y="235.6" width="18.8" height="2.4"/><rect x="251.8" y="236.0" width="18.8" height="2.0"/><rect x="272.6" y="235.4" width="18.8" height="2.6"/><rect x="293.4" y="234.4" width="18.8" height="3.6"/><rect x="314.2" y="235.2" width="18.8" height="2.8"/><rect x="335.0" y="235.2" width="18.8" height="2.8"/><rect x="355.8" y="234.7" width="18.8" height="3.3"/><rect x="376.6" y="233.0" width="18.8" height="5.0"/><rect x="397.4" y="228.8" width="18.8" height="9.2"/><rect x="418.2" y="144.3" width="18.8" height="93.7"/></g><text class="ink" x="22" y="278">|h| &gt; 0.99: 56.6% · loss at init 14.16</text></g><g id="p1" class="a" opacity="0"><rect class="s3" x="22" y="42" width="14" height="14" rx="2"/><text class="ink h" x="44" y="54">init std 0.01</text><g class="s3"><rect x="23.0" y="238.0" width="18.8" height="0.0"/><rect x="43.8" y="238.0" width="18.8" height="0.0"/><rect x="64.6" y="238.0" width="18.8" height="0.0"/><rect x="85.4" y="238.0" width="18.8" height="0.0"/><rect x="106.2" y="238.0" width="18.8" height="0.0"/><rect x="127.0" y="238.0" width="18.8" height="0.0"/><rect x="147.8" y="238.0" width="18.8" height="0.0"/><rect x="168.6" y="238.0" width="18.8" height="0.0"/><rect x="189.4" y="233.2" width="18.8" height="4.8"/><rect x="210.2" y="97.5" width="18.8" height="140.5"/><rect x="231.0" y="113.9" width="18.8" height="124.1"/><rect x="251.8" y="234.8" width="18.8" height="3.2"/><rect x="272.6" y="238.0" width="18.8" height="0.0"/><rect x="293.4" y="238.0" width="18.8" height="0.0"/><rect x="314.2" y="238.0" width="18.8" height="0.0"/><rect x="335.0" y="238.0" width="18.8" height="0.0"/><rect x="355.8" y="238.0" width="18.8" height="0.0"/><rect x="376.6" y="238.0" width="18.8" height="0.0"/><rect x="397.4" y="238.0" width="18.8" height="0.0"/><rect x="418.2" y="238.0" width="18.8" height="0.0"/></g><text class="ink" x="22" y="278">|h| &gt; 0.99: 0.0% · loss at init 3.30</text></g><g id="p2" class="a" opacity="1"><rect class="s1" x="22" y="42" width="14" height="14" rx="2"/><text class="ink h" x="44" y="54">init std 1/√fan_in</text><g class="s1"><rect x="23.0" y="219.2" width="18.8" height="18.8"/><rect x="43.8" y="218.4" width="18.8" height="19.6"/><rect x="64.6" y="222.0" width="18.8" height="16.0"/><rect x="85.4" y="222.3" width="18.8" height="15.7"/><rect x="106.2" y="224.4" width="18.8" height="13.6"/><rect x="127.0" y="225.1" width="18.8" height="12.9"/><rect x="147.8" y="225.7" width="18.8" height="12.3"/><rect x="168.6" y="224.4" width="18.8" height="13.6"/><rect x="189.4" y="225.9" width="18.8" height="12.1"/><rect x="210.2" y="227.2" width="18.8" height="10.8"/><rect x="231.0" y="226.1" width="18.8" height="11.9"/><rect x="251.8" y="227.8" width="18.8" height="10.2"/><rect x="272.6" y="225.0" width="18.8" height="13.0"/><rect x="293.4" y="225.9" width="18.8" height="12.1"/><rect x="314.2" y="227.1" width="18.8" height="10.9"/><rect x="335.0" y="224.9" width="18.8" height="13.1"/><rect x="355.8" y="224.5" width="18.8" height="13.5"/><rect x="376.6" y="223.9" width="18.8" height="14.1"/><rect x="397.4" y="224.9" width="18.8" height="13.1"/><rect x="418.2" y="222.6" width="18.8" height="15.4"/></g><text class="ink" x="22" y="278">|h| &gt; 0.99: 0.6% · loss at init 3.46</text></g>
+<line class="base" x1="22" x2="438" y1="238.5" y2="238.5"/>
+<text class="mut" x="22" y="256">-1</text>
+<text class="mut" x="230.0" y="256" text-anchor="middle">0</text>
+<text class="mut" x="438" y="256" text-anchor="end">+1</text>
+
+<text class="ink h" x="22" y="308">lr 100: loss per training step</text>
+<line class="grid" x1="56" x2="438" y1="500.0" y2="500.0"/><text class="mut" x="50" y="504.0" text-anchor="end">0</text><line class="grid" x1="56" x2="438" y1="446.7" y2="446.7"/><text class="mut" x="50" y="450.7" text-anchor="end">200</text><line class="grid" x1="56" x2="438" y1="393.3" y2="393.3"/><text class="mut" x="50" y="397.3" text-anchor="end">400</text><line class="grid" x1="56" x2="438" y1="340.0" y2="340.0"/><text class="mut" x="50" y="344.0" text-anchor="end">600</text>
+<polyline id="sl" class="a ln l1" pathLength="1" points="56.0,499.1 76.1,490.6 96.2,471.3 116.3,390.2 136.4,378.1 156.5,362.1 176.6,344.4 196.7,357.3 216.8,420.3 236.9,355.8 257.1,377.4 277.2,390.3 297.3,409.8 317.4,376.2 337.5,397.0 357.6,385.0 377.7,354.8 397.8,384.6 417.9,402.4 438.0,365.4"/>
+<polyline id="nl" class="a ln l2" pathLength="1" points="56.0,499.1 76.1,490.6 96.2,471.3"/>
+<g id="mi" class="a"><line class="mark" x1="116.3" x2="116.3" y1="340.0" y2="500"/>
+<text class="sec" x="120.3" y="492">inf</text></g>
+<g id="mn" class="a"><line class="mark" x1="156.5" x2="156.5" y1="340.0" y2="500"/>
+<text class="sec" x="160.5" y="492">NaN from step 6</text></g>
+<g id="nlab" class="a"><circle class="s2 dot" cx="96.2" cy="471.3" r="4.5"/>
+<text class="ink" x="90.2" y="459.3" text-anchor="end">naive</text></g>
+<rect class="s1" x="262" y="318" width="14" height="4" rx="1"/>
+<text class="ink" x="438" y="324" text-anchor="end">stable (log-sum-exp)</text>
+<text class="mut" x="56" y="520">step 1</text>
+<text class="mut" x="438" y="520" text-anchor="end">step 20</text>
+<rect class="s2" x="22" y="536" width="14" height="4" rx="1"/>
+<text class="sec" x="44" y="542">naive: textbook loss in numpy float64</text>
+</svg>

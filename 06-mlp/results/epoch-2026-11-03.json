@@ -1,0 +1,17 @@
+{
+ "date": "2026-11-03T14:18:51",
+ "python": "3.12.13",
+ "machine": "arm64",
+ "examples": 28563,
+ "batch": 32,
+ "repeats": 3,
+ "seconds": [
+  4.889071166981012,
+  4.963057749904692,
+  4.955754459020682
+ ],
+ "median_seconds": 4.955754459020682,
+ "examples_per_second": 5763.60274428213,
+ "uptime_before": "14:18  up 12 days,  3:56, 19 users, load averages: 3.35 4.81 6.81",
+ "uptime_after": "14:18  up 12 days,  3:57, 19 users, load averages: 3.27 4.72 6.74"
+}

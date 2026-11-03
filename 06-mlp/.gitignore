@@ -1,0 +1,2 @@
+# The names list stays local. download_data.py fetches it again and checks its sha256.
+data/
