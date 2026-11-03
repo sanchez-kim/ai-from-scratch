@@ -1,0 +1,51 @@
+{
+  "started": "2026-11-02T23:49:38+0900",
+  "uptime_before": "23:49  up 11 days, 13:27, 19 users, load averages: 11.37 9.70 7.90",
+  "model": "BAAI/bge-small-en-v1.5",
+  "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "query_prefix": "Represent this sentence for searching relevant passages: ",
+  "device": "cpu",
+  "torch_threads": 2,
+  "python": "3.12.13",
+  "versions": {
+    "sentence_transformers": "6.2.0",
+    "torch": "2.15.0",
+    "transformers": "5.22.1"
+  },
+  "rerun_max_abs_diff_first_64_docs_batch8_vs_batch32": 1.4901161193847656e-07,
+  "norms": {
+    "min": 0.9999998807907104,
+    "max": 1.0000001192092896
+  },
+  "files": {
+    "data/bge-small-en-v1.5-5c38ec7c405e-docs.npy": {
+      "shape": [
+        10000,
+        384
+      ],
+      "sha256": "86226b14695a25f741f9529cc33787b9d6f59631946e33b5e4a37436cffc6239"
+    },
+    "data/bge-small-en-v1.5-5c38ec7c405e-queries.npy": {
+      "shape": [
+        1000,
+        384
+      ],
+      "sha256": "b862e495a220645055e389ec4f90e53045957890161ae38ac97a5066500beafd"
+    },
+    "data/bge-small-en-v1.5-5c38ec7c405e-queries-noprefix.npy": {
+      "shape": [
+        1000,
+        384
+      ],
+      "sha256": "509a63ab79bebe7a38c342cfea2b1de1ccdc1f11e883885ed4ed019d7e0248ff"
+    }
+  },
+  "max_seq_length": 512,
+  "doc_token_lengths": {
+    "max": 403,
+    "median": 66.0,
+    "over_max_seq_length": 0
+  },
+  "finished": "2026-11-02T23:51:23+0900",
+  "uptime_after": "23:51  up 11 days, 13:29, 19 users, load averages: 12.20 10.19 8.28"
+}

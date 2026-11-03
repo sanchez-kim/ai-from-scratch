@@ -1,0 +1,16 @@
+[project]
+name = "hybrid-search-from-scratch"
+version = "0.1.0"
+description = "BM25 plus embeddings, fused with reciprocal rank fusion, in small Python; measured on 10,000 Simple English Wikipedia paragraphs"
+requires-python = ">=3.12"
+# The fusion code itself (hybrid/fusion.py, hybrid/metrics.py) uses only the
+# standard library. numpy does the 10,000 x 384 matrix product in the
+# measurement scripts; sentence-transformers computes the embeddings.
+dependencies = ["numpy>=2", "sentence-transformers>=5"]
+
+[dependency-groups]
+dev = ["pytest>=8", "scipy"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

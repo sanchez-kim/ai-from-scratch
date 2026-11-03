@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 416" width="460" height="416" role="img">
+<title>Recall at 10 by method and query set</title>
+<desc>Share of queries whose one gold paragraph is in the top 10, in percent, 500 queries per set, 10,000 Simple English Wikipedia paragraphs. BM25 blue, embeddings orange, fused results aqua. Lexical: BM25 99.2%, embed 99.8%, sum 100.0%, RRF 60 100.0%, RRF 1 100.0%. Paraphrase: BM25 23.4%, embed 64.4%, sum 59.8%, RRF 60 47.8%, RRF 1 61.0%.</desc>
+<style>
+  .bg{fill:#fcfcfb} .ink{fill:#0b0b0b} .sec{fill:#52514e} .mut{fill:#898781}
+  .grid{stroke:#e1e0d9;stroke-width:1} .axis{stroke:#c3c2b7;stroke-width:1}
+  .bm25{fill:#2a78d6} .emb{fill:#eb6834} .fus{fill:#1baf7a}
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+  .b{font-weight:600} .h{font-size:14px;font-weight:600}
+  @media (prefers-color-scheme: dark) {
+    .bg{fill:#1a1a19} .ink{fill:#f0efec} .sec{fill:#c3c2b7} .mut{fill:#898781}
+    .grid{stroke:#2c2c2a} .axis{stroke:#383835}
+    .bm25{fill:#3987e5} .emb{fill:#d95926} .fus{fill:#199e70}
+  }
+</style>
+<rect class="bg" width="460" height="416"/>
+<text class="ink h" x="16" y="24">Recall@10 by method (%, 500 questions each)</text>
+<line class="grid" x1="100.0" x2="100.0" y1="66" y2="352"/><text class="mut" x="100.0" y="370" text-anchor="middle">0</text><line class="grid" x1="173.0" x2="173.0" y1="66" y2="352"/><text class="mut" x="173.0" y="370" text-anchor="middle">25</text><line class="grid" x1="246.0" x2="246.0" y1="66" y2="352"/><text class="mut" x="246.0" y="370" text-anchor="middle">50</text><line class="grid" x1="319.0" x2="319.0" y1="66" y2="352"/><text class="mut" x="319.0" y="370" text-anchor="middle">75</text><line class="grid" x1="392.0" x2="392.0" y1="66" y2="352"/><text class="mut" x="392.0" y="370" text-anchor="middle">100</text><text class="ink b" x="16" y="58">Lexical questions</text><text class="ink" x="92" y="84" text-anchor="end">BM25</text><rect class="bm25" x="100" y="72" width="289.7" height="16"/><text class="ink" x="395.7" y="84">99.2</text><text class="ink" x="92" y="106" text-anchor="end">embed</text><rect class="emb" x="100" y="94" width="291.4" height="16"/><text class="ink" x="397.4" y="106">99.8</text><text class="ink" x="92" y="128" text-anchor="end">sum</text><rect class="fus" x="100" y="116" width="292.0" height="16"/><text class="ink" x="398.0" y="128">100.0</text><text class="ink" x="92" y="150" text-anchor="end">RRF 60</text><rect class="fus" x="100" y="138" width="292.0" height="16"/><text class="ink" x="398.0" y="150">100.0</text><text class="ink" x="92" y="172" text-anchor="end">RRF 1</text><rect class="fus" x="100" y="160" width="292.0" height="16"/><text class="ink" x="398.0" y="172">100.0</text><text class="ink b" x="16" y="208">Paraphrase questions</text><text class="ink" x="92" y="234" text-anchor="end">BM25</text><rect class="bm25" x="100" y="222" width="68.3" height="16"/><text class="ink" x="174.3" y="234">23.4</text><text class="ink" x="92" y="256" text-anchor="end">embed</text><rect class="emb" x="100" y="244" width="188.0" height="16"/><text class="ink" x="294.0" y="256">64.4</text><text class="ink" x="92" y="278" text-anchor="end">sum</text><rect class="fus" x="100" y="266" width="174.6" height="16"/><text class="ink" x="280.6" y="278">59.8</text><text class="ink" x="92" y="300" text-anchor="end">RRF 60</text><rect class="fus" x="100" y="288" width="139.6" height="16"/><text class="ink" x="245.6" y="300">47.8</text><text class="ink" x="92" y="322" text-anchor="end">RRF 1</text><rect class="fus" x="100" y="310" width="178.1" height="16"/><text class="ink" x="284.1" y="322">61.0</text><line class="axis" x1="100" x2="100" y1="66" y2="352"/>
+<text class="sec" x="100" y="388">recall@10, %</text>
+<text class="sec" x="16" y="408">fusion of each top 100 · RRF k = 60 and k = 1</text>
+</svg>
