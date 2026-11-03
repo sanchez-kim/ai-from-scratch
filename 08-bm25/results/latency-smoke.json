@@ -1,0 +1,24 @@
+{
+  "date": "2026-11-02T22:04:28+0900",
+  "smoke": true,
+  "uptime_before": "22:04  up 11 days, 11:42, 19 users, load averages: 49.49 46.09 35.82",
+  "uptime_after": "22:04  up 11 days, 11:42, 19 users, load averages: 49.49 46.09 35.82",
+  "queries": 5,
+  "repeats": 1,
+  "documents": 10000,
+  "index_build_s": {
+    "ours": 0.24346008396241814,
+    "bm25s": 0.3357358749490231,
+    "rank_bm25": 0.1415339580271393
+  },
+  "median_query_ms": {
+    "ours": 9.56041703466326,
+    "bm25s": 0.3939169691875577,
+    "rank_bm25": 24.449666030704975
+  },
+  "p90_query_ms": {
+    "ours": 25.751041364856064,
+    "bm25s": 2.303016372025013,
+    "rank_bm25": 33.492783177644014
+  }
+}

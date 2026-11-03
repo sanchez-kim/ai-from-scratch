@@ -1,0 +1,15 @@
+[project]
+name = "bm25-from-scratch"
+version = "0.1.0"
+description = "Okapi BM25 in plain Python, checked against bm25s and rank_bm25 on 10,000 Simple English Wikipedia paragraphs"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+# The BM25 code itself uses only the standard library.
+# bm25s and rank_bm25 are references; pyarrow reads the Wikipedia parquet file.
+dev = ["pytest>=8", "numpy>=2", "bm25s", "rank-bm25", "pyarrow"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

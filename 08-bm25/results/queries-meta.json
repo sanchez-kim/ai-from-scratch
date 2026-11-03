@@ -1,0 +1,27 @@
+{
+  "model": "qwen3.5:4b-q4_K_M",
+  "model_digest": "d8b0f5e9760cd1682034f292d7ef72ec46f432149be0df7574bf2d6e92e38c04",
+  "ollama_version": "0.40.8",
+  "options": {
+    "temperature": 0,
+    "seed": 42,
+    "num_predict": 80
+  },
+  "think": false,
+  "sample": {
+    "n": 500,
+    "seed": 8
+  },
+  "prompts": {
+    "lexical": "Here is a paragraph from a Simple English Wikipedia article titled \"{title}\".\n\n{text}\n\nWrite one question that a person might type into a search engine, which this paragraph answers. Reply with the question only.",
+    "paraphrase": "Here is a paragraph from a Simple English Wikipedia article titled \"{title}\".\n\n{text}\n\nWrite one question that this paragraph answers. Do not use any noun, verb, adjective or name that appears in the paragraph or the title. Use synonyms and descriptions instead. Reply with the question only."
+  },
+  "cleaning": "first non-empty line, strip 'Question:' label, quotes and *",
+  "last_run_started": "2026-11-02T21:58:04+0900",
+  "finished": "2026-11-02T22:11:33+0900",
+  "uptime": "22:11  up 11 days, 11:49, 19 users, load averages: 53.37 48.22 40.72",
+  "rows": {
+    "lexical": 500,
+    "paraphrase": 500
+  }
+}
