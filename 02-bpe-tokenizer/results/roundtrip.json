@@ -1,0 +1,75 @@
+{
+ "created": "2026-11-02 21:33:15 +0900",
+ "checks": [
+  {
+   "tokenizer": "ours-en",
+   "file": "wiki-en-test.txt",
+   "chars": 169058,
+   "tokens": 42879,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-en",
+   "file": "wiki-ko-test.txt",
+   "chars": 184103,
+   "tokens": 423663,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-en",
+   "file": "python-code.txt",
+   "chars": 272427,
+   "tokens": 124815,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-en",
+   "file": "flores-eng.txt",
+   "chars": 132978,
+   "tokens": 36038,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-en",
+   "file": "flores-kor.txt",
+   "chars": 66977,
+   "tokens": 156768,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-mixed",
+   "file": "wiki-en-test.txt",
+   "chars": 169058,
+   "tokens": 48609,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-mixed",
+   "file": "wiki-ko-test.txt",
+   "chars": 184103,
+   "tokens": 110135,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-mixed",
+   "file": "python-code.txt",
+   "chars": 272427,
+   "tokens": 154699,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-mixed",
+   "file": "flores-eng.txt",
+   "chars": 132978,
+   "tokens": 41666,
+   "round_trip": true
+  },
+  {
+   "tokenizer": "ours-mixed",
+   "file": "flores-kor.txt",
+   "chars": 66977,
+   "tokens": 41960,
+   "round_trip": true
+  }
+ ]
+}

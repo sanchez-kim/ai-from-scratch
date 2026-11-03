@@ -1,0 +1,3 @@
+# Downloaded corpora stay local. download_data.py fetches them again;
+# results/corpus-manifest.json records revision IDs and sha256 of every file.
+data/
