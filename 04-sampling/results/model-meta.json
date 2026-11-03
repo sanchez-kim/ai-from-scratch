@@ -1,0 +1,13 @@
+{
+ "source": "GET /v1/models on llama-server 0.4.1 (build 10964), same flags as collect_probs.py",
+ "meta": {
+  "vocab_type": true,
+  "n_vocab": 248320,
+  "n_ctx": 4096,
+  "n_ctx_train": 262144,
+  "n_embd": 2560,
+  "n_params": 4205751296,
+  "size": 2637625344,
+  "ftype": "Q4_K - Medium"
+ }
+}
