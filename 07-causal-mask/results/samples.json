@@ -1,0 +1,144 @@
+{
+ "prompt": "Elizabeth",
+ "new_chars": 150,
+ "seeds": [
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19
+ ],
+ "temperature": 1.0,
+ "train_vocab_words": 6076,
+ "models": {
+  "causal-cpu-repeat": {
+   "split_at_new_char": 55,
+   "real_words": {
+    "positions_8_to_62": {
+     "real": 148,
+     "total": 161,
+     "share": 0.9192546583850931
+    },
+    "position_63": {
+     "real": 261,
+     "total": 291,
+     "share": 0.8969072164948454
+    }
+   },
+   "samples": [
+    "Elizabeth, and writtent hed ather\nopperpred, _I_ should connect now me some see by the stopped; and I\nwonder, Mrs. Hurst assertion which Jane, and his coldly a",
+    "Elizabeth did not know that they eldered. You most\nit was either having a voluntary into-morrows, was certainly all\nthings, which, she is could give you than t",
+    "Elizabeth commendated by the shocking, at leisure”\n\n[_Collins; thought her in the whole till looked was unables. Nexcessity or evening\nthe word of place al cha",
+    "Elizabeth and of knowing humour, I wish me of the greatest, and\npount.\n\n“I freely,” replied, Mr. Darcy made it would be down agt.\n\n\n\n\n[Illustration]\n\n\n\n\n\nCHAPT",
+    "Elizabeth’s own, girl in at the mana further her deal easily lived,\nfor set as I think the treater. But the was scarcely expressed months\nof his praise of Darc",
+    "Elizabeth disconcerted she me particularly resolved, unconnected\nto addessed Elizabeth could not that betraded you wisher, and a polite\nin anything by no reply",
+    "Elizabeth; and she cried to say; but though I\nshall be reserving him business on breditation, afterhood, sudied\nnever and need by\nobservice to thy happiness.”\n",
+    "Elizabeth and having looked; and should of me\ncommon; but she was promised at trial\nto look of the morning at all herself.”\n\n“May were very fresh prootion in a",
+    "Elizabeth,--     Lizzy, as you are not at they convinced in throwing\nthe praise, having reached nature perfectly. Jane was preserved at\nJane; to have no!\noblig",
+    "Elizabeth, that however, many years on seclusion. Mrs. Bennet me pale about\nthe educated lead.\n\n“I should notice hope already wished as she under much sharpene",
+    "Elizabeth’s bringing to renderecures, are\nthere was right, of seeing me easily calment was prone\nfrom there it which opetiness.”\n\nMrs.--I entreater the other m",
+    "Elizabeth, she had no think, who ruding his and new led\nas to be place endeavour to be began ast well to her opinion of her\ndaughters, that you thought her dis",
+    "Elizabeth. Her pack\npleasure to the reprosmed to whom I have liked to have that her such happiness of Elizabeth had\nrepresented convinced and though often bein",
+    "Elizabeth nobody afflage her feeling. He come tome\n    was a full timust return with her, loss the drive some return,\nteampted of lodgiving anything as half an",
+    "Elizabeth rather should be now merely. Attention\nfor the house false. Had crossively saying, as to be his friend;\nthough walking her regimental, for considerat",
+    "Elizabeth stairs that I might preserved. Elizabeth had settled that they\nremembarish and curiosity, but I cannot be easy added opinion of decidedly\nshort\nby th",
+    "Elizabeth hoped upon by her fellow. With Bright sensibly enough, lamed\nto compration, or then minutes, from wrote\nit inconvenience without infancying visible. ",
+    "Elizabeth--it I resigned, as she sing, “you do.”\n\nMrs. Bennet known any reasonable insterrost in polite are vaconts\nof a siguity; and ill-was I pursuit in a la",
+    "Elizabeth without one chief.”\n\n“Meredness Do you will be so speaking of allowed. Miss Bingley deceived from\nher aynessed to have regard another, in love’s fals",
+    "Elizabeth told her on my powerful so other entary\nto the meaning of whom they have younger so it. Colonel Fitzwilliam”\n]\n\n\n\n\nCHAPTER XXV.\n\n\n[Illustration]\n\nAt "
+   ],
+   "greedy": "Elizabeth was a strong of the proper of the ladies were propriety and seeing her\ndaughters and her daughters and her daughters and she could not be\nso see the "
+  },
+  "none-cpu-rerun": {
+   "split_at_new_char": 55,
+   "real_words": {
+    "positions_8_to_62": {
+     "real": 36,
+     "total": 130,
+     "share": 0.27692307692307694
+    },
+    "position_63": {
+     "real": 166,
+     "total": 345,
+     "share": 0.4811594202898551
+    }
+   },
+   "samples": [
+    "ElizabethleaaLizzyazy-zaz’’zaz’’azzzz’’’s’’’s’s’’szz’’s’s’’’s!’’n, of withs so ven on to of\njence.”\n\n“Yons chart in woo the, of amil irst sur, wey, ti as will ",
+    "Elizabethleaalazzyazlyzazy-zy’’’Te’’saly’’’’a’’’’’se’’’’’’’V’s’’s prosp, his compr;\nart,-\nMere seall, bual hisural sen Mare retr,  sain Elizabeth worl settair\n",
+    "Elizabethleaalazzyavay’szs!”-’szazzzzy,’’’’’s”’’s”-z’sz’’szy’sz’s comnt her Mis incroade.”\n\n“He durel of imprasans ove, way. I I a houlk deasay of pleat tl, I\n",
+    "Elizabethleyyyy’yyy’lyzyzy:’y’’’y’x’y?y’’’’’sy’’’sy’’’y’’’’’’’’’s ceeas -ave, hom,” add\nnot of that trry, wit a they wald with, saidain, ricaculay, to the\ncrig",
+    "Elizabethlessyszsysssssszssssssssssssssssssssssssssssssssssssssss_sssssssss ss\ns temeastas to ade reeasur all forceard incle her, the deop whild\npraes beit was",
+    "Elizabethleaalazzyazay-azzazazzzazzzzylazzy-azzyzyzzzzazy--azzzy,”’sa:-\n\n“Be Elizaby, to anwereal to orm, of the  seasese a refe if shem,\nwas, op of for Xrid s",
+    "Elizabethleaazizzyazy-zEzEzzy’gzazzzazy’’zyzazs-zyzzz-l-’,-y’sE’ she bus\nhould-nable-rey,, brigerabout to udne tican.H:\nBenget incorfet dive dmagy have fard.”\n",
+    "Elizabethleaalazzyazy,iazy;ut’’’asLzzyy;uzy’sy’’’’’s’’ly-zy;’’E; and mall, and rith\nto loot_ mor, of foried to ten the peaew,\nwal with very, éal.”\n\nBoth cligan",
+    "Elizabetheiyyyyzzyy’y?’’s’’’’’’’’’’’’’’’’’’’sy’’’’’’’’s’’’’’’’’’s Havis Liza-s crot harl rece,\ninaw as peftes. Hes tres with isn arce, dent wart wall not to co",
+    "Elizabethleaayyz’sa’(E’szss’s’s’TsTLy’s’s’s’siz’s’ss’ss’s’ss’sss pried her, and even ond lect.\n\n“Hll littleogive hor soy a margis wors intreute marr. Hhear enc",
+    "Elizabethleaalazzya’lyzyzy’sazzzasLzayy’lly’zy’’sy’sz’y’’’ss’sss, I, more with hease of and the\ncom on shrir trong cooss tire see sela-rele selley of to trioge",
+    "Elizabethleaaly)yaavayvazy!)ivy-a’Thvaly azaaaa’’!)z’’azazya’ayalal thased well iver, and, and the\npart which hearr ence toed, thed he :ality ret jy las sron i",
+    "Elizabethleaalazzyazy-zazy,y-zzzay’zy’y,-Eyzazzy-y’y’’y,--y,?-y-ry to had to al the saidume ir not said,\nible sure Bingley said coulite soame of saw of tall, a",
+    "Elizabethleaalaz’saTlazazaazaz’sazzzazazy-yzas’Vmazz’saz’’sazzzzy--ayul breation, was doom his\nabled it    make to Mopreait She creadingleavanilaraceas says al",
+    "Elizabethleaayy’aya’ly’’sy;’l’’’a’’’’’y’’’’’s-’’’’’’’’s’’’’s’’’’s, the and rea very knly\nsear her, berh,’ tharige, I is onsloned hear answereal cecarce,\n marma",
+    "ElizabethleaalazzyazlezEzEviaz-zazzz-zy’llyzazy-zy zzyaz’zzazzzy akith tir me mas on jiss you,\nand, be to lign to matae being alpenige to we not a\nver this sir",
+    "Elizabethleaalazzyavay-azyvaa’’’aazam’yaz’’,as’’’’az’’’’’’sa’Tazalalyiw’d,\nden ang wo of to ner the a, from wars\none-, to ment leas lach to by hisign vide os p",
+    "Elizabethleaalaz’saTlezEzEvzEzzzazzzEs!TLzyzazyz’sTszazzEzEs’sEEse you that is if I_realur,” where be all much\nwas coulaking it I think gever I”pmairive bear a",
+    "Elizabethleiiyizzy’ve’’’s’’’’’’’’’’’’’’’’’’’s’’’’’’s’’l’’s’s’s’’. The carcease\nnew what wis ince to waY forquew ay seeee her   sore of igcods’s, in and\nall was",
+    "Elizabethle--ly--y--l?zEtEly---y------ly--y---------------------a--------t oulL noy’\nroood to it ans ports not tave pecte came me cont uncaces easeligo\ncompanc"
+   ],
+   "greedy": "Elizabethleaalazzyazy-zEzEazy’Ezazzzazy’y’’szy’szy’szazy-y’y’ss------------------------------------------------------------------------------------------------"
+  },
+  "after-cpu-rerun": {
+   "split_at_new_char": 55,
+   "real_words": {
+    "positions_8_to_62": {
+     "real": 5,
+     "total": 60,
+     "share": 0.08333333333333333
+    },
+    "position_63": {
+     "real": 172,
+     "total": 326,
+     "share": 0.5276073619631901
+    }
+   },
+   "samples": [
+    "Elizabethnnnnnnnnnnnn:nnn;894949nnqI-nn:*/5In_IIn:nn:*IIn]]]]]]]\n\n““He sadsing ven on to of jake and gaven chart would and of tham\nwhich to wis  ceating remen ",
+    "Elizabethnn;4Innnnknn]]]]]]]]]]]]en:*9nnnnkI,*/**IIII94*&94*/*/*\n\n“I swall to know; and,--My che, was cealw ill all veryad, which\n  sheurice lemend and tisting",
+    "Elizabethnnnnnnqnnnnnn:Yn;;*/*/)_n]]]]gnnn]]]]]:**&n:*IIIII_IIII.\n\nHent her Miss wishad tit wall\nme was unal as othe her to nous wing be dean was to the tley, ",
+    "Elizabethnnnnnnnnnnannnn;*nnnnœzan]]]]]]]\n*/*494***I]]]]]]]]]]:*\n\n[*]\n\n\n\n\n[Illk, he madinces seminc trry dinite they will will than a fapriead.\n\n“I to marm de ",
+    "Elizabethnnnnnn94U*nn:n]]]]]]]]]]]{unnn94**/**/*/*94*/**/***ê\n\n*n_neht was cail ot meartawh yeade reeard Lally crinand incled, whal would\nonceidhe as irwing se",
+    "Elizabethnnnnnnnnnq;94nnnzannnnnannnnnnnnnnnnnnn9nncennnnnnnveen\ntraad amsre Elizabeth coun arkan toter nord their\nwas arme rese if shem, was in won for irsons",
+    "Elizabethnnnnnnnnnnnnœknnœnnn]]]]]]:&nnnnnng;94 IIn_IF/*‘9n]]]]]\n\n\n“Yous\n\n\n““Aon]\n\n\n“I nother mest has to udned_neagat: of pee in\nof tiwn wondmegy have fave.”\n",
+    "Elizabethnnnnnnnnnnnn,’;;9494494&94949nn:*/*nnn:*/*/*/*/*/**/*/*\n\n“Cood,---on, whal to lood_ no her of aid the per than eaew,\nwall was vere, é she chotion igan",
+    "Elizabethnnnknnnnnq;;’nnn:9nnnnncenœennknn:; */:}e;YYn;IIInnkn&:\n\nHe\nis Lizaw his tone-treecentinaw of pefted. Hes. Lister’s isner\nceand ny was nor mont!\n\nond ",
+    "Elizabethnnnnnnnnnq;; nnnnnnnnê9nnqunnng;’œ:;9nnq’949494ennnnnquaps, Mr. His\nimced haved lece.\n\n“Il he than civen of way and densed was streures could sead enc",
+    "Elizabethnn; nnnnnnnn;n]]]]894*/*/*/*nnn:*/*/9n94*{94U*&U*/*/*/*\n\n“My will marl whal on. He the com on shrice raid cours tire semese,”-\n\n“He fromend,” to him e",
+    "Elizabethnnnnnn)]}nn]]]]&9494*4*94*/9494*œ)9494**94* 94*/**&94\n*fil in enviled: in becabligand the had had know and envery ever tod\nhe : nit went not as prones",
+    "Elizabethnnnnnnqnnnng;nnnnnnnn;-9nenann; Ennnnnnnnng;_nnzannnnanry tond’s\nto alr anshaveuge irancersaed and the is Bingle sumant!”\n\n“Beved even ous of that him",
+    "Elizabethnnnnnnnnn:;894*/9494*{94*/94*nnn]]]]]]]mun]]]]*/*/*-9un]\n\n\n“ul ornt Mrswirl so on his of crumis cample to not evin She crled\nstif innil was cersale al",
+    "Elizabethnnnnnnnnn:F94nnnn;94:{:_éknnnngnn:’]]]]]]]]]]]*/**{*{unce\nno said nor will kny with all tontry,’s, arighthreid, wall of her may\nsheir oce a ceasimare ",
+    "Elizabethnnnnnnnnnq;; Innnnnnn]/’kn]gnnnqungan; In; I]]]]]]]:{94\n\n\n“In tir I mole and her you,\n\n“way is dilign to matoe being alpedinnt spicce Mr.\n\nHe thinky w",
+    "Elizabethnnnnnnnnnenn;nnnnnn]]]]]:*49nnnnnngnnk)*-9494*/*/***à**he\n\n“Rw’\n\n\n“Hou wunce of to nemire bul from was in er, to ment leakn neopense\nfare and idvans. ",
+    "Elizabethnnnnnnn;;9nn]]]]]]*nn]]]]]]94*YEZ89494*/*94*/*****{Y*94\n\n“A Elizabeth it inrey grose, had be adnevurresad a ince in it I than list\nhavepmale Lessed la",
+    "Elizabethnninnnnn:9nnnn;;)9n]]]]]]]]]]94949494*94**949494**{/*/*\n\n[--\n\n“Go andent to honses inded to maffetquew ay seevery re methersed amor\nthe in longed you ",
+    "Elizabethnn; nnnnnnnn;; nnnnnnnnab; nnnnnnn; Fanannnnncn; ncanncamemes,\nharseme nole\nonhour five anrept. Hen connes, to e came me coned tealk tealk if of\nmy an"
+   ],
+   "greedy": "Elizabethnnnnnnnnnq;9nnnnnnnnn;-9nnnnnnnnnnannnnqunn:nnnnnnn::94\n\n“I and the was of the was of the was of the could to the could to\n                           "
+  }
+ }
+}
