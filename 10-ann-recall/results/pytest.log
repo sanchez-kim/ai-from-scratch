@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ~/Desktop/projects/ai-from-scratch/10-ann-recall/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: ~/Desktop/projects/ai-from-scratch/10-ann-recall
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 4 items
+
+tests/test_search.py::test_numpy_search_matches_the_plain_python_loop PASSED [ 25%]
+tests/test_search.py::test_recall_at_10_on_a_hand_example PASSED         [ 50%]
+tests/test_search.py::test_more_lsh_tables_approach_exact_recall PASSED  [ 75%]
+tests/test_search.py::test_lsh_returns_exact_ranking_of_its_candidates PASSED [100%]
+
+============================== 4 passed in 0.08s ===============================

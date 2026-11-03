@@ -1,0 +1,105 @@
+{
+  "uptime": "22:27  up 11 days, 12:05, 19 users, load averages: 12.11 26.67 33.73",
+  "hnswlib": "0.8.0",
+  "space": "ip",
+  "M": 16,
+  "ef_construction": 200,
+  "random_seed": 100,
+  "build_threads": 1,
+  "query_threads": 2,
+  "k": 10,
+  "sets": {
+    "real": {
+      "sweep": [
+        {
+          "ef_search": 10,
+          "recall_at_10": 0.8429,
+          "queries_with_all_10": 435,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 20,
+          "recall_at_10": 0.9246,
+          "queries_with_all_10": 657,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 40,
+          "recall_at_10": 0.9669,
+          "queries_with_all_10": 811,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 80,
+          "recall_at_10": 0.9875,
+          "queries_with_all_10": 913,
+          "worst_query_recall": 0.2
+        },
+        {
+          "ef_search": 160,
+          "recall_at_10": 0.9933,
+          "queries_with_all_10": 947,
+          "worst_query_recall": 0.5
+        },
+        {
+          "ef_search": 320,
+          "recall_at_10": 0.9969,
+          "queries_with_all_10": 972,
+          "worst_query_recall": 0.8
+        }
+      ],
+      "builds_return_identical_ids": true,
+      "index_files_identical": true,
+      "neighbour_of_neighbour": {
+        "mean_shared_of_9": 4.008,
+        "median": 4.0
+      }
+    },
+    "random": {
+      "sweep": [
+        {
+          "ef_search": 10,
+          "recall_at_10": 0.0122,
+          "queries_with_all_10": 0,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 20,
+          "recall_at_10": 0.0202,
+          "queries_with_all_10": 0,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 40,
+          "recall_at_10": 0.0394,
+          "queries_with_all_10": 0,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 80,
+          "recall_at_10": 0.0669,
+          "queries_with_all_10": 0,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 160,
+          "recall_at_10": 0.1165,
+          "queries_with_all_10": 0,
+          "worst_query_recall": 0.0
+        },
+        {
+          "ef_search": 320,
+          "recall_at_10": 0.207,
+          "queries_with_all_10": 0,
+          "worst_query_recall": 0.0
+        }
+      ],
+      "builds_return_identical_ids": true,
+      "index_files_identical": true,
+      "neighbour_of_neighbour": {
+        "mean_shared_of_9": 0.01,
+        "median": 0.0
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+# Downloaded parquet shards and the derived .npy files are large and not ours to redistribute.
+data/
+.venv/
+__pycache__/
+.pytest_cache/

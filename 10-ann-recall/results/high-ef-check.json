@@ -1,0 +1,35 @@
+{
+  "uptime": "22:28  up 11 days, 12:06, 19 users, load averages: 13.92 25.47 33.00",
+  "rows": [
+    {
+      "set": "real",
+      "ef_search": 1000,
+      "recall_at_10": 0.9985
+    },
+    {
+      "set": "real",
+      "ef_search": 3000,
+      "recall_at_10": 0.999
+    },
+    {
+      "set": "real",
+      "ef_search": 10000,
+      "recall_at_10": 0.9995
+    },
+    {
+      "set": "random",
+      "ef_search": 1000,
+      "recall_at_10": 0.4762
+    },
+    {
+      "set": "random",
+      "ef_search": 3000,
+      "recall_at_10": 0.8019
+    },
+    {
+      "set": "random",
+      "ef_search": 10000,
+      "recall_at_10": 0.9839
+    }
+  ]
+}

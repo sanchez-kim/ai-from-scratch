@@ -1,0 +1,17 @@
+{
+  "repo": "timescale/wikipedia-22-12-simple-embeddings",
+  "revision": "2f97d23433103634cff31a8c519f0a6f7445aadb",
+  "files": [
+    {
+      "path": "data/0000.parquet",
+      "bytes": 387257483,
+      "sha256": "0197589f68b57e5595feed0ec96b1b8b94a4bc1b6c73bb7264060e321d5dcab8"
+    },
+    {
+      "path": "data/0001.parquet",
+      "bytes": 387176134,
+      "sha256": "6983bfde4f7e54006d3eda2fa59001e05490fdfce4ed6469bdac27cd7802a549"
+    }
+  ],
+  "checked_at": "2026-11-02 22:11:31 KST"
+}

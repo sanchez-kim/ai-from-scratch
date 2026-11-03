@@ -1,0 +1,49 @@
+{
+  "uptime": "22:12  up 11 days, 11:50, 19 users, load averages: 46.29 47.14 40.75",
+  "rows_read": 120000,
+  "dim": 768,
+  "raw_norm": {
+    "min": 12.245,
+    "median": 13.41,
+    "max": 16.429
+  },
+  "split": {
+    "seed": 0,
+    "corpus": 100000,
+    "queries": 1000
+  },
+  "datasets": {
+    "real": {
+      "corpus_shape": [
+        100000,
+        768
+      ],
+      "corpus_vectors_with_an_exact_duplicate": 37,
+      "neighbour_cosine_median_over_queries": {
+        "rank_1": 0.9122,
+        "rank_10": 0.8717,
+        "rank_100": 0.8417,
+        "rank_1000": 0.8136,
+        "mean": 0.7366,
+        "std": 0.0364
+      },
+      "truth_sha256": "7f4b3eb2e66bcba50789891cde7a5752c278e807cf96d3bd602dd6af1221dbcd"
+    },
+    "random": {
+      "corpus_shape": [
+        100000,
+        768
+      ],
+      "corpus_vectors_with_an_exact_duplicate": 0,
+      "neighbour_cosine_median_over_queries": {
+        "rank_1": 0.1566,
+        "rank_10": 0.1343,
+        "rank_100": 0.1113,
+        "rank_1000": 0.0839,
+        "mean": -0.0,
+        "std": 0.0361
+      },
+      "truth_sha256": "5ef89e452c672dce5ac9ab0f91e2fea67e24b342e16fd7ff0bcd1a870d1a3d7c"
+    }
+  }
+}
