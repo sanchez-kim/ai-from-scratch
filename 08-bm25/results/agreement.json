@@ -1,0 +1,243 @@
+{
+  "started": "2026-11-02T23:51:16+0900",
+  "uptime_before": "23:51  up 11 days, 13:29, 19 users, load averages: 11.70 10.03 8.20",
+  "uptime_after": "23:51  up 11 days, 13:29, 19 users, load averages: 12.39 10.33 8.36",
+  "versions": {
+    "bm25s": "0.3.16",
+    "rank_bm25": "0.2.2",
+    "numpy": "2.5.4"
+  },
+  "k1": 1.5,
+  "b": 0.75,
+  "documents": 10000,
+  "avgdl": 56.4235,
+  "vocabulary": 41802,
+  "queries_scored": 1000,
+  "comparisons": [
+    {
+      "name": "bm25s lucene float32, raw",
+      "scale_applied_to_ours": 1.0,
+      "queries": 1000,
+      "max_abs_diff": 104.94205357977785,
+      "mean_abs_diff_over_matching_docs": 1.204691534359377,
+      "top10_same_order": 1.0,
+      "top10_same_set": 1.0,
+      "top1_same": 1.0,
+      "top10_mean_overlap": 1.0
+    },
+    {
+      "name": "bm25s lucene float32, ours / (k1 + 1)",
+      "scale_applied_to_ours": 2.5,
+      "queries": 1000,
+      "max_abs_diff": 6.571018545287188e-06,
+      "mean_abs_diff_over_matching_docs": 3.275945816013357e-08,
+      "top10_same_order": 1.0,
+      "top10_same_set": 1.0,
+      "top1_same": 1.0,
+      "top10_mean_overlap": 1.0
+    },
+    {
+      "name": "bm25s lucene float64, raw",
+      "scale_applied_to_ours": 1.0,
+      "queries": 1000,
+      "max_abs_diff": 104.9420601507964,
+      "mean_abs_diff_over_matching_docs": 1.2046915471500412,
+      "top10_same_order": 1.0,
+      "top10_same_set": 1.0,
+      "top1_same": 1.0,
+      "top10_mean_overlap": 1.0
+    },
+    {
+      "name": "bm25s lucene float64, ours / (k1 + 1)",
+      "scale_applied_to_ours": 2.5,
+      "queries": 1000,
+      "max_abs_diff": 7.105427357601002e-15,
+      "mean_abs_diff_over_matching_docs": 6.915404317180905e-17,
+      "top10_same_order": 1.0,
+      "top10_same_set": 1.0,
+      "top1_same": 1.0,
+      "top10_mean_overlap": 1.0
+    },
+    {
+      "name": "rank_bm25 BM25Okapi",
+      "scale_applied_to_ours": 1.0,
+      "queries": 1000,
+      "max_abs_diff": 39.36976371852692,
+      "mean_abs_diff_over_matching_docs": 6.944355882936557,
+      "top10_same_order": 0.029,
+      "top10_same_set": 0.091,
+      "top1_same": 0.77,
+      "top10_mean_overlap": 0.7116
+    }
+  ],
+  "retrieval_quality": {
+    "ours/lexical": {
+      "queries": 500,
+      "recall@10": 0.992,
+      "mrr@10": 0.902
+    },
+    "ours/paraphrase": {
+      "queries": 500,
+      "recall@10": 0.234,
+      "mrr@10": 0.14216587301587302
+    },
+    "rank_bm25/lexical": {
+      "queries": 500,
+      "recall@10": 0.992,
+      "mrr@10": 0.8999103174603175
+    },
+    "rank_bm25/paraphrase": {
+      "queries": 500,
+      "recall@10": 0.228,
+      "mrr@10": 0.13601984126984126
+    }
+  },
+  "rank_bm25": {
+    "epsilon": 0.25,
+    "average_idf": 8.182492364019033,
+    "floor_value": 2.0456230910047584,
+    "words_in_more_than_half_of_docs": {
+      "a": {
+        "df": 7011,
+        "ours_idf": 0.35513342980981055,
+        "rank_bm25_idf": 2.0456230910047584,
+        "robertson_idf_before_floor": -0.8524455088457463
+      },
+      "and": {
+        "df": 7333,
+        "ours_idf": 0.31023219628970616,
+        "rank_bm25_idf": 2.0456230910047584,
+        "robertson_idf_before_floor": -1.0113111875109015
+      },
+      "in": {
+        "df": 7501,
+        "ours_idf": 0.28758208744944797,
+        "rank_bm25_idf": 2.0456230910047584,
+        "robertson_idf_before_floor": -1.099012288673443
+      },
+      "is": {
+        "df": 6022,
+        "ours_idf": 0.5071826324874896,
+        "rank_bm25_idf": 2.0456230910047584,
+        "robertson_idf_before_floor": -0.41459759167143684
+      },
+      "of": {
+        "df": 7368,
+        "ours_idf": 0.30547093032319833,
+        "rank_bm25_idf": 2.0456230910047584,
+        "robertson_idf_before_floor": -1.029280192645187
+      },
+      "the": {
+        "df": 9151,
+        "ours_idf": 0.08876728771649915,
+        "rank_bm25_idf": 2.0456230910047584,
+        "robertson_idf_before_floor": -2.37702513814803
+      },
+      "was": {
+        "df": 5061,
+        "ours_idf": 0.6810222059377097,
+        "rank_bm25_idf": 2.0456230910047584,
+        "robertson_idf_before_floor": -0.024398770554277676
+      }
+    },
+    "15_most_common_words": [
+      {
+        "word": "the",
+        "df": 9151,
+        "ours_idf": 0.08876728771649915,
+        "rank_bm25_idf": 2.0456230910047584
+      },
+      {
+        "word": "in",
+        "df": 7501,
+        "ours_idf": 0.28758208744944797,
+        "rank_bm25_idf": 2.0456230910047584
+      },
+      {
+        "word": "of",
+        "df": 7368,
+        "ours_idf": 0.30547093032319833,
+        "rank_bm25_idf": 2.0456230910047584
+      },
+      {
+        "word": "and",
+        "df": 7333,
+        "ours_idf": 0.31023219628970616,
+        "rank_bm25_idf": 2.0456230910047584
+      },
+      {
+        "word": "a",
+        "df": 7011,
+        "ours_idf": 0.35513342980981055,
+        "rank_bm25_idf": 2.0456230910047584
+      },
+      {
+        "word": "is",
+        "df": 6022,
+        "ours_idf": 0.5071826324874896,
+        "rank_bm25_idf": 2.0456230910047584
+      },
+      {
+        "word": "was",
+        "df": 5061,
+        "ours_idf": 0.6810222059377097,
+        "rank_bm25_idf": 2.0456230910047584
+      },
+      {
+        "word": "to",
+        "df": 4495,
+        "ours_idf": 0.7996081915516885,
+        "rank_bm25_idf": 0.20267069612881805
+      },
+      {
+        "word": "it",
+        "df": 3624,
+        "ours_idf": 1.0149687402355836,
+        "rank_bm25_idf": 0.5649030097260219
+      },
+      {
+        "word": "for",
+        "df": 3104,
+        "ours_idf": 1.1698324161715685,
+        "rank_bm25_idf": 0.7981613647106265
+      },
+      {
+        "word": "on",
+        "df": 2862,
+        "ours_idf": 1.250989719114021,
+        "rank_bm25_idf": 0.9138073013667807
+      },
+      {
+        "word": "as",
+        "df": 2850,
+        "ours_idf": 1.2551906705048794,
+        "rank_bm25_idf": 0.919687866841354
+      },
+      {
+        "word": "by",
+        "df": 2638,
+        "ours_idf": 1.3324745141307934,
+        "rank_bm25_idf": 1.0261889751141204
+      },
+      {
+        "word": "he",
+        "df": 2632,
+        "ours_idf": 1.3347511229683855,
+        "rank_bm25_idf": 1.0292801926451869
+      },
+      {
+        "word": "an",
+        "df": 2529,
+        "ours_idf": 1.3746634332445253,
+        "rank_bm25_idf": 1.083074127449457
+      }
+    ],
+    "rare_word_example": {
+      "word": "000m",
+      "df": 1,
+      "ours_idf": 8.804975258868351,
+      "rank_bm25_idf": 8.804825262617978
+    }
+  },
+  "rank_bm25_module_file": "rank_bm25.py"
+}

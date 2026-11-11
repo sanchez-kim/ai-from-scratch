@@ -1,0 +1,34 @@
+{
+  "source": "https://huggingface.co/datasets/wikimedia/wikipedia",
+  "config": "20231101.simple",
+  "revision": "b04c8d1ceb2f5cd4588862100d08de323dccfbaa",
+  "file": "20231101.simple/train-00000-of-00001.parquet",
+  "file_sha256": "31bded16768a47c286becd292079122f5d7d4397a17b87d4250a00ccd581e6f0",
+  "licence": "dataset card at this revision: cc-by-sa-3.0, gfdl; simple.wikipedia.org now: CC BY-SA 4.0",
+  "articles_in_dump": 241787,
+  "rule": {
+    "order": "sha256(article id)",
+    "split": "blank lines",
+    "keep": "no line starts with a space, ends with '.'",
+    "min_words": 25,
+    "max_words": 250,
+    "per_article": 2
+  },
+  "files": {
+    "data/corpus.jsonl": {
+      "rows": 10000,
+      "articles": 6869,
+      "sha256": "2de3c24815bcc564fb8ad78691832e54279fc0d304d4eef13c98d0643456bcba"
+    },
+    "data/extra.jsonl": {
+      "rows": 1000,
+      "sha256": "f9ce8d790cba2e29c7ee784430891134d3498afea5830ae793e75f9738fd3020"
+    }
+  },
+  "corpus_words_per_paragraph": {
+    "min": 25,
+    "median": 46,
+    "max": 250,
+    "mean": 52.97
+  }
+}

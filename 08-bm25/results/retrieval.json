@@ -1,0 +1,364 @@
+{
+  "started": "2026-11-02T23:46:37+0900",
+  "uptime_before": "23:46  up 11 days, 13:24, 19 users, load averages: 17.81 9.28 7.39",
+  "documents": 10000,
+  "queries": {
+    "lexical": 500,
+    "paraphrase": 500
+  },
+  "worked_examples": {
+    "tf_saturation_k1_1.5": {
+      "1": 1.0,
+      "2": 1.4285714285714286,
+      "4": 1.8181818181818181,
+      "8": 2.1052631578947367
+    },
+    "length_tf1_b0.75": {
+      "0.5x_avgdl": 1.2903225806451613,
+      "1x_avgdl": 1.0,
+      "2x_avgdl": 0.6896551724137931
+    },
+    "length_tf1_b0": {
+      "0.5x_avgdl": 1.0,
+      "1x_avgdl": 1.0,
+      "2x_avgdl": 1.0
+    }
+  },
+  "query_word_overlap": {
+    "lexical": {
+      "mean_share_of_query_words_in_gold": 0.6954567705124826,
+      "mean_query_words": 7.778,
+      "queries_with_zero_overlap": 1,
+      "queries_whose_text_repeats": 0
+    },
+    "paraphrase": {
+      "mean_share_of_query_words_in_gold": 0.33658999115121924,
+      "mean_query_words": 16.988,
+      "queries_with_zero_overlap": 13,
+      "queries_whose_text_repeats": 4
+    }
+  },
+  "grid": {
+    "k1=0.5,b=0.0": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.9083857142857144,
+        "mean_len_of_top10_docs": 84.8374
+      },
+      "paraphrase": {
+        "recall@10": 0.202,
+        "mrr@10": 0.1340126984126984,
+        "mean_len_of_top10_docs": 105.958
+      }
+    },
+    "k1=0.5,b=0.25": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.907902380952381,
+        "mean_len_of_top10_docs": 74.304
+      },
+      "paraphrase": {
+        "recall@10": 0.208,
+        "mrr@10": 0.14136825396825398,
+        "mean_len_of_top10_docs": 92.3252
+      }
+    },
+    "k1=0.5,b=0.5": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.911302380952381,
+        "mean_len_of_top10_docs": 66.66
+      },
+      "paraphrase": {
+        "recall@10": 0.226,
+        "mrr@10": 0.14344047619047617,
+        "mean_len_of_top10_docs": 80.9362
+      }
+    },
+    "k1=0.5,b=0.75": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.9135412698412698,
+        "mean_len_of_top10_docs": 61.6432
+      },
+      "paraphrase": {
+        "recall@10": 0.234,
+        "mrr@10": 0.1455595238095238,
+        "mean_len_of_top10_docs": 72.493
+      }
+    },
+    "k1=0.5,b=1.0": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.9054555555555556,
+        "mean_len_of_top10_docs": 57.5266
+      },
+      "paraphrase": {
+        "recall@10": 0.244,
+        "mrr@10": 0.14638333333333334,
+        "mean_len_of_top10_docs": 65.4438
+      }
+    },
+    "k1=1.2,b=0.0": {
+      "lexical": {
+        "recall@10": 0.988,
+        "mrr@10": 0.9002555555555556,
+        "mean_len_of_top10_docs": 87.3022
+      },
+      "paraphrase": {
+        "recall@10": 0.202,
+        "mrr@10": 0.1268904761904762,
+        "mean_len_of_top10_docs": 111.5472
+      }
+    },
+    "k1=1.2,b=0.25": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.9086357142857142,
+        "mean_len_of_top10_docs": 73.06
+      },
+      "paraphrase": {
+        "recall@10": 0.216,
+        "mrr@10": 0.1383269841269841,
+        "mean_len_of_top10_docs": 90.0068
+      }
+    },
+    "k1=1.2,b=0.5": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.9107888888888889,
+        "mean_len_of_top10_docs": 63.9126
+      },
+      "paraphrase": {
+        "recall@10": 0.232,
+        "mrr@10": 0.1401460317460317,
+        "mean_len_of_top10_docs": 74.5736
+      }
+    },
+    "k1=1.2,b=0.75": {
+      "lexical": {
+        "recall@10": 0.994,
+        "mrr@10": 0.9106357142857142,
+        "mean_len_of_top10_docs": 57.424
+      },
+      "paraphrase": {
+        "recall@10": 0.24,
+        "mrr@10": 0.1450015873015873,
+        "mean_len_of_top10_docs": 63.1962
+      }
+    },
+    "k1=1.2,b=1.0": {
+      "lexical": {
+        "recall@10": 0.988,
+        "mrr@10": 0.89735,
+        "mean_len_of_top10_docs": 52.6762
+      },
+      "paraphrase": {
+        "recall@10": 0.238,
+        "mrr@10": 0.1398904761904762,
+        "mean_len_of_top10_docs": 54.0514
+      }
+    },
+    "k1=1.5,b=0.0": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.8951690476190477,
+        "mean_len_of_top10_docs": 88.235
+      },
+      "paraphrase": {
+        "recall@10": 0.2,
+        "mrr@10": 0.12282142857142858,
+        "mean_len_of_top10_docs": 113.4208
+      }
+    },
+    "k1=1.5,b=0.25": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.9047079365079365,
+        "mean_len_of_top10_docs": 72.9636
+      },
+      "paraphrase": {
+        "recall@10": 0.214,
+        "mrr@10": 0.1349079365079365,
+        "mean_len_of_top10_docs": 90.0016
+      }
+    },
+    "k1=1.5,b=0.5": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.90825,
+        "mean_len_of_top10_docs": 63.1644
+      },
+      "paraphrase": {
+        "recall@10": 0.232,
+        "mrr@10": 0.13720634920634922,
+        "mean_len_of_top10_docs": 73.2918
+      }
+    },
+    "k1=1.5,b=0.75": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.902,
+        "mean_len_of_top10_docs": 56.5222
+      },
+      "paraphrase": {
+        "recall@10": 0.234,
+        "mrr@10": 0.14216587301587302,
+        "mean_len_of_top10_docs": 61.0946
+      }
+    },
+    "k1=1.5,b=1.0": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.8932333333333333,
+        "mean_len_of_top10_docs": 51.6086
+      },
+      "paraphrase": {
+        "recall@10": 0.23,
+        "mrr@10": 0.13767063492063494,
+        "mean_len_of_top10_docs": 52.0272
+      }
+    },
+    "k1=2.0,b=0.0": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.890052380952381,
+        "mean_len_of_top10_docs": 89.122
+      },
+      "paraphrase": {
+        "recall@10": 0.2,
+        "mrr@10": 0.11808492063492064,
+        "mean_len_of_top10_docs": 115.9936
+      }
+    },
+    "k1=2.0,b=0.25": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.8998412698412699,
+        "mean_len_of_top10_docs": 73.0862
+      },
+      "paraphrase": {
+        "recall@10": 0.212,
+        "mrr@10": 0.13389603174603176,
+        "mean_len_of_top10_docs": 90.0438
+      }
+    },
+    "k1=2.0,b=0.5": {
+      "lexical": {
+        "recall@10": 0.992,
+        "mrr@10": 0.9043880952380953,
+        "mean_len_of_top10_docs": 62.5826
+      },
+      "paraphrase": {
+        "recall@10": 0.226,
+        "mrr@10": 0.13712857142857143,
+        "mean_len_of_top10_docs": 72.1892
+      }
+    },
+    "k1=2.0,b=0.75": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.8991690476190477,
+        "mean_len_of_top10_docs": 55.9202
+      },
+      "paraphrase": {
+        "recall@10": 0.218,
+        "mrr@10": 0.13568015873015873,
+        "mean_len_of_top10_docs": 58.903
+      }
+    },
+    "k1=2.0,b=1.0": {
+      "lexical": {
+        "recall@10": 0.99,
+        "mrr@10": 0.8864666666666667,
+        "mean_len_of_top10_docs": 50.4358
+      },
+      "paraphrase": {
+        "recall@10": 0.218,
+        "mrr@10": 0.13372619047619047,
+        "mean_len_of_top10_docs": 49.6384
+      }
+    }
+  },
+  "length_quartiles_tokens": {
+    "q1": 37.0,
+    "median": 49.0,
+    "q3": 67.0
+  },
+  "b0_vs_b075": {
+    "b=0.0/lexical": {
+      "recall@10": 0.992,
+      "mrr@10": 0.8951690476190477,
+      "mean_len_of_top10_docs": 88.235,
+      "recall@10_short_gold": 0.9927007299270073,
+      "n_short": 137,
+      "recall@10_long_gold": 0.9918032786885246,
+      "n_long": 122
+    },
+    "b=0.0/paraphrase": {
+      "recall@10": 0.2,
+      "mrr@10": 0.12282142857142858,
+      "mean_len_of_top10_docs": 113.4208,
+      "recall@10_short_gold": 0.13138686131386862,
+      "n_short": 137,
+      "recall@10_long_gold": 0.319672131147541,
+      "n_long": 122
+    },
+    "b=0.75/lexical": {
+      "recall@10": 0.992,
+      "mrr@10": 0.902,
+      "mean_len_of_top10_docs": 56.5222,
+      "recall@10_short_gold": 1.0,
+      "n_short": 137,
+      "recall@10_long_gold": 0.9836065573770492,
+      "n_long": 122
+    },
+    "b=0.75/paraphrase": {
+      "recall@10": 0.234,
+      "mrr@10": 0.14216587301587302,
+      "mean_len_of_top10_docs": 61.0946,
+      "recall@10_short_gold": 0.23357664233576642,
+      "n_short": 137,
+      "recall@10_long_gold": 0.27049180327868855,
+      "n_long": 122
+    }
+  },
+  "add_10_percent": {
+    "documents_before": 10000,
+    "documents_after": 11000,
+    "avgdl_before": 56.4235,
+    "avgdl_after": 56.29336363636364,
+    "avgdl_change": -0.0023064213250925114,
+    "query_words": 2910,
+    "idf_shift": {
+      "min": -0.8602103552645168,
+      "median": 0.02848087142226996,
+      "max": 0.09530108976291984,
+      "ln_1.1": 0.09531017980432493
+    },
+    "gold_score_relative_change": {
+      "min": -0.043269926981542084,
+      "median": 0.0021144365882158622,
+      "max": 0.013702735654244957,
+      "mean_abs": 0.004961593423362652
+    },
+    "queries": 1000,
+    "top10_of_original_docs_same_order": 0.56,
+    "new_docs_in_top10_total": 852,
+    "gold_rank_unchanged": 0.592,
+    "gold_rank_worse": 0.402,
+    "gold_rank_better": 0.006,
+    "gold_rank_move_max": 993,
+    "recall@10_before_after": {
+      "lexical": [
+        0.992,
+        0.992
+      ],
+      "paraphrase": [
+        0.234,
+        0.23
+      ]
+    }
+  },
+  "uptime_after": "23:49  up 11 days, 13:27, 19 users, load averages: 11.00 9.57 7.81"
+}

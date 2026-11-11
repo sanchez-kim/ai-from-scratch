@@ -1,0 +1,3 @@
+# Downloaded and generated corpora stay local. build_corpus.py rebuilds them;
+# results/corpus-manifest.json records the source revision and sha256 of every file.
+data/
