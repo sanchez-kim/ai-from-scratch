@@ -1,0 +1,27 @@
+{
+ "script": "bench_numpy.py",
+ "written": "2026-11-02T21:44:00+09:00",
+ "python": "3.12.13",
+ "platform": "macOS-26.7.1-arm64-arm-64bit",
+ "uptime_before": "21:44  up 11 days, 11:22, 19 users, load averages: 11.87 12.42 15.24",
+ "smoke_test_only": true,
+ "timed": true,
+ "numpy": "2.5.4",
+ "rows": [
+  {
+   "n": 4,
+   "value_graph_nodes": 65,
+   "max_abs_diff_vs_numpy": 3.3306690738754696e-16,
+   "value_seconds_median": 4.679197445511818e-05,
+   "numpy_seconds_median": 1.3708020560443401e-05
+  },
+  {
+   "n": 8,
+   "value_graph_nodes": 225,
+   "max_abs_diff_vs_numpy": 2.220446049250313e-16,
+   "value_seconds_median": 0.0001744590699672699,
+   "numpy_seconds_median": 7.4999406933784485e-06
+  }
+ ],
+ "uptime_after": "21:44  up 11 days, 11:22, 19 users, load averages: 11.87 12.42 15.24"
+}

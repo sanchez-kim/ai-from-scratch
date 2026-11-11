@@ -1,0 +1,41 @@
+{
+ "script": "bench_numpy.py",
+ "written": "2026-11-03T14:18:36+09:00",
+ "python": "3.12.13",
+ "platform": "macOS-26.7.1-arm64-arm-64bit",
+ "uptime_before": "14:18  up 12 days,  3:56, 19 users, load averages: 3.35 4.81 6.81",
+ "smoke_test_only": false,
+ "timed": true,
+ "numpy": "2.5.4",
+ "rows": [
+  {
+   "n": 16,
+   "value_graph_nodes": 833,
+   "max_abs_diff_vs_numpy": 8.881784197001252e-16,
+   "value_seconds_median": 0.00034437503200024366,
+   "numpy_seconds_median": 3.4170225262641907e-06
+  },
+  {
+   "n": 32,
+   "value_graph_nodes": 3201,
+   "max_abs_diff_vs_numpy": 5.551115123125783e-16,
+   "value_seconds_median": 0.0016602500109001994,
+   "numpy_seconds_median": 5.332985892891884e-06
+  },
+  {
+   "n": 64,
+   "value_graph_nodes": 12545,
+   "max_abs_diff_vs_numpy": 1.1102230246251565e-15,
+   "value_seconds_median": 0.012466249987483025,
+   "numpy_seconds_median": 1.8249964341521263e-05
+  },
+  {
+   "n": 128,
+   "value_graph_nodes": 49665,
+   "max_abs_diff_vs_numpy": 2.220446049250313e-15,
+   "value_seconds_median": 0.06575858301948756,
+   "numpy_seconds_median": 3.7958030588924885e-05
+  }
+ ],
+ "uptime_after": "14:18  up 12 days,  3:56, 19 users, load averages: 3.35 4.81 6.81"
+}

@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ~/Desktop/projects/ai-from-scratch/05-backprop/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: ~/Desktop/projects/ai-from-scratch/05-backprop
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 8 items
+
+tests/test_value.py::test_slope_of_x_squared_is_6_at_3 PASSED            [ 12%]
+tests/test_value.py::test_diamond_adds_both_paths_and_assign_bug_keeps_one PASSED [ 25%]
+tests/test_value.py::test_backward_matches_finite_differences PASSED     [ 37%]
+tests/test_value.py::test_forgetting_reversed_leaves_gradients_at_zero PASSED [ 50%]
+tests/test_value.py::test_recursive_backward_passes_simple_tests_and_fails_on_shared_inner_node PASSED [ 62%]
+tests/test_value.py::test_calling_backward_twice_without_zeroing_overcounts PASSED [ 75%]
+tests/test_value.py::test_gradient_check_catches_both_bugs_on_a_shared_inner_node PASSED [ 87%]
+tests/test_value.py::test_numpy_reference_matches_value_layer PASSED     [100%]
+
+============================== 8 passed in 0.06s ===============================

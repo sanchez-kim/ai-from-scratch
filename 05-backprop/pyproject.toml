@@ -1,0 +1,14 @@
+[project]
+name = "backprop-from-scratch"
+version = "0.1.0"
+description = "A scalar autograd Value class in plain Python, two silent backprop bugs, and a finite-difference epsilon sweep"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+# numpy is only the reference for the timing comparison and its test.
+dev = ["pytest>=8", "numpy>=2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330" width="460" height="330" role="img">
+<title>Finite-difference error against epsilon, tanh at x = 0.5</title>
+<desc>Absolute error of the forward difference (orange) and the central difference (blue) against the backward() gradient of tanh at x = 0.5, float64, log scales. eps 1e-1: forward 3.7e-2, central 9.4e-4; eps 1e-2: forward 3.6e-3, central 9.4e-6; eps 1e-3: forward 3.6e-4, central 9.4e-8; eps 1e-4: forward 3.6e-5, central 9.4e-10; eps 1e-5: forward 3.6e-6, central 1.3e-11; eps 1e-6: forward 3.6e-7, central 1.5e-12; eps 1e-7: forward 3.7e-8, central 2e-10; eps 1e-8: forward 1.7e-9, central 1.7e-9; eps 1e-9: forward 7.3e-9, central 7.3e-9; eps 1e-10: forward 4e-7, central 1.2e-7; eps 1e-11: forward 9.5e-7, central 1.8e-6; eps 1e-12: forward 2.1e-5, central 2.1e-5; eps 1e-13: forward 7e-4, central 1.5e-4; eps 1e-14: forward 1.8e-3, central 9.6e-4.</desc>
+<style>
+  .bg{fill:#fcfcfb} .ink{fill:#0b0b0b} .sec{fill:#52514e} .mut{fill:#898781}
+  .grid{stroke:#e1e0d9;stroke-width:1}
+  .ln{fill:none;stroke-width:2;stroke-linejoin:round} .fwl{stroke:#eb6834} .cel{stroke:#2a78d6}
+  .fw{fill:#eb6834;stroke:#fcfcfb;stroke-width:2} .ce{fill:#2a78d6;stroke:#fcfcfb;stroke-width:2}
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+  .h{font-size:14px;font-weight:600} .b{font-weight:700}
+  @media (prefers-color-scheme: dark) {
+    .bg{fill:#1a1a19} .ink{fill:#f0efec} .sec{fill:#c3c2b7} .grid{stroke:#2c2c2a}
+    .fwl{stroke:#d95926} .cel{stroke:#3987e5}
+    .fw{fill:#d95926;stroke:#1a1a19} .ce{fill:#3987e5;stroke:#1a1a19}
+  }
+</style>
+<rect class="bg" width="460" height="330"/>
+<text class="ink h" x="16" y="24">Finite-difference error vs ε</text>
+<text class="sec" x="16" y="42">tanh at x = 0.5 · |estimate − backward()| · float64</text>
+<line class="grid" x1="56" x2="440" y1="70.0" y2="70.0"/><text class="mut" x="48" y="74.0" text-anchor="end">1e0</text><line class="grid" x1="56" x2="440" y1="114.3" y2="114.3"/><text class="mut" x="48" y="118.3" text-anchor="end">1e-3</text><line class="grid" x1="56" x2="440" y1="158.6" y2="158.6"/><text class="mut" x="48" y="162.6" text-anchor="end">1e-6</text><line class="grid" x1="56" x2="440" y1="202.9" y2="202.9"/><text class="mut" x="48" y="206.9" text-anchor="end">1e-9</text><line class="grid" x1="56" x2="440" y1="247.2" y2="247.2"/><text class="mut" x="48" y="251.2" text-anchor="end">1e-12</text><text class="mut" x="56.0" y="280" text-anchor="middle">1e-1</text><text class="mut" x="144.6" y="280" text-anchor="middle">1e-4</text><text class="mut" x="233.2" y="280" text-anchor="middle">1e-7</text><text class="mut" x="321.8" y="280" text-anchor="middle">1e-10</text><text class="mut" x="410.5" y="280" text-anchor="middle">1e-13</text><polyline class="ln fwl" points="56.0,91.1 70.8,98.6 85.5,106.0 100.3,113.4 115.1,120.8 129.8,128.2 144.6,135.6 159.4,143.0 174.2,150.3 188.9,157.7 203.7,165.1 218.5,172.5 233.2,179.8 248.0,188.4 262.8,199.3 277.5,187.3 292.3,190.2 307.1,170.9 321.8,164.6 336.6,154.9 351.4,158.9 366.2,150.6 380.9,139.0 395.7,139.1 410.5,116.6 425.2,110.8 440.0,110.5"/><circle class="fw" cx="262.8" cy="199.3" r="5"/><text class="ink" x="258.8" y="219.3" text-anchor="start">best 1.7e-9 at ε 1e-8</text><line class="ln fwl" x1="64" x2="80" y1="79.1" y2="79.1"/><text class="ink b" x="86" y="83.1">forward</text><polyline class="ln cel" points="56.0,114.7 70.8,129.5 85.5,144.2 100.3,159.0 115.1,173.8 129.8,188.5 144.6,203.3 159.4,218.2 174.2,231.0 188.9,236.5 203.7,244.7 218.5,221.4 233.2,213.4 248.0,203.5 262.8,199.3 277.5,196.6 292.3,190.2 307.1,170.9 321.8,172.3 336.6,181.3 351.4,154.8 366.2,150.6 380.9,139.0 395.7,139.1 410.5,126.7 425.2,115.3 440.0,114.5"/><circle class="ce" cx="203.7" cy="244.7" r="5"/><text class="ink" x="203.7" y="264.7" text-anchor="middle">best 1.5e-12 at ε 1e-6</text><line class="ln cel" x1="64" x2="80" y1="198.9" y2="198.9"/><text class="ink b" x="86" y="202.9">central</text>
+<text class="mut" x="16" y="304">x: ε, log scale, smaller to the right</text>
+<text class="mut" x="16" y="321">y: absolute error, log scale</text>
+</svg>
