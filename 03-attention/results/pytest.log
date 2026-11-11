@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ~/Desktop/projects/ai-from-scratch/03-attention/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: ~/Desktop/projects/ai-from-scratch/03-attention
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 6 items
+
+tests/test_attention.py::test_matches_numpy_reference PASSED             [ 16%]
+tests/test_attention.py::test_weight_rows_sum_to_one PASSED              [ 33%]
+tests/test_attention.py::test_scaling_off_vs_on PASSED                   [ 50%]
+tests/test_attention.py::test_wrong_head_axis_runs_but_gives_wrong_output PASSED [ 66%]
+tests/test_attention.py::test_softmax_jacobian_matches_finite_differences PASSED [ 83%]
+tests/test_attention.py::test_entropy_endpoints PASSED                   [100%]
+
+============================== 6 passed in 0.08s ===============================

@@ -1,0 +1,14 @@
+[project]
+name = "attention-from-scratch"
+version = "0.1.0"
+description = "Scaled dot-product and multi-head attention in plain Python, plus a 1/sqrt(d_k) entropy sweep"
+requires-python = ">=3.12"
+dependencies = []
+
+[dependency-groups]
+# numpy is only the reference implementation the tests compare against.
+dev = ["pytest>=8", "numpy>=2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
