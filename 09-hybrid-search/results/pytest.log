@@ -1,0 +1,22 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- <repo>/09-hybrid-search/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: <repo>/09-hybrid-search
+configfile: pyproject.toml
+testpaths: tests
+plugins: anyio-4.16.0
+collecting ... collected 11 items
+
+tests/test_fusion.py::test_cosine_hand_examples PASSED                   [  9%]
+tests/test_fusion.py::test_dot_equals_cosine_only_after_normalising PASSED [ 18%]
+tests/test_fusion.py::test_rrf_adds_one_over_k_plus_rank PASSED          [ 27%]
+tests/test_fusion.py::test_rrf_k_decides_between_one_top_place_and_two_middle_places PASSED [ 36%]
+tests/test_fusion.py::test_rrf_ties_go_to_smaller_id PASSED              [ 45%]
+tests/test_fusion.py::test_min_max PASSED                                [ 54%]
+tests/test_fusion.py::test_sum_scores_hand_example PASSED                [ 63%]
+tests/test_fusion.py::test_one_outlier_squashes_min_max_but_not_rrf PASSED [ 72%]
+tests/test_metrics.py::test_recall_and_reciprocal_rank PASSED            [ 81%]
+tests/test_metrics.py::test_kendall_tau_hand_examples PASSED             [ 90%]
+tests/test_metrics.py::test_kendall_tau_matches_scipy_with_ties PASSED   [100%]
+
+============================== 11 passed in 0.66s ==============================

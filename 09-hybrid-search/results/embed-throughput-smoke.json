@@ -1,0 +1,21 @@
+{
+  "started": "2026-11-02T23:53:59+0900",
+  "uptime_before": "23:53  up 11 days, 13:32, 19 users, load averages: 13.92 11.87 9.29",
+  "model": "BAAI/bge-small-en-v1.5",
+  "revision": "5c38ec7c405ec4b44b94cc5a9bb96e735b38267a",
+  "device": "cpu",
+  "torch_threads": 2,
+  "batch_size": 32,
+  "smoke": true,
+  "docs": 64,
+  "queries": 32,
+  "doc_seconds": [
+    0.8618198749609292
+  ],
+  "query_seconds": [
+    0.1500820410437882
+  ],
+  "docs_per_second_median": 74.26145748019731,
+  "queries_per_second_median": 213.2167165201573,
+  "uptime_after": "23:54  up 11 days, 13:32, 19 users, load averages: 13.69 11.89 9.32"
+}

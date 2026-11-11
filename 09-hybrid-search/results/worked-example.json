@@ -1,0 +1,222 @@
+{
+  "rule": "first paraphrase query by id: gold in both top-5 at different ranks, first in neither, first after RRF k=60",
+  "query_id": "p193",
+  "query": "What makes a distinct individual within the divine group?",
+  "gold_id": "131582-p1",
+  "gold_title": "Sabellianism",
+  "gold_text": "Those in favor Historic Sabellianism taught that God the Father was the only person of the Godhead, a belief known as Monarchianism.  One author has described Sabellius' teaching: The true question, therefore, turns on this, viz., what is it which constitutes what we name ‘person’ in the Godhead? Is it original, substantial, essential to divinity itself? Or does it belong to and arise from the exhibitions and developments which the divine Being has made of  himself to his creatures? The former Sabellius denied; the latter he fully admitted.",
+  "bm25_top5": [
+    {
+      "doc": "523451-p1",
+      "title": "Elliot Richardson",
+      "gold": false,
+      "bm25_rank": 1,
+      "embedding_rank": null,
+      "score": 13.978783595041675
+    },
+    {
+      "doc": "136696-p1",
+      "title": "Computer security",
+      "gold": false,
+      "bm25_rank": 2,
+      "embedding_rank": null,
+      "score": 13.049035247481969
+    },
+    {
+      "doc": "32098-p0",
+      "title": "Crew",
+      "gold": false,
+      "bm25_rank": 3,
+      "embedding_rank": 99,
+      "score": 12.544122182763749
+    },
+    {
+      "doc": "560347-p1",
+      "title": "States' rights",
+      "gold": false,
+      "bm25_rank": 4,
+      "embedding_rank": null,
+      "score": 12.428344124438524
+    },
+    {
+      "doc": "131582-p1",
+      "title": "Sabellianism",
+      "gold": true,
+      "bm25_rank": 5,
+      "embedding_rank": 3,
+      "score": 11.665820697541683
+    }
+  ],
+  "embedding_top5": [
+    {
+      "doc": "305-p1",
+      "title": "God",
+      "gold": false,
+      "bm25_rank": null,
+      "embedding_rank": 1,
+      "score": 0.6574959465444059
+    },
+    {
+      "doc": "305-p0",
+      "title": "God",
+      "gold": false,
+      "bm25_rank": null,
+      "embedding_rank": 2,
+      "score": 0.6454118890351004
+    },
+    {
+      "doc": "131582-p1",
+      "title": "Sabellianism",
+      "gold": true,
+      "bm25_rank": 5,
+      "embedding_rank": 3,
+      "score": 0.6313272964539428
+    },
+    {
+      "doc": "5011-p1",
+      "title": "Mysticism",
+      "gold": false,
+      "bm25_rank": 66,
+      "embedding_rank": 4,
+      "score": 0.6282349434963523
+    },
+    {
+      "doc": "6763-p0",
+      "title": "Alter ego",
+      "gold": false,
+      "bm25_rank": null,
+      "embedding_rank": 5,
+      "score": 0.6203565565712861
+    }
+  ],
+  "rrf60_top5": [
+    {
+      "doc": "131582-p1",
+      "title": "Sabellianism",
+      "gold": true,
+      "bm25_rank": 5,
+      "embedding_rank": 3,
+      "rrf": 0.03125763125763126
+    },
+    {
+      "doc": "5011-p1",
+      "title": "Mysticism",
+      "gold": false,
+      "bm25_rank": 66,
+      "embedding_rank": 4,
+      "rrf": 0.023561507936507936
+    },
+    {
+      "doc": "32098-p0",
+      "title": "Crew",
+      "gold": false,
+      "bm25_rank": 3,
+      "embedding_rank": 99,
+      "rrf": 0.0221623240491165
+    },
+    {
+      "doc": "219593-p1",
+      "title": "Judaism",
+      "gold": false,
+      "bm25_rank": 83,
+      "embedding_rank": 15,
+      "rrf": 0.020326340326340328
+    },
+    {
+      "doc": "44418-p1",
+      "title": "Sign of the cross",
+      "gold": false,
+      "bm25_rank": 39,
+      "embedding_rank": 50,
+      "rrf": 0.01919191919191919
+    }
+  ],
+  "rrf1_top5": [
+    {
+      "doc": "523451-p1",
+      "title": "Elliot Richardson",
+      "gold": false,
+      "bm25_rank": 1,
+      "embedding_rank": null,
+      "rrf": 0.5
+    },
+    {
+      "doc": "305-p1",
+      "title": "God",
+      "gold": false,
+      "bm25_rank": null,
+      "embedding_rank": 1,
+      "rrf": 0.5
+    },
+    {
+      "doc": "131582-p1",
+      "title": "Sabellianism",
+      "gold": true,
+      "bm25_rank": 5,
+      "embedding_rank": 3,
+      "rrf": 0.41666666666666663
+    },
+    {
+      "doc": "136696-p1",
+      "title": "Computer security",
+      "gold": false,
+      "bm25_rank": 2,
+      "embedding_rank": null,
+      "rrf": 0.3333333333333333
+    },
+    {
+      "doc": "305-p0",
+      "title": "God",
+      "gold": false,
+      "bm25_rank": null,
+      "embedding_rank": 2,
+      "rrf": 0.3333333333333333
+    }
+  ],
+  "kendall_tau": -0.4502923976608187,
+  "rrf60_rank_of_each_list_top2": {
+    "bm25": [
+      [
+        "Elliot Richardson",
+        8
+      ],
+      [
+        "Computer security",
+        10
+      ]
+    ],
+    "embedding": [
+      [
+        "God",
+        9
+      ],
+      [
+        "God",
+        11
+      ]
+    ]
+  },
+  "query_words": [
+    "what",
+    "makes",
+    "a",
+    "distinct",
+    "individual",
+    "within",
+    "the",
+    "divine",
+    "group"
+  ],
+  "query_words_in_gold": [
+    "what",
+    "a",
+    "the",
+    "divine"
+  ],
+  "query_words_in_bm25_top1": [
+    "makes",
+    "individual",
+    "within",
+    "the"
+  ]
+}
