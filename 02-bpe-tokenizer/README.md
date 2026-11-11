@@ -1,7 +1,7 @@
 # 02 · BPE tokenizer and what Korean costs
 
 A byte-level BPE tokenizer in about 70 lines of plain Python
-(`bpe/tokenizer.py`: train merges, encode, decode), three tests, and token
+(`bpe/tokenizer.py`: train merges, encode, decode), seven tests, and token
 counts for English prose, Korean prose and Python code with four tokenizers:
 
 | Name | What it is |
@@ -62,10 +62,14 @@ see the test articles, the code or FLORES.
 ```
 $ uv run pytest -v
 platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0
-tests/test_tokenizer.py::test_known_merge_sequence_and_an_unseen_word PASSED [ 33%]
-tests/test_tokenizer.py::test_round_trip_for_any_utf8_text PASSED        [ 66%]
-tests/test_tokenizer.py::test_english_merges_never_join_hangul_bytes PASSED [100%]
-============================== 3 passed in 0.01s ===============================
+tests/test_tokenizer.py::test_known_merge_sequence_and_an_unseen_word PASSED [ 14%]
+tests/test_tokenizer.py::test_round_trip_for_any_utf8_text PASSED        [ 28%]
+tests/test_tokenizer.py::test_english_merges_never_join_hangul_bytes PASSED [ 42%]
+tests/test_tokenizer.py::test_encode_applies_the_earliest_learned_merge_first PASSED [ 57%]
+tests/test_tokenizer.py::test_training_stops_when_no_pair_is_left PASSED [ 71%]
+tests/test_tokenizer.py::test_chunks_split_on_spaces_and_punctuation PASSED [ 85%]
+tests/test_tokenizer.py::test_no_merge_spans_a_space_or_punctuation_boundary PASSED [100%]
+============================== 7 passed in 0.02s ===============================
 ```
 
 ## License

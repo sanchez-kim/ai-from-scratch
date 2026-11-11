@@ -95,3 +95,42 @@ def test_training_lowers_the_loss():
     for _ in range(50):
         last, _ = train_step(p, examples, lr=0.5)
     assert last < first - 1.0
+
+
+def test_fan_in_init_uses_the_number_of_inputs():
+    # W1 has block*emb = 200 rows (inputs) and 50 columns (hidden units).
+    # fan_in std = 1/sqrt(200) = 0.0707; 1/sqrt(50) = 0.141 and 1/200 = 0.005
+    # would both miss by far. Std of 10,000 normal draws has a relative
+    # standard error of 1/sqrt(2 * 10,000) = 0.7%, so 5% is about 7 sigma.
+    p = init_params(vocab=27, emb=200, block=1, hidden=50, scale="fan_in", rng=random.Random(0))
+    w1 = np.array(p["W1"])
+    assert w1.shape == (200, 50)
+    assert np.sqrt((w1 ** 2).mean()) == pytest.approx(1 / math.sqrt(200), rel=0.05)
+    # W2 has 50 inputs: std 1/sqrt(50) = 0.141. 1,350 draws, relative
+    # standard error 1/sqrt(2 * 1,350) = 1.9%, so 10% is about 5 sigma.
+    w2 = np.array(p["W2"])
+    assert np.sqrt((w2 ** 2).mean()) == pytest.approx(1 / math.sqrt(50), rel=0.10)
+
+
+def test_numeric_init_scale_is_the_std():
+    # scale=0.5 means std 0.5 for W1 and W2, whatever the layer sizes.
+    p = init_params(vocab=27, emb=200, block=1, hidden=50, scale=0.5, rng=random.Random(0))
+    assert np.sqrt((np.array(p["W1"]) ** 2).mean()) == pytest.approx(0.5, rel=0.05)
+    assert np.sqrt((np.array(p["W2"]) ** 2).mean()) == pytest.approx(0.5, rel=0.10)
+    assert p["b1"] == [0.0] * 50 and p["b2"] == [0.0] * 27
+
+
+def test_one_train_step_by_hand():
+    # All weights zero: every logit is 0, so p = [1/3, 1/3, 1/3] for both
+    # examples and each loss is ln 3. d(loss)/d(b2) = p - onehot(target):
+    #   target 0: [-2/3, 1/3, 1/3]   target 2: [1/3, 1/3, -2/3]
+    #   batch mean: [-1/6, 1/3, -1/6]
+    # SGD with lr 0.6: b2 = 0 - 0.6 * mean = [0.1, -0.2, 0.1].
+    p = {"C": [[0.0], [0.0], [0.0]], "W1": [[0.0]], "b1": [0.0],
+         "W2": [[0.0, 0.0, 0.0]], "b2": [0.0, 0.0, 0.0]}
+    loss, top = train_step(p, [((0,), 0), ((1,), 2)], lr=0.6)
+    assert loss == pytest.approx(math.log(3), abs=1e-12)   # mean, not the sum 2 ln 3
+    assert top == 0.0
+    assert p["b2"] == pytest.approx([0.1, -0.2, 0.1], abs=1e-12)
+    # h = tanh(0) = 0, so W2, W1, b1 and C get zero gradient.
+    assert p["W2"] == [[0.0, 0.0, 0.0]] and p["b1"] == [0.0]

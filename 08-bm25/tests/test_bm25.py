@@ -92,3 +92,29 @@ def test_search_orders_by_score_and_breaks_ties_by_doc_number():
     hits = BM25(docs).search(["cat"], k=10)
     assert [i for i, _ in hits] == [0, 2]  # equal scores: lower number first
     assert hits[0][1] == hits[1][1] > 0
+
+
+def test_tokenize_lowercases_and_keeps_numbers():
+    # Runs of a-z and 0-9 after lowercasing; everything else splits.
+    assert tokenize("BM25 Ranks, K1=1.5") == ["bm25", "ranks", "k1", "1", "5"]
+
+
+def test_search_returns_exactly_k_hits_in_score_order():
+    # Four documents of 4 words, so avgdl = 4 and norm = 1 - b + b * 4 / 4 = 1.
+    # "cat" is in all four: idf = ln(1 + 0.5 / 4.5) = ln(10 / 9).
+    # term = idf * tf * 2.5 / (tf + 1.5):
+    #   tf 1: 2.5 / 2.5 = 1   tf 2: 5 / 3.5 = 10/7   tf 3: 7.5 / 4.5 = 5/3   tf 4: 10 / 5.5 = 20/11
+    docs = [["cat", "cat", "cat", "x"], ["cat", "y", "y", "y"],
+            ["cat", "cat", "z", "z"], ["cat", "cat", "cat", "cat"]]
+    idf = math.log(10 / 9)
+    hits = BM25(docs, k1=1.5, b=0.75).search(["cat"], k=2)
+    assert [i for i, _ in hits] == [3, 0]
+    assert [s for _, s in hits] == pytest.approx([idf * 20 / 11, idf * 5 / 3])
+    hits = BM25(docs, k1=1.5, b=0.75).search(["cat"], k=3)
+    assert [i for i, _ in hits] == [3, 0, 2]
+    assert hits[0][1] > hits[1][1] > hits[2][1] == pytest.approx(idf * 10 / 7)
+
+
+def test_a_number_in_the_query_finds_the_document_with_it():
+    docs = [tokenize(t) for t in ["Released in 1999.", "Released in 2004.", "Never released."]]
+    assert [i for i, _ in BM25(docs).search(tokenize("1999"))] == [0]

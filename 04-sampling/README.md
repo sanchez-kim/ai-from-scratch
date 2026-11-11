@@ -1,7 +1,7 @@
 # 04 · Temperature, top-k, top-p, and the order they run in
 
 Temperature, top-k, top-p and min-p in 71 lines of plain Python, comments included
-(`sampling/sampler.py`), four tests, and a measurement on real next-token
+(`sampling/sampler.py`), nine tests, and a measurement on real next-token
 probabilities from `qwen3.5:4b-q4_K_M`:
 
 | Script | What it does |

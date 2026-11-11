@@ -12,7 +12,7 @@ deterministic measurements.
 | `backprop/bugs.py` | bug 1 `AssignValue` (`grad =` instead of `grad +=`), bug 2a `backward_forgot_reversed`, bug 2b `backward_recursive` (no topological sort) |
 | `backprop/check.py` | forward and central differences, `numeric_grads`, `grad_check` |
 | `backprop/graphs.py` | random small expression graphs, with or without shared nodes |
-| `tests/test_value.py` | 8 tests: x*x slope, the diamond `a*3 + a*5`, finite-difference checks, both bugs, backward twice, numpy reference |
+| `tests/test_value.py` | 10 tests: x*x slope, the diamond `a*3 + a*5`, finite-difference checks, both bugs, backward twice, numpy reference, every operator (`-`, `/`, unary `-` and the reflected ones) by hand, a plain-float oracle |
 | `measure_fd.py` | finite-difference error for eps = 1e-1 to 1e-14, forward vs central, four functions |
 | `measure_bugs.py` | share of 1,000 random graphs per size where each bug changes a leaf gradient, plus the worked examples |
 | `bench_numpy.py` | pure-Python `Value` vs numpy for the gradient of sum(tanh(W x)); timing harness |

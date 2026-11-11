@@ -4,13 +4,16 @@ cachedir: .pytest_cache
 rootdir: 03-attention
 configfile: pyproject.toml
 testpaths: tests
-collecting ... collected 6 items
+collecting ... collected 9 items
 
-tests/test_attention.py::test_matches_numpy_reference PASSED             [ 16%]
-tests/test_attention.py::test_weight_rows_sum_to_one PASSED              [ 33%]
-tests/test_attention.py::test_scaling_off_vs_on PASSED                   [ 50%]
-tests/test_attention.py::test_wrong_head_axis_runs_but_gives_wrong_output PASSED [ 66%]
-tests/test_attention.py::test_softmax_jacobian_matches_finite_differences PASSED [ 83%]
-tests/test_attention.py::test_entropy_endpoints PASSED                   [100%]
+tests/test_attention.py::test_matches_numpy_reference PASSED             [ 11%]
+tests/test_attention.py::test_weight_rows_sum_to_one PASSED              [ 22%]
+tests/test_attention.py::test_scaling_off_vs_on PASSED                   [ 33%]
+tests/test_attention.py::test_wrong_head_axis_runs_but_gives_wrong_output PASSED [ 44%]
+tests/test_attention.py::test_softmax_jacobian_matches_finite_differences PASSED [ 55%]
+tests/test_attention.py::test_entropy_endpoints PASSED                   [ 66%]
+tests/test_attention.py::test_softmax_survives_scores_past_exp_overflow PASSED [ 77%]
+tests/test_attention.py::test_head_count_must_divide_d_model PASSED      [ 88%]
+tests/test_attention.py::test_variance_is_population_variance PASSED     [100%]
 
-============================== 6 passed in 0.08s ===============================
+============================== 9 passed in 0.04s ===============================

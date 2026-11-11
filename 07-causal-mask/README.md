@@ -12,7 +12,7 @@ batches. Only the attention mask changes:
 |---|---|
 | `charformer/model.py` | `causal_mask`, `attention_weights` (the three mask settings), the transformer, `generate` |
 | `charformer/data.py` | character vocabulary, train/validation split, random windows |
-| `tests/test_mask.py` | -inf above the diagonal, rows sum to 1 with zero future weight, the after-softmax bug gives rows that do not sum to 1, output at position t does not change when later tokens change (only with the mask), targets are inputs shifted by one |
+| `tests/test_mask.py` | -inf above the diagonal, rows sum to 1 with zero future weight, the after-softmax bug gives rows that do not sum to 1, output at position t does not change when later tokens change (only with the mask), targets are inputs shifted by one, attention matches `F.scaled_dot_product_attention`, positions change the output, residual connections, loss equals cross-entropy by hand, greedy `generate` takes the last position's argmax, batches stay inside the data, the last 10% is validation |
 | `prepare_data.py` | downloads the book and strips the Project Gutenberg header and footer |
 | `worked_example.py` | the 4-token example from the post (`results/worked-example.json`) |
 | `train.py` | one training run: loss curves, the loss when each position sees only its past, attention statistics, samples (`results/train-<mask>-<device>-<tag>.json`) |

@@ -1,6 +1,7 @@
 import math
 import random
 
+import numpy as np
 import pytest
 
 from backprop import (AssignValue, Value, backward_forgot_reversed, backward_recursive,
@@ -121,7 +122,6 @@ def test_gradient_check_catches_both_bugs_on_a_shared_inner_node():
 
 
 def test_numpy_reference_matches_value_layer():
-    np = pytest.importorskip("numpy")
     from bench_numpy import numpy_grad, value_grad
     rng = random.Random(0)
     n = 8
@@ -130,3 +130,51 @@ def test_numpy_reference_matches_value_layer():
     g, nodes = value_grad(w, x)
     assert nodes == 225
     assert float(np.max(np.abs(np.array(g) - numpy_grad(np.array(w), np.array(x))))) < 1e-12
+
+
+def test_each_operator_has_the_right_value_and_gradient():
+    def run(build, a=6.0, b=3.0):
+        x, y = Value(a), Value(b)
+        out = build(x, y)
+        out.backward()
+        return out.data, x.grad, y.grad
+
+    # Each line: value, d/dx, d/dy at x=6, y=3, worked by hand.
+    assert run(lambda x, y: x + y) == (9.0, 1.0, 1.0)
+    assert run(lambda x, y: x * y) == (18.0, 3.0, 6.0)         # y, x
+    assert run(lambda x, y: x - y) == (3.0, 1.0, -1.0)
+    d, gx, gy = run(lambda x, y: x / y)                        # 6/3 = 2
+    assert d == pytest.approx(2.0)
+    assert gx == pytest.approx(1 / 3)                          # 1/y
+    assert gy == pytest.approx(-6 / 9)                         # -x/y^2
+    assert run(lambda x, y: -x) == (-6.0, -1.0, 0.0)
+    # Python float on the left uses the reflected operators.
+    assert run(lambda x, y: 2.5 * x) == (15.0, 2.5, 0.0)       # d/dx = 2.5
+    assert run(lambda x, y: 5 + x) == (11.0, 1.0, 0.0)
+    assert run(lambda x, y: 2 - x) == (-4.0, -1.0, 0.0)
+    d, gx, _ = run(lambda x, y: 12 / x)                        # 12/6 = 2
+    assert d == pytest.approx(2.0)
+    assert gx == pytest.approx(-12 / 36)                       # -12/x^2
+    # Value on the left, float on the right.
+    assert run(lambda x, y: x - 1.5) == (4.5, 1.0, 0.0)
+    d, gx, _ = run(lambda x, y: x / 4)
+    assert (d, gx) == (1.5, 0.25)
+
+
+def test_backward_matches_plain_float_arithmetic():
+    # Same function on plain floats is the oracle: no Value code is involved.
+    def f(v):
+        x, y, z = v
+        return (2 - x) * (3 / (y * y + 1)) + (-z) - (x - y) / (z + 5) + 2 * x
+    xs = [0.7, -1.3, 0.4]
+    vals = [Value(t) for t in xs]
+    out = f(vals)
+    assert out.data == pytest.approx(f(xs), rel=1e-12)           # forward value
+    out.backward()
+    for v, n in zip(vals, numeric_grads(f, xs)):                 # float central diff
+        assert v.grad == pytest.approx(n, rel=1e-6, abs=1e-8)
+    # Forward value for the tanh / exp / pow primitives against math.
+    x = Value(0.5)
+    assert x.tanh().data == math.tanh(0.5)
+    assert x.exp().data == math.exp(0.5)
+    assert (x ** 3).data == 0.125

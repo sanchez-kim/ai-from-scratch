@@ -7,6 +7,8 @@ from kvcache.cache import (
     decode_without_cache,
     extend_cached,
     reusable_prefix_length,
+    softmax,
+    weighted_sum,
 )
 
 DIM = 4
@@ -152,3 +154,29 @@ def test_broken_invalidation_is_silent_and_wrong():
     decode_with_cache(build_model(), old, good)
     right, _ = extend_cached(build_model(), good, old, new)
     assert close(right[-1], expected[-1])
+
+
+def test_softmax_is_stable_for_huge_scores():
+    # exp(1000) overflows a float. Equal scores must still give 0.5 each.
+    assert softmax([1000.0, 1000.0]) == [0.5, 0.5]
+    # Shift invariance: softmax([1001, 1000]) = softmax([1, 0]) = [e/(e+1), 1/(e+1)]
+    # = [0.7310586, 0.2689414] (hand value, 7 digits).
+    got = softmax([1001.0, 1000.0])
+    assert abs(got[0] - 0.7310586) < 1e-6
+    assert abs(got[1] - 0.2689414) < 1e-6
+
+
+def test_weighted_sum_hand_value():
+    # 0.25 * [4, 8] + 0.75 * [0, 4] = [1, 2] + [0, 3] = [1, 5]
+    assert weighted_sum([0.25, 0.75], [[4.0, 8.0], [0.0, 4.0]]) == [1.0, 5.0]
+
+
+def test_attend_scales_scores_by_sqrt_of_dimension():
+    # query has d = 2, keys [2, 0] and [0, 0]: raw scores 2 and 0.
+    # Scaled by 1/sqrt(2): scores sqrt(2) and 0.
+    # Weight of the first value = e^1.41421 / (e^1.41421 + 1) = 4.1133 / 5.1133 = 0.80443.
+    # Without the scale it would be e^2 / (e^2 + 1) = 0.88080.
+    model = TinyAttention({}, None, None, None)
+    out = model.attend([1.0, 1.0], [[2.0, 0.0], [0.0, 0.0]], [[1.0, 0.0], [0.0, 1.0]])
+    assert abs(out[0] - 0.80443) < 1e-4
+    assert abs(out[1] - 0.19557) < 1e-4

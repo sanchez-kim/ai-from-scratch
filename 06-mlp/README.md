@@ -2,7 +2,7 @@
 
 A character-level MLP that reads three letters of a name and predicts the
 next one, in about 120 lines of plain Python (`mlp/core.py`), with a
-hand-written backward pass. Eight tests, and three deterministic measurements:
+hand-written backward pass. Eleven tests, and three deterministic measurements:
 
 1. three init scales (std 1.0, std 0.01, 1/sqrt(fan_in)): loss curves and
    how many hidden tanh units start out stuck at +-1;
@@ -14,7 +14,7 @@ hand-written backward pass. Eight tests, and three deterministic measurements:
 |---|---|
 | `mlp/core.py` | `make_examples`, `init_params`, `forward`, `log_sum_exp`, `cross_entropy` (stable or naive), `backward`, `train_step` |
 | `mlp/setup.py` | the data split (4,000 train names, 1,000 dev names, seed 42) and model size every script shares |
-| `tests/test_mlp.py` | examples from one name, ln 27 for a uniform guess, stable = naive on small logits, naive raises (Python) or gives nan (numpy) where stable stays finite, the underflow case, a log-sum-exp worked example, gradients vs finite differences, training lowers the loss |
+| `tests/test_mlp.py` | examples from one name, ln 27 for a uniform guess, stable = naive on small logits, naive raises (Python) or gives nan (numpy) where stable stays finite, the underflow case, a log-sum-exp worked example, gradients vs finite differences, training lowers the loss, init std (1/sqrt(fan_in) and a fixed number), one SGD step by hand |
 | `download_data.py` | fetches `names.txt` into `data/` and checks its sha256 |
 | `worked_examples.py` | the small numbers the post explains with (`results/worked-examples.json`) |
 | `measure_init.py` | three init scales, 4,000 SGD steps each (`results/init-<date>.json`) |

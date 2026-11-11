@@ -4,11 +4,18 @@ cachedir: .pytest_cache
 rootdir: 10-ann-recall
 configfile: pyproject.toml
 testpaths: tests
-collecting ... collected 4 items
+collecting ... collected 11 items
 
-tests/test_search.py::test_numpy_search_matches_the_plain_python_loop PASSED [ 25%]
-tests/test_search.py::test_recall_at_10_on_a_hand_example PASSED         [ 50%]
-tests/test_search.py::test_more_lsh_tables_approach_exact_recall PASSED  [ 75%]
-tests/test_search.py::test_lsh_returns_exact_ranking_of_its_candidates PASSED [100%]
+tests/test_search.py::test_numpy_search_matches_the_plain_python_loop PASSED [  9%]
+tests/test_search.py::test_recall_at_10_on_a_hand_example PASSED         [ 18%]
+tests/test_search.py::test_more_lsh_tables_approach_exact_recall PASSED  [ 27%]
+tests/test_search.py::test_lsh_returns_exact_ranking_of_its_candidates PASSED [ 36%]
+tests/test_search.py::test_recall_counts_only_the_first_k_found PASSED   [ 45%]
+tests/test_search.py::test_lsh_key_is_the_binary_number_of_the_sides PASSED [ 54%]
+tests/test_search.py::test_collision_chance_formula_by_hand PASSED       [ 63%]
+tests/test_search.py::test_lsh_collision_rate_matches_one_minus_angle_over_pi[1-2000] PASSED [ 72%]
+tests/test_search.py::test_lsh_collision_rate_matches_one_minus_angle_over_pi[2-1000] PASSED [ 81%]
+tests/test_search.py::test_lsh_scores_only_the_query_bucket PASSED       [ 90%]
+tests/test_search.py::test_exact_search_agrees_with_hnswlib_at_full_ef PASSED [100%]
 
-============================== 4 passed in 0.08s ===============================
+============================== 11 passed in 0.06s ==============================

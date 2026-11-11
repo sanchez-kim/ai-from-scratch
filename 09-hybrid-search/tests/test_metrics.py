@@ -1,6 +1,7 @@
 import random
 
 import pytest
+import scipy.stats
 
 from hybrid import kendall_tau_b, recall_at_k, reciprocal_rank
 
@@ -23,13 +24,12 @@ def test_kendall_tau_hand_examples():
 
 
 def test_kendall_tau_matches_scipy_with_ties():
-    scipy_stats = pytest.importorskip("scipy.stats")
     rng = random.Random(9)
     for _ in range(50):
         n = rng.randint(3, 20)
         x = [rng.choice([0.0, 0.0, rng.random()]) for _ in range(n)]
         y = [rng.random() for _ in range(n)]
-        expected = scipy_stats.kendalltau(x, y).statistic
+        expected = scipy.stats.kendalltau(x, y).statistic
         if expected != expected:   # NaN when one list is constant
             continue
         assert kendall_tau_b(x, y) == pytest.approx(expected)

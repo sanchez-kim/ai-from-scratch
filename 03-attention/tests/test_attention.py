@@ -2,6 +2,7 @@ import math
 import random
 
 import numpy as np
+import pytest
 
 from attention import (
     attention,
@@ -11,6 +12,7 @@ from attention import (
     multi_head_attention,
     softmax,
     softmax_jacobian,
+    variance,
 )
 
 
@@ -129,3 +131,37 @@ def test_entropy_endpoints():
     assert entropy_bits([1.0] + [0.0] * 11) == 0
     # A one-hot row passes no gradient back to the scores.
     assert jacobian_norm([1.0] + [0.0] * 11) == 0
+
+
+def test_softmax_survives_scores_past_exp_overflow():
+    # exp(710) overflows a float. The max-subtraction in softmax must keep it finite.
+    scores = [1000.0, 999.0, 0.0, -1000.0]
+    ours = softmax(scores)
+    shifted = np.array(scores) - max(scores)  # numpy stable reference
+    ref = np.exp(shifted) / np.exp(shifted).sum()
+    assert max_abs_diff(ours, ref) < 1e-12
+    # Hand value: e / (e + 1) = 0.7310586 for the top weight, 0.2689414 for the next.
+    assert abs(ours[0] - 0.7310586) < 1e-6 and abs(ours[1] - 0.2689414) < 1e-6
+    # Through attention_weights with no scaling: scores are 1000 and 998, a gap of 2.
+    row = attention_weights([[1000.0]], [[1.0], [0.998]], scale=1.0)[0]
+    assert abs(row[0] - 1 / (1 + math.exp(-2))) < 1e-12
+
+
+def test_head_count_must_divide_d_model():
+    rng = random.Random(5)
+    x = rand_matrix(rng, 4, 8)
+    w = [rand_matrix(rng, 8, 8) for _ in range(4)]
+    with pytest.raises(ValueError, match="divisible"):
+        multi_head_attention(x, *w, num_heads=3)
+    # 8 divides evenly by 2 and 4, so those still run.
+    assert len(multi_head_attention(x, *w, num_heads=4)) == 4
+
+
+def test_variance_is_population_variance():
+    # mean 2.5; squared gaps 2.25 + 0.25 + 0.25 + 2.25 = 5; population: 5 / 4 = 1.25.
+    # (Sample variance, 5 / 3, would be 1.6667.)
+    assert variance([1, 2, 3, 4]) == 1.25
+    assert variance([7.0]) == 0.0
+    rng = random.Random(6)
+    xs = [rng.gauss(0, 1) for _ in range(50)]
+    assert abs(variance(xs) - float(np.var(xs))) < 1e-12  # np.var defaults to ddof=0

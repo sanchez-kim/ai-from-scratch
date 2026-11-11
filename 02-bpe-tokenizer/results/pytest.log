@@ -4,10 +4,14 @@ cachedir: .pytest_cache
 rootdir: .
 configfile: pyproject.toml
 testpaths: tests
-collecting ... collected 3 items
+collecting ... collected 7 items
 
-tests/test_tokenizer.py::test_known_merge_sequence_and_an_unseen_word PASSED [ 33%]
-tests/test_tokenizer.py::test_round_trip_for_any_utf8_text PASSED        [ 66%]
-tests/test_tokenizer.py::test_english_merges_never_join_hangul_bytes PASSED [100%]
+tests/test_tokenizer.py::test_known_merge_sequence_and_an_unseen_word PASSED [ 14%]
+tests/test_tokenizer.py::test_round_trip_for_any_utf8_text PASSED        [ 28%]
+tests/test_tokenizer.py::test_english_merges_never_join_hangul_bytes PASSED [ 42%]
+tests/test_tokenizer.py::test_encode_applies_the_earliest_learned_merge_first PASSED [ 57%]
+tests/test_tokenizer.py::test_training_stops_when_no_pair_is_left PASSED [ 71%]
+tests/test_tokenizer.py::test_chunks_split_on_spaces_and_punctuation PASSED [ 85%]
+tests/test_tokenizer.py::test_no_merge_spans_a_space_or_punctuation_boundary PASSED [100%]
 
-============================== 3 passed in 0.03s ===============================
+============================== 7 passed in 0.02s ===============================

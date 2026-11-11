@@ -64,3 +64,14 @@ def test_one_outlier_squashes_min_max_but_not_rrf():
     assert math.isclose(summed["a"], 1.0)         # 1.0 + 0.0
     assert summed["b"] < 1.06                     # 0.053 + 1.0: BM25's second place is worth almost nothing
     assert [d for d, _ in rrf([[d for d, _ in bm25], [d for d, _ in emb]])][0] == "b"
+
+
+def test_rrf_default_k_is_60():
+    # One list, rank 1: 1 / (60 + 1).
+    assert dict(rrf([["a"]]))["a"] == pytest.approx(1 / 61, rel=1e-15)
+
+
+def test_normalise_zero_vector_stays_zero():
+    # Length 0 has no direction; the code returns the vector unchanged.
+    assert normalise([0, 0]) == [0, 0]
+    assert normalise([0.0, 0.0, 0.0]) == [0.0, 0.0, 0.0]

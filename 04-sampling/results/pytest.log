@@ -4,11 +4,16 @@ cachedir: .pytest_cache
 rootdir: 04-sampling
 configfile: pyproject.toml
 testpaths: tests
-collecting ... collected 4 items
+collecting ... collected 9 items
 
-tests/test_sampling.py::test_temperature_to_zero_becomes_argmax PASSED   [ 25%]
-tests/test_sampling.py::test_top_p_keeps_the_smallest_set_that_reaches_p PASSED [ 50%]
-tests/test_sampling.py::test_temperature_before_or_after_top_p_changes_the_survivors PASSED [ 75%]
-tests/test_sampling.py::test_same_survivors_give_the_same_final_distribution PASSED [100%]
+tests/test_sampling.py::test_temperature_to_zero_becomes_argmax PASSED   [ 11%]
+tests/test_sampling.py::test_top_p_keeps_the_smallest_set_that_reaches_p PASSED [ 22%]
+tests/test_sampling.py::test_temperature_before_or_after_top_p_changes_the_survivors PASSED [ 33%]
+tests/test_sampling.py::test_same_survivors_give_the_same_final_distribution PASSED [ 44%]
+tests/test_sampling.py::test_top_k_keeps_the_best_k_with_logits_unchanged PASSED [ 55%]
+tests/test_sampling.py::test_min_p_cutoff_is_a_fraction_of_the_top_probability PASSED [ 66%]
+tests/test_sampling.py::test_sample_follows_the_survivor_probabilities PASSED [ 77%]
+tests/test_sampling.py::test_equal_logits_rank_by_lower_token_id PASSED  [ 88%]
+tests/test_sampling.py::test_softmax_does_not_overflow_on_large_logits PASSED [100%]
 
-============================== 4 passed in 0.01s ===============================
+============================== 9 passed in 0.03s ===============================
