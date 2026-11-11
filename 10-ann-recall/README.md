@@ -1,7 +1,7 @@
 # 10 · ANN recall: brute force, LSH and HNSW on 100K vectors
 
 Exact nearest-neighbour search and random-hyperplane LSH in about 70 lines
-(`ann/search.py`), eleven tests, and a recall sweep of
+(`ann/search.py`), twelve tests, and a recall sweep of
 [hnswlib](https://github.com/nmslib/hnswlib) 0.8.0 on 100,000 real text
 embeddings and on 100,000 random vectors of the same size.
 

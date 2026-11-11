@@ -6,6 +6,7 @@ from kvcache.cache import (
     decode_with_cache,
     decode_without_cache,
     extend_cached,
+    matvec,
     reusable_prefix_length,
     softmax,
     weighted_sum,
@@ -180,3 +181,34 @@ def test_attend_scales_scores_by_sqrt_of_dimension():
     out = model.attend([1.0, 1.0], [[2.0, 0.0], [0.0, 0.0]], [[1.0, 0.0], [0.0, 1.0]])
     assert abs(out[0] - 0.80443) < 1e-4
     assert abs(out[1] - 0.19557) < 1e-4
+
+
+def test_attend_scale_uses_the_query_width_not_the_number_of_keys():
+    # d = 2 but three keys, so 1/sqrt(d) and 1/sqrt(#keys) differ.
+    # Raw scores 2, 0, 0; scaled by 1/sqrt(2): sqrt(2), 0, 0.
+    # First weight = e^1.41421 / (e^1.41421 + 2) = 4.11325 / 6.11325 = 0.67284,
+    # the other two 1 / 6.11325 = 0.16358 each.
+    # Scaling by 1/sqrt(3) instead would give e^1.1547 / (e^1.1547 + 2) = 0.61338.
+    model = TinyAttention({}, None, None, None)
+    out = model.attend([1.0, 1.0], [[2.0, 0.0], [0.0, 0.0], [0.0, 0.0]],
+                       [[1.0, 0.0], [0.0, 1.0], [0.0, 1.0]])
+    assert abs(out[0] - 0.67284) < 1e-4
+    assert abs(out[1] - 2 * 0.16358) < 1e-4
+
+
+def test_matvec_multiplies_rows_by_the_vector():
+    # Not square, so rows and columns cannot be swapped by accident.
+    # [1 2 3] . [1 2 3] = 1 + 4 + 9 = 14;  [4 5 6] . [1 2 3] = 4 + 10 + 18 = 32
+    assert matvec([[1, 2, 3], [4, 5, 6]], [1, 2, 3]) == [14, 32]
+
+
+def test_project_uses_each_matrix_for_its_own_output():
+    # x = [1, 2]. Three different, non-symmetric matrices:
+    #   wq = [[1, 2], [0, 1]] -> [1 + 4, 0 + 2] = [5, 2]
+    #   wk = [[0, 1], [3, 0]] -> [0 + 2, 3 + 0] = [2, 3]
+    #   wv = [[2, 3], [4, 5]] -> [2 + 6, 4 + 10] = [8, 14]
+    model = TinyAttention({"a": [1, 2]}, [[1, 2], [0, 1]], [[0, 1], [3, 0]], [[2, 3], [4, 5]])
+    query, key, value = model.project("a")
+    assert query == [5, 2]
+    assert key == [2, 3]
+    assert value == [8, 14]

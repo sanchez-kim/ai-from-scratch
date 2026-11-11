@@ -86,6 +86,19 @@ def test_lsh_key_is_the_binary_number_of_the_sides():
     assert keys[1].tolist() == [0, 1, 2, 3]
 
 
+
+def test_lsh_key_with_three_bits_gives_eight_distinct_buckets():
+    # One table of three planes = the three axes, so bit i is "x_i > 0".
+    # The eight sign patterns of a cube's corners, written as (b0, b1, b2):
+    # key = b0 * 1 + b1 * 2 + b2 * 4, so the keys are 0..7 with no repeats.
+    lsh = HyperplaneLSH(dim=3, n_tables=1, n_bits=3, seed=0)
+    lsh.planes = np.eye(3, dtype=np.float32)
+    s = np.array([[-1, -1, -1], [1, -1, -1], [-1, 1, -1], [1, 1, -1],
+                  [-1, -1, 1], [1, -1, 1], [-1, 1, 1], [1, 1, 1]], dtype=np.float32)
+    # (0,0,0) -> 0, (1,0,0) -> 1, (0,1,0) -> 2, (1,1,0) -> 3,
+    # (0,0,1) -> 4, (1,0,1) -> 5, (0,1,1) -> 6, (1,1,1) -> 7
+    assert lsh.keys(s)[0].tolist() == [0, 1, 2, 3, 4, 5, 6, 7]
+
 def test_collision_chance_formula_by_hand():
     # cosine 0.5 is 60 degrees: one plane splits the pair with chance 1/3.
     assert collision_chance(0.5, 1, 1) == pytest.approx(2 / 3)

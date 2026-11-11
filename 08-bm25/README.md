@@ -1,7 +1,7 @@
 # 08 · BM25 from scratch, checked against bm25s and rank_bm25
 
 Okapi BM25 in plain Python (`bm25/bm25.py`, 55 non-blank lines: tokenizer,
-inverted index, one scoring formula), eight tests, and measurements on 10,000 Simple English
+inverted index, one scoring formula), eleven tests, and measurements on 10,000 Simple English
 Wikipedia paragraphs with two sets of synthetic questions.
 
 This folder also owns the **shared retrieval corpus** for Parts 9 and 10 of

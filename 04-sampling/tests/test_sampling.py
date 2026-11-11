@@ -117,3 +117,10 @@ def test_softmax_does_not_overflow_on_large_logits():
     # Gap of 1: e / (e + 1) = 0.7310586, 1 / (e + 1) = 0.2689414.
     (_, a), (_, b) = softmax([(0, 1001.0), (1, 1000.0)])
     assert abs(a - 0.7310586) < 1e-6 and abs(b - 0.2689414) < 1e-6
+
+
+def test_softmax_handles_a_logit_gap_wider_than_exp_can_hold():
+    # Gap 1000: exp(1000) overflows, exp(-1000) underflows to exactly 0.0.
+    # Shifting by the largest logit gives exp(0) = 1 and exp(-1000) = 0.
+    # Shifting by the smallest would need exp(1000) and raise OverflowError.
+    assert softmax([(0, 1000.0), (1, 0.0)]) == [(0, 1.0), (1, 0.0)]

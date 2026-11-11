@@ -5,24 +5,28 @@ rootdir: <repo>/09-hybrid-search
 configfile: pyproject.toml
 testpaths: tests
 plugins: anyio-4.16.0
-collecting ... collected 17 items
+collecting ... collected 21 items
 
-tests/test_bm25.py::test_copy_matches_part_8_except_the_header_line PASSED [  5%]
-tests/test_bm25.py::test_tokenize_lowercases_and_keeps_numbers PASSED    [ 11%]
-tests/test_bm25.py::test_toy_score_by_hand PASSED                        [ 17%]
-tests/test_bm25.py::test_search_returns_exactly_k_hits_in_score_order PASSED [ 23%]
-tests/test_fusion.py::test_cosine_hand_examples PASSED                   [ 29%]
-tests/test_fusion.py::test_dot_equals_cosine_only_after_normalising PASSED [ 35%]
-tests/test_fusion.py::test_rrf_adds_one_over_k_plus_rank PASSED          [ 41%]
-tests/test_fusion.py::test_rrf_k_decides_between_one_top_place_and_two_middle_places PASSED [ 47%]
-tests/test_fusion.py::test_rrf_ties_go_to_smaller_id PASSED              [ 52%]
-tests/test_fusion.py::test_min_max PASSED                                [ 58%]
-tests/test_fusion.py::test_sum_scores_hand_example PASSED                [ 64%]
-tests/test_fusion.py::test_one_outlier_squashes_min_max_but_not_rrf PASSED [ 70%]
+tests/test_bm25.py::test_copy_matches_part_8_except_the_header_line PASSED [  4%]
+tests/test_bm25.py::test_tokenize_lowercases_and_keeps_numbers PASSED    [  9%]
+tests/test_bm25.py::test_toy_score_by_hand PASSED                        [ 14%]
+tests/test_bm25.py::test_search_returns_exactly_k_hits_in_score_order PASSED [ 19%]
+tests/test_embed.py::test_prefix_goes_on_queries_only PASSED             [ 23%]
+tests/test_embed.py::test_encode_asks_for_unit_length_numpy_vectors PASSED [ 28%]
+tests/test_embed.py::test_model_is_the_pinned_bge_small_on_cpu_loaded_once PASSED [ 33%]
+tests/test_fusion.py::test_cosine_hand_examples PASSED                   [ 38%]
+tests/test_fusion.py::test_dot_equals_cosine_only_after_normalising PASSED [ 42%]
+tests/test_fusion.py::test_rrf_adds_one_over_k_plus_rank PASSED          [ 47%]
+tests/test_fusion.py::test_rrf_k_decides_between_one_top_place_and_two_middle_places PASSED [ 52%]
+tests/test_fusion.py::test_rrf_ties_go_to_smaller_id PASSED              [ 57%]
+tests/test_fusion.py::test_min_max PASSED                                [ 61%]
+tests/test_fusion.py::test_sum_scores_hand_example PASSED                [ 66%]
+tests/test_fusion.py::test_one_outlier_squashes_min_max_but_not_rrf PASSED [ 71%]
 tests/test_fusion.py::test_rrf_default_k_is_60 PASSED                    [ 76%]
-tests/test_fusion.py::test_normalise_zero_vector_stays_zero PASSED       [ 82%]
-tests/test_metrics.py::test_recall_and_reciprocal_rank PASSED            [ 88%]
-tests/test_metrics.py::test_kendall_tau_hand_examples PASSED             [ 94%]
-tests/test_metrics.py::test_kendall_tau_matches_scipy_with_ties PASSED   [100%]
+tests/test_fusion.py::test_normalise_zero_vector_stays_zero PASSED       [ 80%]
+tests/test_metrics.py::test_recall_and_reciprocal_rank PASSED            [ 85%]
+tests/test_metrics.py::test_kendall_tau_hand_examples PASSED             [ 90%]
+tests/test_metrics.py::test_kendall_tau_matches_scipy_with_ties PASSED   [ 95%]
+tests/test_metrics.py::test_default_cutoff_is_10 PASSED                  [100%]
 
-============================== 17 passed in 0.34s ==============================
+============================== 21 passed in 0.33s ==============================

@@ -180,3 +180,104 @@ def test_load_keeps_the_last_tenth_for_validation(tmp_path):
     assert len(train) == 90 and len(val) == 10
     assert chars.decode(train.tolist()) == text[:90]
     assert chars.decode(val.tolist()) == text[90:]
+
+
+def test_generate_feeds_only_the_last_context_characters():
+    # context is 16; 3 + 20 = 23 characters means the window must slide.
+    # The model may only see the newest 16, so the reference crops the tail.
+    torch.manual_seed(0)
+    model = CharTransformer(tiny_config()).eval()
+    prompt = torch.tensor([[3, 1, 4]])
+    out = generate(model, prompt, n_new=20, temperature=0)
+    assert out.shape == (1, 23)
+    seq = prompt
+    with torch.no_grad():
+        for _ in range(20):
+            nxt = model(seq[:, -16:])[0][0, -1].argmax()
+            seq = torch.cat([seq, nxt.view(1, 1)], dim=1)
+    assert torch.equal(out, seq)
+
+
+def test_sampling_draws_every_row_from_softmax_of_logits_over_temperature():
+    # Two different prompts in one batch, temperature 0.5. The reference
+    # divides the last position's logits by 0.5, takes softmax and draws with
+    # torch.multinomial from a generator with the same seed, so a correct
+    # generate() must pick the same characters, row by row.
+    torch.manual_seed(0)
+    model = CharTransformer(tiny_config()).eval()
+    prompt = torch.tensor([[3, 1, 4], [9, 2, 6]])
+    out = generate(model, prompt, n_new=12, temperature=0.5,
+                   generator=torch.Generator().manual_seed(0))
+    assert out.shape == (2, 15)
+    g = torch.Generator().manual_seed(0)
+    seq = prompt
+    with torch.no_grad():
+        for _ in range(12):
+            last = model(seq[:, -16:])[0][:, -1]
+            nxt = torch.multinomial(torch.softmax(last / 0.5, dim=-1), 1, generator=g)
+            seq = torch.cat([seq, nxt], dim=1)
+    assert torch.equal(out, seq)
+    assert not torch.equal(out[0, 3:], out[1, 3:])  # the rows really are separate draws
+
+
+def test_attention_maps_are_each_layers_causal_softmax_weights():
+    # Recompute every layer's weights from that layer's input with plain
+    # torch ops: ln1, the q | k | v split, scores / sqrt(8), -inf above the
+    # diagonal, softmax. Layer i must match map i.
+    torch.manual_seed(0)
+    model = CharTransformer(tiny_config()).eval()
+    idx = torch.randint(20, (2, 10), generator=torch.Generator().manual_seed(2))
+    b, t, d, h = 2, 10, 32, 4
+    with torch.no_grad():
+        model(idx)
+        maps = model.attention_maps()
+        x = model.tok.weight[idx] + model.pos.weight[:t]
+        expected = []
+        for block in model.blocks:
+            q, k, _ = block.attn.qkv(block.ln1(x)).split(d, dim=-1)
+            q, k = (m.view(b, t, h, d // h).transpose(1, 2) for m in (q, k))
+            scores = q @ k.transpose(-2, -1) / 8 ** 0.5
+            future = torch.ones(t, t, dtype=torch.bool).triu(1)
+            expected.append(torch.softmax(scores.masked_fill(future, -INF), dim=-1))
+            x = block(x)
+    assert len(maps) == 2
+    future = torch.ones(t, t, dtype=torch.bool).triu(1)
+    for got, want in zip(maps, expected):
+        assert got.shape == (b, h, t, t)
+        assert torch.allclose(got.sum(-1), torch.ones(b, h, t), atol=1e-6)
+        assert (got[..., future] == 0).all()
+        assert torch.allclose(got, want, atol=1e-6)
+    # The two layers differ, so a swapped order would not pass by chance.
+    assert (maps[0] - maps[1]).abs().max() > 1e-3
+
+
+def test_position_p_adds_row_p_of_the_position_table():
+    # Capture what the first block receives: it must be token row + position
+    # row p at position p, taken straight from the two weight tables.
+    torch.manual_seed(0)
+    model = CharTransformer(tiny_config()).eval()
+    idx = torch.tensor([[5, 5, 7, 1, 5, 0, 3, 3, 9, 2]])
+    seen = []
+    hook = model.blocks[0].register_forward_pre_hook(lambda _m, args: seen.append(args[0]))
+    try:
+        with torch.no_grad():
+            model(idx)
+    finally:
+        hook.remove()
+    assert torch.equal(seen[0], model.tok.weight[idx] + model.pos.weight[:10])
+
+
+def test_forward_is_embeddings_then_blocks_then_final_norm_then_head():
+    # The same model run by hand from its own parts, not through forward().
+    torch.manual_seed(0)
+    model = CharTransformer(tiny_config()).eval()
+    idx = torch.randint(20, (2, 12), generator=torch.Generator().manual_seed(3))
+    with torch.no_grad():
+        logits, _ = model(idx)
+        x = model.tok.weight[idx] + model.pos.weight[:12]
+        for block in model.blocks:
+            x = block(x)
+        expected = model.head(model.ln(x))
+        # Leaving out the final LayerNorm gives clearly different logits.
+        assert (model.head(x) - expected).abs().max() > 1e-3
+    assert torch.allclose(logits, expected, atol=1e-6)

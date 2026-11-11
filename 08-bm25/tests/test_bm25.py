@@ -118,3 +118,34 @@ def test_search_returns_exactly_k_hits_in_score_order():
 def test_a_number_in_the_query_finds_the_document_with_it():
     docs = [tokenize(t) for t in ["Released in 1999.", "Released in 2004.", "Never released."]]
     assert [i for i, _ in BM25(docs).search(tokenize("1999"))] == [0]
+
+
+def test_a_repeated_query_word_counts_once_per_repeat():
+    # The scores() docstring: a word repeated in the query counts once per
+    # repeat, as in rank_bm25 and bm25s. Same TOY numbers as the first test:
+    # one "cat" in document 0 is ln(1.6) * 2.5 / 2.725, so "cat cat" is twice that.
+    index = BM25([tokenize(t) for t in TOY], k1=1.5, b=0.75)
+    one = math.log(1.6) * 2.5 / 2.725
+    assert index.score(["cat"], 0) == pytest.approx(one)
+    assert index.score(["cat", "cat"], 0) == pytest.approx(2 * one)
+    assert index.score(["cat", "sat", "cat"], 0) == pytest.approx(
+        2 * one + index.score(["sat"], 0))
+
+
+def test_defaults_are_k1_1_5_b_0_75_and_top_10():
+    # README: "Defaults: k1 = 1.5, b = 0.75". The TOY hand value from the
+    # first test uses exactly those, so the default index must reproduce it.
+    index = BM25([tokenize(t) for t in TOY])
+    assert (index.k1, index.b) == (1.5, 0.75)
+    assert index.score(["cat"], 0) == pytest.approx(math.log(1.6) * 2.5 / 2.725)
+    # search() without k returns the top 10. Twelve one-word documents tie,
+    # so the lowest ten numbers win.
+    many = BM25([["w"]] * 12)
+    assert [i for i, _ in many.search(["w"])] == list(range(10))
+
+
+def test_tokenize_splits_on_anything_outside_a_to_z_and_0_to_9():
+    # README: "Tokenizer: lowercase, `[a-z0-9]+`". An underscore is not in
+    # the set, so it splits; so do accented letters, which are dropped.
+    assert tokenize("snake_case") == ["snake", "case"]
+    assert tokenize("Naïve café") == ["na", "ve", "caf"]

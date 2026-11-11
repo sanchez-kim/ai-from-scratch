@@ -33,3 +33,12 @@ def test_kendall_tau_matches_scipy_with_ties():
         if expected != expected:   # NaN when one list is constant
             continue
         assert kendall_tau_b(x, y) == pytest.approx(expected)
+
+
+def test_default_cutoff_is_10():
+    # Recall@10 and MRR@10 without passing k: in range(20), id 9 is at rank 10
+    # (the last place inside) and id 10 at rank 11 (the first place outside).
+    ranking = list(range(20))
+    assert recall_at_k(ranking, 9) == 1.0 and recall_at_k(ranking, 10) == 0.0
+    assert reciprocal_rank(ranking, 9) == pytest.approx(1 / 10)
+    assert reciprocal_rank(ranking, 10) == 0.0

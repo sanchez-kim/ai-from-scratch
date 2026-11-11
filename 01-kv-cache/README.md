@@ -1,8 +1,8 @@
 # 01 · KV cache reuse and prefix invalidation
 
-A KV cache in about 100 lines of plain Python (`kvcache/cache.py`), six
-tests (three on what it reuses and where reuse must stop, three on the attention
-math), and three
+A KV cache in about 100 lines of plain Python (`kvcache/cache.py`), nine
+tests (three on what it reuses and where reuse must stop, six on the attention
+math and the projections), and three
 benchmarks:
 
 | Script | What it measures |
@@ -67,13 +67,16 @@ The tests also passed on 3.14.6, which is what the benchmarks in `results/` ran 
 ```
 $ uv run pytest -v
 platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- .venv/bin/python3
-tests/test_kv_cache.py::test_cache_gives_identical_outputs_with_fewer_projections PASSED [ 16%]
-tests/test_kv_cache.py::test_changing_one_token_invalidates_everything_after_it PASSED [ 33%]
-tests/test_kv_cache.py::test_broken_invalidation_is_silent_and_wrong PASSED [ 50%]
-tests/test_kv_cache.py::test_softmax_is_stable_for_huge_scores PASSED    [ 66%]
-tests/test_kv_cache.py::test_weighted_sum_hand_value PASSED              [ 83%]
-tests/test_kv_cache.py::test_attend_scales_scores_by_sqrt_of_dimension PASSED [100%]
-============================== 6 passed in 0.01s ===============================
+tests/test_kv_cache.py::test_cache_gives_identical_outputs_with_fewer_projections PASSED [ 11%]
+tests/test_kv_cache.py::test_changing_one_token_invalidates_everything_after_it PASSED [ 22%]
+tests/test_kv_cache.py::test_broken_invalidation_is_silent_and_wrong PASSED [ 33%]
+tests/test_kv_cache.py::test_softmax_is_stable_for_huge_scores PASSED    [ 44%]
+tests/test_kv_cache.py::test_weighted_sum_hand_value PASSED              [ 55%]
+tests/test_kv_cache.py::test_attend_scales_scores_by_sqrt_of_dimension PASSED [ 66%]
+tests/test_kv_cache.py::test_attend_scale_uses_the_query_width_not_the_number_of_keys PASSED [ 77%]
+tests/test_kv_cache.py::test_matvec_multiplies_rows_by_the_vector PASSED [ 88%]
+tests/test_kv_cache.py::test_project_uses_each_matrix_for_its_own_output PASSED [100%]
+============================== 9 passed in 0.01s ===============================
 ```
 
 ## Evidence files
