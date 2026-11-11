@@ -1,0 +1,457 @@
+{
+ "source": "probs-qwen3.5_4b-q4_K_M-2026-11-02-2130.json",
+ "server_build": "b10964-b29c606e2",
+ "server_default_samplers": [
+  "penalties",
+  "dry",
+  "top_n_sigma",
+  "top_k",
+  "typ_p",
+  "top_p",
+  "min_p",
+  "xtc",
+  "temperature"
+ ],
+ "uptime_start": "21:26  up 11 days, 11:04, 19 users, load averages: 12.48 21.87 22.81",
+ "uptime_end": "21:30  up 11 days, 11:08, 19 users, load averages: 12.04 16.07 19.91",
+ "positions": 541,
+ "top1_prob": {
+  "p10": 0.15,
+  "median": 0.47,
+  "p90": 0.975,
+  "mean": 0.522,
+  "min": 0.029765359336463987,
+  "max": 0.9999200031999147
+ },
+ "top1_at_least_0.9": 97,
+ "top1_at_least_0.5": 253,
+ "mass_outside_top100": {
+  "p10": 0.0,
+  "median": 0.013,
+  "p90": 0.153,
+  "mean": 0.053,
+  "min": -1.6265263038661715e-06,
+  "max": 0.6365518092262747
+ },
+ "actual_next_in_top100": 526,
+ "settings": {
+  "T0.7-p0.9": {
+   "a": "temperature first",
+   "b": "temperature last",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 1.0,
+    "median": 3,
+    "p90": 12.0,
+    "mean": 4.701,
+    "min": 1,
+    "max": 29
+   },
+   "survivors_b": {
+    "p10": 1.0,
+    "median": 6,
+    "p90": 23.0,
+    "mean": 9.346,
+    "min": 1,
+    "max": 33
+   },
+   "differ": 413,
+   "differ_share": 0.7634,
+   "a_smaller": 413,
+   "a_larger": 0,
+   "tvd_when_differ": {
+    "p10": 0.025,
+    "median": 0.06,
+    "p90": 0.075,
+    "mean": 0.055,
+    "min": 0.004344033140741457,
+    "max": 0.08549103812919147
+   },
+   "actual_next_kept_a": 432,
+   "actual_next_kept_b": 481,
+   "server_match_a": 541,
+   "server_match_b": 541,
+   "server_mismatches": []
+  },
+  "T0.7-p0.95": {
+   "a": "temperature first",
+   "b": "temperature last",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 1.0,
+    "median": 4,
+    "p90": 19.0,
+    "mean": 6.933,
+    "min": 1,
+    "max": 34
+   },
+   "survivors_b": {
+    "p10": 1.0,
+    "median": 10,
+    "p90": 30.0,
+    "mean": 13.532,
+    "min": 1,
+    "max": 37
+   },
+   "differ": 436,
+   "differ_share": 0.8059,
+   "a_smaller": 436,
+   "a_larger": 0,
+   "tvd_when_differ": {
+    "p10": 0.013,
+    "median": 0.033,
+    "p90": 0.04,
+    "mean": 0.03,
+    "min": 0.0007999599839968025,
+    "max": 0.04432346500813335
+   },
+   "actual_next_kept_a": 458,
+   "actual_next_kept_b": 501,
+   "server_match_a": 541,
+   "server_match_b": 541,
+   "server_mismatches": []
+  },
+  "T1.0-p0.9": {
+   "a": "temperature first",
+   "b": "temperature last",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 1.0,
+    "median": 6,
+    "p90": 23.0,
+    "mean": 9.346,
+    "min": 1,
+    "max": 33
+   },
+   "survivors_b": {
+    "p10": 1.0,
+    "median": 6,
+    "p90": 23.0,
+    "mean": 9.346,
+    "min": 1,
+    "max": 33
+   },
+   "differ": 0,
+   "differ_share": 0.0,
+   "a_smaller": 0,
+   "a_larger": 0,
+   "tvd_when_differ": null,
+   "actual_next_kept_a": 481,
+   "actual_next_kept_b": 481,
+   "server_match_a": 541,
+   "server_match_b": 541,
+   "server_mismatches": []
+  },
+  "T1.0-p0.95": {
+   "a": "temperature first",
+   "b": "temperature last",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 1.0,
+    "median": 10,
+    "p90": 30.0,
+    "mean": 13.532,
+    "min": 1,
+    "max": 37
+   },
+   "survivors_b": {
+    "p10": 1.0,
+    "median": 10,
+    "p90": 30.0,
+    "mean": 13.532,
+    "min": 1,
+    "max": 37
+   },
+   "differ": 0,
+   "differ_share": 0.0,
+   "a_smaller": 0,
+   "a_larger": 0,
+   "tvd_when_differ": null,
+   "actual_next_kept_a": 501,
+   "actual_next_kept_b": 501,
+   "server_match_a": 541,
+   "server_match_b": 541,
+   "server_mismatches": []
+  },
+  "T1.3-p0.9": {
+   "a": "temperature first",
+   "b": "temperature last",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 1.0,
+    "median": 14,
+    "p90": 28.0,
+    "mean": 14.553,
+    "min": 1,
+    "max": 34
+   },
+   "survivors_b": {
+    "p10": 1.0,
+    "median": 6,
+    "p90": 23.0,
+    "mean": 9.346,
+    "min": 1,
+    "max": 33
+   },
+   "differ": 462,
+   "differ_share": 0.854,
+   "a_smaller": 0,
+   "a_larger": 462,
+   "tvd_when_differ": {
+    "p10": 0.051,
+    "median": 0.096,
+    "p90": 0.139,
+    "mean": 0.096,
+    "min": 0.016259440725190887,
+    "max": 0.1966379355193949
+   },
+   "actual_next_kept_a": 503,
+   "actual_next_kept_b": 481,
+   "server_match_a": 541,
+   "server_match_b": 541,
+   "server_mismatches": []
+  },
+  "T1.3-p0.95": {
+   "a": "temperature first",
+   "b": "temperature last",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 2.0,
+    "median": 22,
+    "p90": 34.0,
+    "mean": 20.03,
+    "min": 1,
+    "max": 37
+   },
+   "survivors_b": {
+    "p10": 1.0,
+    "median": 10,
+    "p90": 30.0,
+    "mean": 13.532,
+    "min": 1,
+    "max": 37
+   },
+   "differ": 490,
+   "differ_share": 0.9057,
+   "a_smaller": 0,
+   "a_larger": 490,
+   "tvd_when_differ": {
+    "p10": 0.029,
+    "median": 0.064,
+    "p90": 0.097,
+    "mean": 0.063,
+    "min": 0.010918629404375942,
+    "max": 0.13127419511116545
+   },
+   "actual_next_kept_a": 511,
+   "actual_next_kept_b": 501,
+   "server_match_a": 541,
+   "server_match_b": 541,
+   "server_mismatches": []
+  },
+  "llamacpp-default": {
+   "a": "temperature first (same numbers)",
+   "b": "llama.cpp default order",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 1.0,
+    "median": 3,
+    "p90": 12.0,
+    "mean": 5.05,
+    "min": 1,
+    "max": 35
+   },
+   "survivors_b": {
+    "p10": 1.0,
+    "median": 5,
+    "p90": 18.0,
+    "mean": 7.323,
+    "min": 1,
+    "max": 37
+   },
+   "differ": 337,
+   "differ_share": 0.6229,
+   "a_smaller": 337,
+   "a_larger": 0,
+   "tvd_when_differ": {
+    "p10": 0.018,
+    "median": 0.043,
+    "p90": 0.099,
+    "mean": 0.052,
+    "min": 0.00855096978145554,
+    "max": 0.18539477247178282
+   },
+   "actual_next_kept_a": 438,
+   "actual_next_kept_b": 467,
+   "server_match_a": 541,
+   "server_match_b": 541,
+   "server_mismatches": []
+  },
+  "hf-bare-sampling": {
+   "a": "T 1.0, top_k 50, top_p 1.0",
+   "b": "same",
+   "positions": 541,
+   "survivors_a": {
+    "p10": 50.0,
+    "median": 50,
+    "p90": 50.0,
+    "mean": 50.0,
+    "min": 50,
+    "max": 50
+   },
+   "survivors_b": {
+    "p10": 50.0,
+    "median": 50,
+    "p90": 50.0,
+    "mean": 50.0,
+    "min": 50,
+    "max": 50
+   },
+   "differ": 0,
+   "differ_share": 0.0,
+   "a_smaller": 0,
+   "a_larger": 0,
+   "tvd_when_differ": null,
+   "actual_next_kept_a": 521,
+   "actual_next_kept_b": 521
+  }
+ },
+ "example": {
+  "passage": 0,
+  "prefix_len": 35,
+  "context_tail": " reached the harbour. He walked down to the rocks with a",
+  "actual_next_text": " lamp",
+  "full_vocab_prob": [
+   0.304,
+   0.0807,
+   0.0503,
+   0.0488,
+   0.0212
+  ],
+  "T1.0": [
+   [
+    " lantern",
+    0.6021
+   ],
+   [
+    " torch",
+    0.1598
+   ],
+   [
+    " bucket",
+    0.0996
+   ],
+   [
+    " flashlight",
+    0.0965
+   ],
+   [
+    " rope",
+    0.0419
+   ]
+  ],
+  "T1.0-cumulative": [
+   0.6021,
+   0.7619,
+   0.8615,
+   0.9581,
+   1.0
+  ],
+  "T0.7": [
+   [
+    " lantern",
+    0.7562
+   ],
+   [
+    " torch",
+    0.1137
+   ],
+   [
+    " bucket",
+    0.0579
+   ],
+   [
+    " flashlight",
+    0.0553
+   ],
+   [
+    " rope",
+    0.0168
+   ]
+  ],
+  "T0.7-cumulative": [
+   0.7562,
+   0.87,
+   0.9279,
+   0.9832,
+   1.0
+  ],
+  "T1.3": [
+   [
+    " lantern",
+    0.5039
+   ],
+   [
+    " torch",
+    0.1817
+   ],
+   [
+    " bucket",
+    0.1263
+   ],
+   [
+    " flashlight",
+    0.1233
+   ],
+   [
+    " rope",
+    0.0649
+   ]
+  ],
+  "T1.3-cumulative": [
+   0.5039,
+   0.6855,
+   0.8119,
+   0.9351,
+   1.0
+  ],
+  "top_p0.9-T0.7-first": [
+   " lantern",
+   " torch",
+   " bucket"
+  ],
+  "top_p0.9-T0.7-last": [
+   " lantern",
+   " torch",
+   " bucket",
+   " flashlight"
+  ],
+  "top_p0.9-T1.3-first": [
+   " lantern",
+   " torch",
+   " bucket",
+   " flashlight"
+  ],
+  "top_p0.9-T1.3-last": [
+   " lantern",
+   " torch",
+   " bucket",
+   " flashlight"
+  ],
+  "top_k3": [
+   " lantern",
+   " torch",
+   " bucket"
+  ],
+  "k15-T0.7-p0.9-survivors": {
+   "first": 4,
+   "last": 9
+  },
+  "k40-T0.7-p0.9-survivors": {
+   "first": 7,
+   "last": 21
+  },
+  "actual_next_rank": 8,
+  "actual_next_prob": 0.0149
+ }
+}

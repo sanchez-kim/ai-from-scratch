@@ -1,0 +1,9 @@
+{
+ "first": "probs-qwen3.5_4b-q4_K_M-2026-11-02-2130.json",
+ "second": "repeat-probs-passages-0-4-8.json",
+ "positions": 155,
+ "same_top100_order": 155,
+ "same_survivor_sets_all_chains": 155,
+ "max_abs_logprob_diff": 0.0,
+ "uptime": "21:37  up 11 days, 11:15, 19 users, load averages: 13.21 13.86 17.32"
+}

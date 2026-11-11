@@ -1,0 +1,14 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- .venv/bin/python3
+cachedir: .pytest_cache
+rootdir: ~/Desktop/projects/ai-from-scratch/04-sampling
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 4 items
+
+tests/test_sampling.py::test_temperature_to_zero_becomes_argmax PASSED   [ 25%]
+tests/test_sampling.py::test_top_p_keeps_the_smallest_set_that_reaches_p PASSED [ 50%]
+tests/test_sampling.py::test_temperature_before_or_after_top_p_changes_the_survivors PASSED [ 75%]
+tests/test_sampling.py::test_same_survivors_give_the_same_final_distribution PASSED [100%]
+
+============================== 4 passed in 0.01s ===============================
