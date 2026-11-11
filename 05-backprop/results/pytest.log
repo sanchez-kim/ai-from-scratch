@@ -1,7 +1,7 @@
 ============================= test session starts ==============================
-platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ~/Desktop/projects/ai-from-scratch/05-backprop/.venv/bin/python3
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- 05-backprop/.venv/bin/python3
 cachedir: .pytest_cache
-rootdir: ~/Desktop/projects/ai-from-scratch/05-backprop
+rootdir: 05-backprop
 configfile: pyproject.toml
 testpaths: tests
 collecting ... collected 8 items

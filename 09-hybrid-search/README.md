@@ -9,7 +9,7 @@ Part 8 (`08-bm25`), and two ways to merge their ranked lists:
 - `hybrid/metrics.py`: recall@10, reciprocal rank (MRR@10 when averaged),
   Kendall's tau-b. Same recall and MRR definitions as
   `08-bm25/measure_retrieval.py`.
-- `hybrid/bm25.py`: an unchanged copy of `08-bm25/bm25/bm25.py`.
+- `hybrid/bm25.py`: a copy of `08-bm25/bm25/bm25.py`, identical except for a one-line header comment.
 - `hybrid/embed.py`: the only file that turns text into vectors
   (sentence-transformers, `BAAI/bge-small-en-v1.5` pinned to commit
   `5c38ec7c405ec4b44b94cc5a9bb96e735b38267a`, CPU, 2 torch threads).

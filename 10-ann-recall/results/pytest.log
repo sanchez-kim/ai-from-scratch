@@ -1,7 +1,7 @@
 ============================= test session starts ==============================
-platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ~/Desktop/projects/ai-from-scratch/10-ann-recall/.venv/bin/python
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- 10-ann-recall/.venv/bin/python
 cachedir: .pytest_cache
-rootdir: ~/Desktop/projects/ai-from-scratch/10-ann-recall
+rootdir: 10-ann-recall
 configfile: pyproject.toml
 testpaths: tests
 collecting ... collected 4 items

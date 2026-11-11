@@ -1,7 +1,7 @@
 ============================= test session starts ==============================
 platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- .venv/bin/python3
 cachedir: .pytest_cache
-rootdir: ~/Desktop/projects/ai-from-scratch/04-sampling
+rootdir: 04-sampling
 configfile: pyproject.toml
 testpaths: tests
 collecting ... collected 4 items

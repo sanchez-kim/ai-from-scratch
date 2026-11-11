@@ -29,9 +29,11 @@ script on 2,000 vectors and is not a measurement. The timing runs are
 ```bash
 uv venv && uv sync
 uv run pytest
-uv run python download_data.py         # about 775 MB into data/
+uv run python download_data.py         # about 775 MB into data/ (data/ grows to about 2.5 GB after the builds)
 uv run python prepare_vectors.py       # about 3 GB of RAM at peak
 for s in real random; do for t in a b; do uv run python build_index.py --set $s --tag $t; done; done
+uv run python check_rebuild.py --set real
+uv run python check_rebuild.py --set random
 uv run python measure_recall.py
 uv run python measure_filter.py
 uv run python measure_lsh.py

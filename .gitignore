@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .pytest_cache/
 # results/ is committed on purpose: every number in the posts comes from there.
+.DS_Store

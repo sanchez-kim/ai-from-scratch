@@ -1,7 +1,7 @@
 ============================= test session starts ==============================
-platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ~/Desktop/projects/ai-from-scratch/07-causal-mask/.venv/bin/python3
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- 07-causal-mask/.venv/bin/python3
 cachedir: .pytest_cache
-rootdir: ~/Desktop/projects/ai-from-scratch/07-causal-mask
+rootdir: 07-causal-mask
 configfile: pyproject.toml
 testpaths: tests
 collecting ... collected 6 items
