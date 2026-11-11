@@ -1,0 +1,18 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- .venv/bin/python3
+cachedir: .pytest_cache
+rootdir: .
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 8 items
+
+tests/test_mlp.py::test_examples_from_one_name PASSED                    [ 12%]
+tests/test_mlp.py::test_random_guess_loss_is_ln_vocab PASSED             [ 25%]
+tests/test_mlp.py::test_stable_equals_naive_on_small_logits PASSED       [ 37%]
+tests/test_mlp.py::test_naive_breaks_where_stable_stays_finite PASSED    [ 50%]
+tests/test_mlp.py::test_naive_breaks_on_underflow_too PASSED             [ 62%]
+tests/test_mlp.py::test_log_sum_exp_worked_example PASSED                [ 75%]
+tests/test_mlp.py::test_gradients_match_finite_differences PASSED        [ 87%]
+tests/test_mlp.py::test_training_lowers_the_loss PASSED                  [100%]
+
+============================== 8 passed in 0.15s ===============================
