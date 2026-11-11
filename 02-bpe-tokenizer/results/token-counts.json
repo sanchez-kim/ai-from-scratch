@@ -1,0 +1,383 @@
+{
+ "created": "2026-11-02 23:53:01 +0900",
+ "python": "3.12.13",
+ "tiktoken": "0.14.0",
+ "uptime_before": "23:51  up 11 days, 13:29, 19 users, load averages: 12.68 10.35 8.36",
+ "uptime_after": "23:53  up 11 days, 13:31, 19 users, load averages: 14.06 11.33 8.91",
+ "training": {
+  "ours-en": {
+   "bytes": 542368,
+   "chars": 541493,
+   "sha256": "157bb7024ffe343cff4f5c84b6ad1a1ab28c69fdc652f7bc9a6cbfe3502cfdf2",
+   "korean_bytes": 0
+  },
+  "ours-mixed": {
+   "bytes": 540627,
+   "chars": 386144,
+   "sha256": "02a486de1a371db7d928a50dc0d70019d089b30e9c21b17f89c092f7f380c1ea",
+   "korean_bytes": 269737
+  }
+ },
+ "max_merges": 8000,
+ "eval_sets": {
+  "english": {
+   "file": "wiki-en-test.txt",
+   "chars": 169058,
+   "bytes": 169239,
+   "bytes_per_char": 1.001,
+   "hangul_share": 0.0,
+   "space_share": 0.167
+  },
+  "korean": {
+   "file": "wiki-ko-test.txt",
+   "chars": 184103,
+   "bytes": 431206,
+   "bytes_per_char": 2.342,
+   "hangul_share": 0.664,
+   "space_share": 0.219
+  },
+  "code": {
+   "file": "python-code.txt",
+   "chars": 272427,
+   "bytes": 272497,
+   "bytes_per_char": 1.0,
+   "hangul_share": 0.0,
+   "space_share": 0.286
+  }
+ },
+ "counts": {
+  "ours-en": {
+   "english": {
+    "tokens": 42879,
+    "per_1000_chars": 253.6,
+    "chars_per_token": 3.94
+   },
+   "korean": {
+    "tokens": 423663,
+    "per_1000_chars": 2301.2,
+    "chars_per_token": 0.43
+   },
+   "code": {
+    "tokens": 124815,
+    "per_1000_chars": 458.2,
+    "chars_per_token": 2.18
+   }
+  },
+  "ours-mixed": {
+   "english": {
+    "tokens": 48609,
+    "per_1000_chars": 287.5,
+    "chars_per_token": 3.48
+   },
+   "korean": {
+    "tokens": 110135,
+    "per_1000_chars": 598.2,
+    "chars_per_token": 1.67
+   },
+   "code": {
+    "tokens": 154699,
+    "per_1000_chars": 567.9,
+    "chars_per_token": 1.76
+   }
+  },
+  "cl100k_base": {
+   "english": {
+    "tokens": 36676,
+    "per_1000_chars": 216.9,
+    "chars_per_token": 4.61
+   },
+   "korean": {
+    "tokens": 179382,
+    "per_1000_chars": 974.4,
+    "chars_per_token": 1.03
+   },
+   "code": {
+    "tokens": 68450,
+    "per_1000_chars": 251.3,
+    "chars_per_token": 3.98
+   }
+  },
+  "o200k_base": {
+   "english": {
+    "tokens": 36344,
+    "per_1000_chars": 215.0,
+    "chars_per_token": 4.65
+   },
+   "korean": {
+    "tokens": 112868,
+    "per_1000_chars": 613.1,
+    "chars_per_token": 1.63
+   },
+   "code": {
+    "tokens": 68502,
+    "per_1000_chars": 251.5,
+    "chars_per_token": 3.98
+   }
+  }
+ },
+ "flores_devtest": {
+  "sentences": 1012,
+  "chars": {
+   "english": 131966,
+   "korean": 65965
+  },
+  "ours-en": {
+   "english_tokens": 35026,
+   "korean_tokens": 155756,
+   "korean_over_english": 4.447,
+   "english_per_1000_chars": 265.4,
+   "korean_per_1000_chars": 2361.2,
+   "median_sentence_ratio": 4.48
+  },
+  "ours-mixed": {
+   "english_tokens": 40654,
+   "korean_tokens": 40948,
+   "korean_over_english": 1.007,
+   "english_per_1000_chars": 308.1,
+   "korean_per_1000_chars": 620.8,
+   "median_sentence_ratio": 1.0
+  },
+  "cl100k_base": {
+   "english_tokens": 27182,
+   "korean_tokens": 64338,
+   "korean_over_english": 2.367,
+   "english_per_1000_chars": 206.0,
+   "korean_per_1000_chars": 975.3,
+   "median_sentence_ratio": 2.36
+  },
+  "o200k_base": {
+   "english_tokens": 26873,
+   "korean_tokens": 39566,
+   "korean_over_english": 1.472,
+   "english_per_1000_chars": 203.6,
+   "korean_per_1000_chars": 599.8,
+   "median_sentence_ratio": 1.458
+  }
+ },
+ "sweep_per_1000_chars": {
+  "ours-en": [
+   {
+    "merges": 0,
+    "vocab_size": 256,
+    "english": 1001.1,
+    "korean": 2342.2,
+    "code": 1000.3
+   },
+   {
+    "merges": 250,
+    "vocab_size": 506,
+    "english": 485.4,
+    "korean": 2323.1,
+    "code": 703.9
+   },
+   {
+    "merges": 500,
+    "vocab_size": 756,
+    "english": 416.2,
+    "korean": 2318.1,
+    "code": 660.1
+   },
+   {
+    "merges": 1000,
+    "vocab_size": 1256,
+    "english": 361.6,
+    "korean": 2313.9,
+    "code": 627.2
+   },
+   {
+    "merges": 2000,
+    "vocab_size": 2256,
+    "english": 315.2,
+    "korean": 2310.2,
+    "code": 590.0
+   },
+   {
+    "merges": 4000,
+    "vocab_size": 4256,
+    "english": 278.3,
+    "korean": 2305.8,
+    "code": 558.1
+   },
+   {
+    "merges": 8000,
+    "vocab_size": 8256,
+    "english": 253.6,
+    "korean": 2301.2,
+    "code": 458.2
+   }
+  ],
+  "ours-mixed": [
+   {
+    "merges": 0,
+    "vocab_size": 256,
+    "english": 1001.1,
+    "korean": 2342.2,
+    "code": 1000.3
+   },
+   {
+    "merges": 250,
+    "vocab_size": 506,
+    "english": 571.0,
+    "korean": 1299.9,
+    "code": 752.2
+   },
+   {
+    "merges": 500,
+    "vocab_size": 756,
+    "english": 493.9,
+    "korean": 1089.8,
+    "code": 705.1
+   },
+   {
+    "merges": 1000,
+    "vocab_size": 1256,
+    "english": 426.6,
+    "korean": 907.1,
+    "code": 665.1
+   },
+   {
+    "merges": 2000,
+    "vocab_size": 2256,
+    "english": 365.1,
+    "korean": 772.0,
+    "code": 628.3
+   },
+   {
+    "merges": 4000,
+    "vocab_size": 4256,
+    "english": 319.3,
+    "korean": 674.6,
+    "code": 597.6
+   },
+   {
+    "merges": 8000,
+    "vocab_size": 8256,
+    "english": 287.5,
+    "korean": 598.2,
+    "code": 567.9
+   }
+  ]
+ },
+ "example": {
+  "word": "한국어",
+  "utf8_hex": "ed 95 9c ea b5 ad ec 96 b4",
+  "tokens": {
+   "ours-en": [
+    {
+     "hex": "ed",
+     "text": null
+    },
+    {
+     "hex": "95",
+     "text": null
+    },
+    {
+     "hex": "9c",
+     "text": null
+    },
+    {
+     "hex": "ea",
+     "text": null
+    },
+    {
+     "hex": "b5",
+     "text": null
+    },
+    {
+     "hex": "ad",
+     "text": null
+    },
+    {
+     "hex": "ec",
+     "text": null
+    },
+    {
+     "hex": "96",
+     "text": null
+    },
+    {
+     "hex": "b4",
+     "text": null
+    }
+   ],
+   "ours-mixed": [
+    {
+     "hex": "ed 95 9c",
+     "text": "한"
+    },
+    {
+     "hex": "ea b5 ad",
+     "text": "국"
+    },
+    {
+     "hex": "ec 96 b4",
+     "text": "어"
+    }
+   ],
+   "cl100k_base": [
+    {
+     "hex": "ed 95 9c",
+     "text": "한"
+    },
+    {
+     "hex": "ea b5",
+     "text": null
+    },
+    {
+     "hex": "ad",
+     "text": null
+    },
+    {
+     "hex": "ec 96 b4",
+     "text": "어"
+    }
+   ],
+   "o200k_base": [
+    {
+     "hex": "ed 95 9c ea b5 ad",
+     "text": "한국"
+    },
+    {
+     "hex": "ec 96 b4",
+     "text": "어"
+    }
+   ]
+  }
+ },
+ "vocab": {
+  "ours-en": {
+   "merges_learned": 8000,
+   "merges_with_non_ascii_bytes": 45,
+   "merges_containing_hangul": 0,
+   "merges_containing_hangul_partial_ok": 0
+  },
+  "ours-mixed": {
+   "merges_learned": 8000,
+   "merges_with_non_ascii_bytes": 3860,
+   "merges_containing_hangul": 3369,
+   "merges_containing_hangul_partial_ok": 3472
+  },
+  "cl100k_base": {
+   "vocab_size": 100261,
+   "tokens_containing_hangul": 281,
+   "tokens_containing_hangul_partial_ok": 299
+  },
+  "o200k_base": {
+   "vocab_size": 200000,
+   "tokens_containing_hangul": 2352,
+   "tokens_containing_hangul_partial_ok": 2365
+  }
+ },
+ "code_saving_ours_en_4000_to_8000": {
+  "whitespace_chunks": 19802,
+  "other_chunks": 7421,
+  "whitespace_tokens_at_4000": 52724,
+  "whitespace_tokens_at_8000": 32922,
+  "whitespace_merges": [
+   {
+    "merge": 7689,
+    "bytes": "20 20"
+   }
+  ]
+ }
+}

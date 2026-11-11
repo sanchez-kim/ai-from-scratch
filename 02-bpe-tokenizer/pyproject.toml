@@ -1,0 +1,13 @@
+[project]
+name = "bpe-tokenizer-from-scratch"
+version = "0.1.0"
+description = "Byte-level BPE in plain Python, plus token counts for English, Korean and code against tiktoken"
+requires-python = ">=3.12"
+dependencies = ["tiktoken>=0.9"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

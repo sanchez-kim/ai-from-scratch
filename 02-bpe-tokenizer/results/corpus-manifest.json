@@ -1,0 +1,1691 @@
+{
+ "downloaded": "2026-11-02 21:21:59 +0900",
+ "licences": {
+  "wiki-*": "Wikipedia text, CC BY-SA 4.0 (Simple English and Korean Wikipedia)",
+  "python-code.txt": "CPython standard library, PSF License 2.0",
+  "flores-*": "FLORES-200, CC BY-SA 4.0"
+ },
+ "files": {
+  "wiki-en-train.txt": {
+   "sha256": "157bb7024ffe343cff4f5c84b6ad1a1ab28c69fdc652f7bc9a6cbfe3502cfdf2",
+   "chars": 541493,
+   "bytes": 542368,
+   "articles": [
+    {
+     "title": "Water",
+     "revid": 11044704,
+     "sha256": "366791311dfe26c54c6941c778988f5b81d58d1130615dc1e2809792a63bceef"
+    },
+    {
+     "title": "Sun",
+     "revid": 11003282,
+     "sha256": "6243ebfc99e06201d81ee0af1441ba15a0e5c4dd86cdbfc351910608e316bc8f"
+    },
+    {
+     "title": "Moon",
+     "revid": 10950172,
+     "sha256": "b9d6539aa0c347194e2d5e01368a2a5f5b8cd109e9d8ac59e29c78549752b3e8"
+    },
+    {
+     "title": "Mars",
+     "revid": 11019218,
+     "sha256": "b0c74f0e63c2515135cf94f58999e430cc22619f71e8968a1269f54f8f43e445"
+    },
+    {
+     "title": "Jupiter",
+     "revid": 11011873,
+     "sha256": "50c3a38c6fe485d857418198db5e60039b89a6c8f6f1b0b62677ef9eee93e278"
+    },
+    {
+     "title": "Star",
+     "revid": 11049881,
+     "sha256": "061fa575357feddc0adcbea5b2f192ab9da47e55024d469284f49ba716f958a2"
+    },
+    {
+     "title": "Gravity",
+     "revid": 10910648,
+     "sha256": "818211b8f7ef163f84e77751176c83b7a720ee4c86acb20e48d03c0dbca216a9"
+    },
+    {
+     "title": "Light",
+     "revid": 10894121,
+     "sha256": "b1f91fbee064faa2e04df06943f4127c5f4342db56b5c61ed91b37982a3c5e6b"
+    },
+    {
+     "title": "Sound",
+     "revid": 10921598,
+     "sha256": "2730c81b0175dae923b7e41899c10af2a0a880b8a1d9dcd79c8789c81142b5aa"
+    },
+    {
+     "title": "Magnet",
+     "revid": 11012823,
+     "sha256": "c81fd3b45748c0183c608deb68ddf677097a7abe08a2c395e3769bf91a273a72"
+    },
+    {
+     "title": "Atom",
+     "revid": 10898381,
+     "sha256": "68f97a0f279889d47a79f565a855e9cb2f023defd01aa34aee4cdbc7df8f927f"
+    },
+    {
+     "title": "Molecule",
+     "revid": 10589030,
+     "sha256": "d17c9cc087cb9cfcebaca716c13c16ba70f4e2ff4736b36972ea9d1da50777c2"
+    },
+    {
+     "title": "Carbon",
+     "revid": 10946708,
+     "sha256": "d4b1c8ef260ceba1a83b16a20cb473f7d3583913bb0cb91b96d641420089cbf2"
+    },
+    {
+     "title": "Iron",
+     "revid": 11046842,
+     "sha256": "36803519e8c32f605c689ec5932356abe02b6d998b0163c546947f7b7a5c57df"
+    },
+    {
+     "title": "Gold",
+     "revid": 11012007,
+     "sha256": "7b29c97395719ba7000decbc240769fac3b2b9139cb268fbd7b579097e96e600"
+    },
+    {
+     "title": "Volcano",
+     "revid": 10961960,
+     "sha256": "05178c1499ac0f2a54e3120e1145ef7f14c2b905013750bba33da407ba24b61b"
+    },
+    {
+     "title": "Earthquake",
+     "revid": 11020256,
+     "sha256": "b12f3f98b5bf8e909ea32c96c43c83397303e7ca7ccae0f2d48a3cefc5ffce63"
+    },
+    {
+     "title": "Ocean",
+     "revid": 10713824,
+     "sha256": "b9cbf94d7848ac4a766c13d46fb73e2efb2062cdfc472c95eea62d20969d7b53"
+    },
+    {
+     "title": "Mountain",
+     "revid": 10900598,
+     "sha256": "2890e61d300d5a89b7377fa10e21f18bb75872f55c5ae7e5443f85c780ed6eec"
+    },
+    {
+     "title": "Desert",
+     "revid": 10953001,
+     "sha256": "aaeba46faf1b79d63620400e6d1f4bc42357b31e16ca69613cc71c40c0f9d704"
+    },
+    {
+     "title": "Forest",
+     "revid": 10477208,
+     "sha256": "140bc6859428018309848130671feda00276e294a92d576d586211d7e19945f8"
+    },
+    {
+     "title": "Glacier",
+     "revid": 10989793,
+     "sha256": "b82721c43102bad65d41c7d695cca2436faaa0c884b12aeab5d9cf4d483ee243"
+    },
+    {
+     "title": "Rain",
+     "revid": 10633726,
+     "sha256": "6b7bddc89b51bea97d7785900f4fc2b095953c95085d719c0116e2ae396ee203"
+    },
+    {
+     "title": "Snow",
+     "revid": 9966300,
+     "sha256": "a607cbda5c9a7a68cdb80433ae8101aa88f452a5ad4989e02f0a7aa8e6d2abb8"
+    },
+    {
+     "title": "Cloud",
+     "revid": 10950168,
+     "sha256": "20fff6cd11edc2f19c22bc0d08ba63ae875a87755711b3bddb527334c6dee3d7"
+    },
+    {
+     "title": "Weather",
+     "revid": 10942452,
+     "sha256": "10577f7eeece58eb4150437e96c49f0c3184d78ffe5ba0ab6e007d387ca29d6a"
+    },
+    {
+     "title": "Climate",
+     "revid": 10901873,
+     "sha256": "2175ccfc5170f268967b1d4455ac08e5536cc9e15fadbda4b8214f1ee7ddbc12"
+    },
+    {
+     "title": "Tree",
+     "revid": 10913253,
+     "sha256": "89f5399c1c520be0b52b8c02ab1a26e0b109aa30f0643461f614956849a55e22"
+    },
+    {
+     "title": "Flower",
+     "revid": 10955667,
+     "sha256": "c07b94679f2ebbc57db5d66bb7e75a7a26354f2d3a077f7996c6ef27eb451221"
+    },
+    {
+     "title": "Leaf",
+     "revid": 9752238,
+     "sha256": "74692895653218136d97b517f999312f0a10b2b9f96c8eadcf6cec050ebf7175"
+    },
+    {
+     "title": "Fruit",
+     "revid": 11004641,
+     "sha256": "2ef8da0bbe48d08a6e6a421324a89c74e607a6e76947401bfb7ac23d32cf9d8b"
+    },
+    {
+     "title": "Apple",
+     "revid": 11042128,
+     "sha256": "884260fb074ddc0aa17ac2e602889588b633e5054caaa1391d49d0b4c86893be"
+    },
+    {
+     "title": "Banana",
+     "revid": 11040042,
+     "sha256": "fe753b7393460db336e62e1b4e0c8839126f8f4673e55cf2b05351500e4300ff"
+    },
+    {
+     "title": "Grape",
+     "revid": 10941223,
+     "sha256": "7e475650ea2ba7c5963702fd0235fbb9cab56ea4eb6e9b61ee36b8d32b705d2a"
+    },
+    {
+     "title": "Rice",
+     "revid": 11027938,
+     "sha256": "8212764f386c43a7cd5831c906e9f41105f835246315227998bb188cb5e16d92"
+    },
+    {
+     "title": "Wheat",
+     "revid": 10605254,
+     "sha256": "c12d9e23407ff73be43a19a40f46f4cca77c2ac479be198f2d4d6d34209bf25e"
+    },
+    {
+     "title": "Cheese",
+     "revid": 11031286,
+     "sha256": "0ced3cf29197af24372732c089d2c05f0bf325ccfbffe37185d9d4d41bee50ae"
+    },
+    {
+     "title": "Milk",
+     "revid": 10949865,
+     "sha256": "e16208306836c25e53233ddade950da4096525a89cbf4ccee4545c6cee080941"
+    },
+    {
+     "title": "Coffee",
+     "revid": 10958734,
+     "sha256": "708f6d708a031a1bddef875bf3bae0efbd6afa95614bf2e343e16fd1073d91ff"
+    },
+    {
+     "title": "Sugar",
+     "revid": 11012522,
+     "sha256": "be66218ca909b96aee76c8d2f915d7831352d30d77a2931b4f6f9b1a7c044bcf"
+    },
+    {
+     "title": "Chocolate",
+     "revid": 10910651,
+     "sha256": "07f67f6d79d30708c7c971c7166ef69e0405a89cb4dc0db8715d5a76587eab35"
+    },
+    {
+     "title": "Honey",
+     "revid": 11030371,
+     "sha256": "f6666dcc5ee3ed506f46a0add6a36c5bffdd3df9e06f56875b8e6560da132533"
+    },
+    {
+     "title": "Pizza",
+     "revid": 10962915,
+     "sha256": "f7ff6f2752bfdedbd369a4377724aa4c3a24ba740723ee8c0648ec7d494e1e56"
+    },
+    {
+     "title": "Noodle",
+     "revid": 10771666,
+     "sha256": "42d35b8a9ebd92f00779d3708402fa7a43b0516ae8c378ddaa595e5560071842"
+    },
+    {
+     "title": "Dog",
+     "revid": 11039055,
+     "sha256": "36f04ec446a7f5e738bde6ea2f0db772fd45199efeabc1175370a134f90b4b4a"
+    },
+    {
+     "title": "Horse",
+     "revid": 11047706,
+     "sha256": "73e981eaabd7dde397537b762e2d0de895914efdaa66d7e7b913360b77209386"
+    },
+    {
+     "title": "Cattle",
+     "revid": 10927182,
+     "sha256": "bc775e92933ee82a018775bcbecf9233959749a1c754c6d9792670ecfa435281"
+    },
+    {
+     "title": "Pig",
+     "revid": 10979586,
+     "sha256": "f7a44624b9538b0a8a2fa974dbde0e737236c6b71303666ffc9fa0ff164520f2"
+    },
+    {
+     "title": "Chicken",
+     "revid": 10950239,
+     "sha256": "51842b608ad307f7ea438d4a4b21884a7f683ddd7c2a8a04aef5e59f4d300a25"
+    },
+    {
+     "title": "Fish",
+     "revid": 10905618,
+     "sha256": "61e0f0da8a065568834ac11184538b8e4c5b4eb4ae2fa92d4f1f3f0a6fa22bba"
+    },
+    {
+     "title": "Bird",
+     "revid": 11013199,
+     "sha256": "50e439ae5ed1643796337a4378df25791dc629e880d2e0602790ae3c5ee339ef"
+    },
+    {
+     "title": "Butterfly",
+     "revid": 11002883,
+     "sha256": "6e427905234a9dce7fc67338ff646db8e6a358b5f1a460140c497e4e50182440"
+    },
+    {
+     "title": "Spider",
+     "revid": 10939625,
+     "sha256": "02310d731db77dfe068bfa633931d10eb20fe12c2a57a3a52f721acff84efd03"
+    },
+    {
+     "title": "Snake",
+     "revid": 10939704,
+     "sha256": "a50a0e7a0d695ed2184b96358ecd7074852cc9c53fad139d71b016c9597103c2"
+    },
+    {
+     "title": "Tiger",
+     "revid": 10967347,
+     "sha256": "a97945711d443b13a224180658b63c9354ec6732142b320a57386973a94f3aa5"
+    },
+    {
+     "title": "Elephant",
+     "revid": 10879973,
+     "sha256": "31323f13f7baf8718af25948f50d80268df3184a7189a690f0498c47e0d40527"
+    },
+    {
+     "title": "Shark",
+     "revid": 10887500,
+     "sha256": "76e441cf66c8bf67a22d7781117a0b83e03eba4c0e4cf14d4c67f973e36e777b"
+    },
+    {
+     "title": "Brain",
+     "revid": 10802795,
+     "sha256": "8ebaa0eca9aaca73714b1a73937ba4cdda1cc7eb813770715d8ff670dfc28411"
+    },
+    {
+     "title": "Heart",
+     "revid": 11049517,
+     "sha256": "f22e0c439324de29514184d9efa39b2fc4b82f5e9801e0c4accc8558e683c22e"
+    },
+    {
+     "title": "Blood",
+     "revid": 10971818,
+     "sha256": "1fba3c50ca3817bbd2895bf692ba669765eccb42db9ccda8194d00e24edd3e2a"
+    },
+    {
+     "title": "Skin",
+     "revid": 10902441,
+     "sha256": "2cf20695f375295f82d8ac473f896cbdfab6fc91cc1cc835c605a5609facd282"
+    },
+    {
+     "title": "Eye",
+     "revid": 11008096,
+     "sha256": "aa48e9d39d6e21b5698195579974ba4963cd3024856f0245f763d29dbecb5ee6"
+    },
+    {
+     "title": "Tooth",
+     "revid": 10831869,
+     "sha256": "2b9d05430e79a350d40b6ae140e638cace201332739112568f4534d6a8525b1c"
+    },
+    {
+     "title": "Dream",
+     "revid": 10566218,
+     "sha256": "5ff0ba2974b1195981c4e06f6f5f793af5c9705bf7098fb4ed96f7dedac8e245"
+    },
+    {
+     "title": "Language",
+     "revid": 10885730,
+     "sha256": "fa4ceefa5ee9766aefb4449ade33b8b72ee41ceec0976778ed6db00aeeb6a5af"
+    },
+    {
+     "title": "Alphabet",
+     "revid": 10465560,
+     "sha256": "53bf4a2bd41b77d23d3d4b28553eef405e8b7ca98bef23bc5cd7f6a6217bd973"
+    },
+    {
+     "title": "Library",
+     "revid": 10901378,
+     "sha256": "abb5660d6f107914222a584802a18f347059bc5c595af0bd9abf41061b80faf5"
+    },
+    {
+     "title": "School",
+     "revid": 10975377,
+     "sha256": "cfab5c2622a3e3379992ab7ac5f1276c888745e7999d12fae7bb8824af306a1d"
+    },
+    {
+     "title": "University",
+     "revid": 11018729,
+     "sha256": "59d0f17132cd433325c732524aa20524b66e267da03b435839ea08b078400eb3"
+    },
+    {
+     "title": "Mathematics",
+     "revid": 10949928,
+     "sha256": "fdeb5af9e8d4ae61947cba3d15a18ab16acd995cfa8acf6dbf90ebaf2f09e37e"
+    },
+    {
+     "title": "Number",
+     "revid": 11033936,
+     "sha256": "6b009c09ef9ba97f1ddd6edaee6d5ce3d524ec80ca869673b50d1b4d65743474"
+    },
+    {
+     "title": "Geometry",
+     "revid": 10769483,
+     "sha256": "5819690d001b9e82564b05fd5584d810b7641cb07593864f9460ac79ec6f6b1d"
+    },
+    {
+     "title": "Piano",
+     "revid": 10946494,
+     "sha256": "77c6ac3cb867e6ae6a244f398c0d4c7cf2ff3b8077f44f1d0369a633cabac3f1"
+    },
+    {
+     "title": "Guitar",
+     "revid": 10433060,
+     "sha256": "8cecee488297f16604a0dd1317ac09959c694f7e7dafd0f55d2726063f76167b"
+    },
+    {
+     "title": "Song",
+     "revid": 10162737,
+     "sha256": "aa0e71469785102f6521ecb109bc55680dd755d1b5face18f8d79cdbee1f8eca"
+    },
+    {
+     "title": "Photography",
+     "revid": 11035332,
+     "sha256": "1b5e379f9c09af3da4c995dcf9fa7eef0defecffde9a8f5221f15f629cac1ccb"
+    },
+    {
+     "title": "Movie",
+     "revid": 10917512,
+     "sha256": "d4918b5b4dfee6059cc62d2eb444b2d9f69bf4b54141686a6aee6cfa0d7fac49"
+    },
+    {
+     "title": "Theatre",
+     "revid": 10835552,
+     "sha256": "446569cacda59e91b11cacca97e4dd7a73510a8be323deb85d1f5d40120412b0"
+    },
+    {
+     "title": "Poetry",
+     "revid": 10486956,
+     "sha256": "8226c969e48b238333c03b4702a5acd603cb23b4e3836ee83ca13badc29a2025"
+    },
+    {
+     "title": "Computer",
+     "revid": 11045056,
+     "sha256": "e758fab8df09e77d808a756dabfd113f466af458bd5f17ca3fe42600941d0f7d"
+    },
+    {
+     "title": "Internet",
+     "revid": 11040891,
+     "sha256": "b0c889a7c054b743c166707fa1a6489e42bf5805f509debe9c9e40493b5699b5"
+    },
+    {
+     "title": "Television",
+     "revid": 11038512,
+     "sha256": "666aa17b1ab12b809dc81d93b5258d829ad4da5deac8284c98066c1fb993d73b"
+    },
+    {
+     "title": "Radio",
+     "revid": 10689381,
+     "sha256": "17e0eef2c8d74af645da1ab81f6e1237f6c05a784e6c758374341b88aa7dd0c8"
+    },
+    {
+     "title": "Camera",
+     "revid": 10478774,
+     "sha256": "75149ec0310b85d8bb88395941fef624e1f8bceb4ae2df51866f797b0425170f"
+    },
+    {
+     "title": "Software",
+     "revid": 10730468,
+     "sha256": "83cb9f00d408f13a4329c6a479296c93bd019fd9e043fe15331fcc080e213468"
+    },
+    {
+     "title": "Video game",
+     "revid": 10959862,
+     "sha256": "0dab6b89df138b3ba75049ae748b0b65d16f9c08bc03744289a5afbc1f9794db"
+    },
+    {
+     "title": "E-mail",
+     "revid": 10438437,
+     "sha256": "0c1709309147cfa082477f2758da9c011c1b4a70cb31556d8fff268f87076168"
+    },
+    {
+     "title": "Bicycle",
+     "revid": 11049825,
+     "sha256": "f4e19ff7cb01654b4a07e2fc333ef78ca0c1ac99be6cb476b4aa1ae741865a0d"
+    },
+    {
+     "title": "Train",
+     "revid": 11049823,
+     "sha256": "d399a32b32c5f03c969970f182a39b9e8e45d96f1459e46b69cb961dc281e0a3"
+    },
+    {
+     "title": "Airplane",
+     "revid": 10926601,
+     "sha256": "651e02262830268cc86a6187182fc8a8492b1117a5d9eb94af45c89b06a045d8"
+    },
+    {
+     "title": "Bridge",
+     "revid": 10393533,
+     "sha256": "7a2d517934c523c7a0ddf8d0e4119a30ec130305133556d253dd1050cb1ab68d"
+    },
+    {
+     "title": "Road",
+     "revid": 10714642,
+     "sha256": "a2a43781ac6d5ffa48c5f7ef43a1af1bff9a0af8cd9cf8343816056db93f6fe5"
+    },
+    {
+     "title": "City",
+     "revid": 10988529,
+     "sha256": "f6c612a0d91b69ed55f58e791690b89b859bfc0b2947329fb2de441fedbba38f"
+    },
+    {
+     "title": "House",
+     "revid": 11049668,
+     "sha256": "533947257b8cf99ef3e1c79997aa763ed31560c09363033ed9477999a009a889"
+    },
+    {
+     "title": "Money",
+     "revid": 11005355,
+     "sha256": "a9d20835eca46aa1545c9ea50d501f28cdd631cd1e96a19073f52a1b9ea6829e"
+    },
+    {
+     "title": "Bank",
+     "revid": 10553711,
+     "sha256": "838e4bc554f3818f4110e2c6aa77867a3ad3c44950b310b6ad429551db68a305"
+    },
+    {
+     "title": "Factory",
+     "revid": 10332781,
+     "sha256": "d4861f72ec81c8c28390cf11bdbbab527d60dde383ec92df2e1790c4b234f17e"
+    },
+    {
+     "title": "Farm",
+     "revid": 9944648,
+     "sha256": "a9adb844e5e36c158cc77b2efc0823335a79b6eaf2f921f34a5350219518e4d9"
+    },
+    {
+     "title": "Hospital",
+     "revid": 10667528,
+     "sha256": "2574d3ec0f4968f4c977fec74fad38263edb518d0e72dcd7be041df72208670a"
+    },
+    {
+     "title": "Vaccine",
+     "revid": 11010093,
+     "sha256": "8b6f4811fce0efef2671ed08f9d649c6553a247cdabae3cc2cbc277c8ed39c08"
+    },
+    {
+     "title": "Football",
+     "revid": 11011808,
+     "sha256": "c98d2be18238ef11f3233ee150bef7365c0b92e2e13306f726ad7c5736a7e4c8"
+    },
+    {
+     "title": "Basketball",
+     "revid": 11044074,
+     "sha256": "d8f3a76340affd372df48e14a25fa7e99679d57dc5e6543ed08dedfcb5d3a11d"
+    },
+    {
+     "title": "Swimming",
+     "revid": 10274228,
+     "sha256": "2499651fa61b744f3c2dda5552cb9ef3126ed0e722543c908bc32dc18de8270c"
+    },
+    {
+     "title": "Chess",
+     "revid": 11028874,
+     "sha256": "326bdc9bae34daea09fd0a9a5c74235f7b223561162a19eb511cb7feee51e7c4"
+    },
+    {
+     "title": "Olympic Games",
+     "revid": 10966461,
+     "sha256": "37a2c789711aca93e1c9b067de4331b5f3ba9d3e717a443929056e37e542338b"
+    },
+    {
+     "title": "Baseball",
+     "revid": 10884268,
+     "sha256": "4ef6e3a2a7ea5220096c29d5be3f2e9928f12fe1019af0327172039c10a62d9f"
+    },
+    {
+     "title": "Golf",
+     "revid": 10835253,
+     "sha256": "dab43ce5afea29c37c65375b56739d8e456abfece2e53fc2f9c6f90283094fd1"
+    },
+    {
+     "title": "Boxing",
+     "revid": 10376282,
+     "sha256": "ae092a89e792d05fe61545a93d1d0a9a7bb67ec13c346f9952c4ada99cd9f790"
+    },
+    {
+     "title": "Science",
+     "revid": 10940064,
+     "sha256": "ca7e437cfb1ac230eb16da1ad35cbe26fe4865f3722a62070bec9c668a88df13"
+    },
+    {
+     "title": "Physics",
+     "revid": 10979726,
+     "sha256": "7f34e2fa1b26b1a52e4eb54a0b6cf2e4b92966961d4b0c5f469b7b63d224022b"
+    },
+    {
+     "title": "Chemistry",
+     "revid": 10976485,
+     "sha256": "a4a52932bd14631863bdd344a429a02e1f7466051723c318af69dc558c9ddb31"
+    },
+    {
+     "title": "Philosophy",
+     "revid": 10938579,
+     "sha256": "22afbce040912f5680199bac96dc51148830d1d27038985b627336b78cca8009"
+    },
+    {
+     "title": "Religion",
+     "revid": 10914253,
+     "sha256": "133ad69026efa2a26d8f868ae57898707ed9a6fe7027ec4811c30522f5bfa839"
+    },
+    {
+     "title": "Law",
+     "revid": 10967085,
+     "sha256": "9d271ac2ebeeae21621a2be82b9aba4a9994b6a1bdd6a54c531d4aea5d826df5"
+    },
+    {
+     "title": "Democracy",
+     "revid": 10779390,
+     "sha256": "ac876a1a2975a2cbca259e23d49aa44ed577918832185fa7e500619439581e01"
+    },
+    {
+     "title": "Family",
+     "revid": 11025004,
+     "sha256": "78a61d22a217e471c03b0ba1e3454e4d88b2417b73077bb83ab263bed1a59d74"
+    },
+    {
+     "title": "Friendship",
+     "revid": 10900178,
+     "sha256": "29cf2e818a2f3d338cb6f318b24ce9222c0f6f86b21917b3f801cd32ce30dfaf"
+    },
+    {
+     "title": "Fear",
+     "revid": 10989909,
+     "sha256": "bbd5d69a46cea79c3e9d8e203bd85a7c5ea040dcc5cf7d1c7fcbc24ffae0384c"
+    },
+    {
+     "title": "Happiness",
+     "revid": 10789091,
+     "sha256": "352d58bbdd6a10f56cd0753b776f3849607ae52671018ab03678854dddbd8c14"
+    },
+    {
+     "title": "Time",
+     "revid": 10991654,
+     "sha256": "5910211d8c1a616fd6fcb062e6e74551d49ed97fa1e8ca08235d47688f7a64a5"
+    },
+    {
+     "title": "Calendar",
+     "revid": 10806770,
+     "sha256": "1e6c4edc97d9035088987e01ef71d38c588cec216414441189e557a5f4cbab9c"
+    },
+    {
+     "title": "Year",
+     "revid": 10820694,
+     "sha256": "0f9a342c72c90e09775aa672f0c7b6f6d88bd4c3ea703ca13b63e585e08a6433"
+    },
+    {
+     "title": "Week",
+     "revid": 10864649,
+     "sha256": "f8e42891b5a118b2242d043adae1a98b5ad11b7fb6a4122999da06326cd6e9b7"
+    }
+   ]
+  },
+  "wiki-en-test.txt": {
+   "sha256": "e7b5e5c4bb51e9f2ee288641e88b9e311929af2d54c541ce8ecdc984be30d7f4",
+   "chars": 169058,
+   "bytes": 169239,
+   "articles": [
+    {
+     "title": "Earth",
+     "revid": 11044218,
+     "sha256": "0ba2efbe06a9111dacd0f8ef078c3e7b60e03b4cce813fb59b0c2a3031202265"
+    },
+    {
+     "title": "Galaxy",
+     "revid": 11028673,
+     "sha256": "ee57caae954792f93ecbed0d27eafac1ea745712ae396927d61a4a8b8e440a46"
+    },
+    {
+     "title": "Electricity",
+     "revid": 11046486,
+     "sha256": "972737c1a34cda2b207db7e99c1d0e7cbd85e3ba7952350a5783fd357603e4a8"
+    },
+    {
+     "title": "Oxygen",
+     "revid": 10833857,
+     "sha256": "9197ac6173afba609d2f7c8ff489559eb5d073fa6e4f5565d41db42dd11c96ea"
+    },
+    {
+     "title": "Salt",
+     "revid": 10451939,
+     "sha256": "d8591d821ded270cce4586eb4f74df9ddd0760f05255bd6f70c0f7530ce859d0"
+    },
+    {
+     "title": "River",
+     "revid": 10645133,
+     "sha256": "d703902e7f49ebd4b5f1d252a361cc678abc5cefc2dc77889a5f65958d748c19"
+    },
+    {
+     "title": "Island",
+     "revid": 10841268,
+     "sha256": "08b53e0197b7d2f0e8800083ece19caced46d282f08c7ebd7002e969de506acb"
+    },
+    {
+     "title": "Wind",
+     "revid": 10850693,
+     "sha256": "b53ffdadb0b7147d6172571657bef3362a955b507328d7ecd9a9620ba8c658a5"
+    },
+    {
+     "title": "Season",
+     "revid": 11008899,
+     "sha256": "50a916a0cca543e08ab0d0bbab3c9eda06b00f5adacf891a337f2ed3d781d38c"
+    },
+    {
+     "title": "Seed",
+     "revid": 11007695,
+     "sha256": "f0be7318390695e5ca8e344c241477b4a642f31bef3cec4ce867b5bfbfc574ae"
+    },
+    {
+     "title": "Orange (fruit)",
+     "revid": 10881644,
+     "sha256": "c9011de072b90253c8d7e2c799152df9aec009f246d00aa3b83a899c096f5e76"
+    },
+    {
+     "title": "Bread",
+     "revid": 11015052,
+     "sha256": "039020bd085e41621c633c3605d949e6fd00861e1db4cb8de949121c2a16b8a7"
+    },
+    {
+     "title": "Tea",
+     "revid": 10888680,
+     "sha256": "20418b77c197ce26ce0ac4ef993bc6bba375f4d2dc1c39e4c55f6e82130d06e2"
+    },
+    {
+     "title": "Soup",
+     "revid": 10984323,
+     "sha256": "4ec7ed37b4864198ba629bf291bd78462fdc1e5df24469f6114e7e77826251d9"
+    },
+    {
+     "title": "Cat",
+     "revid": 11013735,
+     "sha256": "dc7413247d008f9a21cdd9a881f726ecf3ebe82fcff2d71dd732dfeeb50c21c1"
+    },
+    {
+     "title": "Domestic sheep",
+     "revid": 10937279,
+     "sha256": "d82779b7378daf446b203c2fa09490a0038b32364eb65fa1fe54ba968da5005b"
+    },
+    {
+     "title": "Ant",
+     "revid": 11044641,
+     "sha256": "cf8bdddb8df5ec2c65b99ee858b501f95db5a943dc09af125e2d19dc80f24f3f"
+    },
+    {
+     "title": "Lion",
+     "revid": 11029568,
+     "sha256": "2e1ff632afa598be48d84518ab2512eb3d8d5aab5052678a34ea6dff87fa27c4"
+    },
+    {
+     "title": "Human",
+     "revid": 11040486,
+     "sha256": "3a8cb3fd305960e096ab0a81ae94376e993d3aacdf38ee4a6e43618ac93b5685"
+    },
+    {
+     "title": "Bone",
+     "revid": 10227720,
+     "sha256": "c9c2b9bfc778546439922060cef9705bc44f7fa7e5bcdadb4769bdfb1fc959e4"
+    },
+    {
+     "title": "Sleep",
+     "revid": 10975894,
+     "sha256": "54a86f5af2b91468d9707825d0f570fe3d421062e8e9eaa9a0f3136c3369b055"
+    },
+    {
+     "title": "Book",
+     "revid": 11021983,
+     "sha256": "50cd4a0b300fdf75f4d5f94e8d0fee03d3ad6d5c6f9159c2e06245bcc0ae3193"
+    },
+    {
+     "title": "Teacher",
+     "revid": 11036913,
+     "sha256": "ce6660d2f1f772315f7d74e082771f62c875341afc03d2c84efccfea93840ef7"
+    },
+    {
+     "title": "Music",
+     "revid": 10887830,
+     "sha256": "dfbfd510694366c5a76fc5265dc2c1ce1a921fef4be7d0ef6ac1c19796c435ba"
+    },
+    {
+     "title": "Painting",
+     "revid": 10932765,
+     "sha256": "c6d4dab16c5d8913f639c87adb09afa213b74d7fee2906ddf10d049bb8814160"
+    },
+    {
+     "title": "Dance",
+     "revid": 10106052,
+     "sha256": "7d0b5e00eae8e64038fe2ebd037be85b42bf2501cc7fef4d610f8b6585c09f16"
+    },
+    {
+     "title": "Telephone",
+     "revid": 10939880,
+     "sha256": "59bf26b3a923c12eaaa857bd019cc99cdb6985aca8d51bfc71baa9dbc8d1e767"
+    },
+    {
+     "title": "Robot",
+     "revid": 10774081,
+     "sha256": "81c153df0c7d262215960a32535cbf16243a0914459d60be64666642026d0fd4"
+    },
+    {
+     "title": "Automobile",
+     "revid": 11049827,
+     "sha256": "141339aa56e40f12bd4cc6b29226e628a0eefc5b15c28da3c3c41933bea17a05"
+    },
+    {
+     "title": "Ship",
+     "revid": 10942592,
+     "sha256": "7c6d7b74dca9771ceff8f16844a4fd3f37e8de6d48fc69ef6ac0bb1f5d4b70ff"
+    },
+    {
+     "title": "Village",
+     "revid": 11043405,
+     "sha256": "2b3e422679e390cd97bb789358b72d754085c8869a3adf16db679a2a43c17064"
+    },
+    {
+     "title": "Market",
+     "revid": 10930580,
+     "sha256": "b8aa3d38b8586bbb8675bf42dae5719d2834e02625c13459d684b8973777dd49"
+    },
+    {
+     "title": "Medicine",
+     "revid": 11043944,
+     "sha256": "6ba4a80be6c8cb8d2f79af4f6011fea91362eb1a7d41840a69fdd6a15c370388"
+    },
+    {
+     "title": "Tennis",
+     "revid": 11029093,
+     "sha256": "ae1e03b9256bb58888f6329a6a0a8ec801ff0f2eb3e74c3936042717f32609f7"
+    },
+    {
+     "title": "Running",
+     "revid": 10576876,
+     "sha256": "338b854bf7be5f17149c7bac959065980a28ec779d4da672e31fa2fa93a2d7b6"
+    },
+    {
+     "title": "History",
+     "revid": 11015105,
+     "sha256": "7211d1a89bf20db139b40d616175e6362751fc3b993e9d2e712dfa13a69f724a"
+    },
+    {
+     "title": "Biology",
+     "revid": 11043949,
+     "sha256": "222c926b425bfa51bc7a569dd2331f2c7e09d4c52f755494254e269b80779904"
+    },
+    {
+     "title": "Government",
+     "revid": 10909440,
+     "sha256": "e73e6844c756858060ffba99df991ac1ccfea8393171793978ac540c638a65b0"
+    },
+    {
+     "title": "Love",
+     "revid": 10812782,
+     "sha256": "2b74cc8e12582004fa1653d8efc068b20943b31ac0fb079a2d695e6f8ff8495d"
+    },
+    {
+     "title": "Clock",
+     "revid": 11001326,
+     "sha256": "e408c9c5b6498973bb104fa33a098131d14d29a79664f507e6e9c58112b50b0a"
+    }
+   ]
+  },
+  "wiki-ko-train.txt": {
+   "sha256": "d3993cb4dd007d840def327711d0a8bb71c787545609d304f5239767220f5cb0",
+   "chars": 590944,
+   "bytes": 1382985,
+   "articles": [
+    {
+     "title": "물",
+     "revid": 42606869,
+     "sha256": "06f6a88cb6d7c17fd36e737d0ee5787baef28fd2635160061bce951bb660d5ff"
+    },
+    {
+     "title": "태양",
+     "revid": 42463847,
+     "sha256": "65f84ed41547f0f1f6f370ebd01f717e643031c3fb94acee75321f905983e42c"
+    },
+    {
+     "title": "달",
+     "revid": 42558376,
+     "sha256": "16a1161a12efe537f8857b7ec0db3e6d38becf9e379e1eb12d51cb7b6af14017"
+    },
+    {
+     "title": "화성",
+     "revid": 42659189,
+     "sha256": "6a0a55aa15e54b8e0bcf4aaed550656e0f3f9f872d0e625bde56462df2e903b6"
+    },
+    {
+     "title": "목성",
+     "revid": 42740703,
+     "sha256": "34cac7af94687c6735080f472e6d8bdd4293693f7123675e74dc2a4daa9909fb"
+    },
+    {
+     "title": "항성",
+     "revid": 42087559,
+     "sha256": "7030cf90a89dd9ec2314d9ff8a4ab6e26d520ce764e42cd9579e79e51e5004f4"
+    },
+    {
+     "title": "중력",
+     "revid": 41077336,
+     "sha256": "d49ea03a0ddef536276a625128a84308235f46a2acc205c50864050318751bf2"
+    },
+    {
+     "title": "빛",
+     "revid": 42150476,
+     "sha256": "f347696a30cb05c0d1f17f3b9598117c0d5abea7563dbd1a802853a32e817408"
+    },
+    {
+     "title": "소리",
+     "revid": 40817027,
+     "sha256": "30f7d56d714b10cb206bd2d898d106c154bd49cd632f6fe3b7aaf0a099fc0780"
+    },
+    {
+     "title": "자석",
+     "revid": 40771853,
+     "sha256": "d8007edfb538a6e07e49c29081c0fd5e581b67cdc7d6eb90c9f21f32964ac5af"
+    },
+    {
+     "title": "원자",
+     "revid": 40872690,
+     "sha256": "dd7c3196ba4c632d740f1938e6138c8cc3a10dd50d22d3baa116aba328298b7a"
+    },
+    {
+     "title": "분자",
+     "revid": 42082630,
+     "sha256": "0e8f5da60e0bb4c034e357716397e96a572c3333a2f2d9a79e858be7b199046a"
+    },
+    {
+     "title": "탄소",
+     "revid": 42725226,
+     "sha256": "efb9ae9f874c88fb3c467953583c0ca55e054a95b7926fb701ad5874d3b1077d"
+    },
+    {
+     "title": "철",
+     "revid": 42421348,
+     "sha256": "b3ac008d0c7409d85ab9a243381430a203928d4cd114158cd2fac89d892ca914"
+    },
+    {
+     "title": "금",
+     "revid": 42695462,
+     "sha256": "39b9ff387c1ca23c3b392312297ff5a934047133a0ebb45eca460b0982183472"
+    },
+    {
+     "title": "화산",
+     "revid": 42463487,
+     "sha256": "db4a1b8272c32f3ae968dc5513860ba741f33b8a1cd9d75947272118123383dd"
+    },
+    {
+     "title": "지진",
+     "revid": 42732853,
+     "sha256": "c2a1b576ca21e6610dda240b3941dfa9afddc99a765fda2bc4276246bd8bc90c"
+    },
+    {
+     "title": "대양",
+     "revid": 39024322,
+     "sha256": "87df372892268ca3a88dd32116a1600fef440f0b7fbbe84d4917b66db64b429f"
+    },
+    {
+     "title": "산",
+     "revid": 42668863,
+     "sha256": "967943762b281a76a04d82da9b039e41a21a3affa8e519562ab2b58e4bd3b7f8"
+    },
+    {
+     "title": "사막",
+     "revid": 40304163,
+     "sha256": "e8a435376621c048eb0cb07f93a12b12af5c8c4eb1b458b825c8f960c67e88b4"
+    },
+    {
+     "title": "숲",
+     "revid": 41730071,
+     "sha256": "5ad06de8b859645eea3fb69c96f71845f10ca0be20bca1fe1a082fe5abb9f0ed"
+    },
+    {
+     "title": "빙하",
+     "revid": 42532278,
+     "sha256": "a97e99f3d62305a17de933951c13969c32656bea858f6731a827d5c0d939db8f"
+    },
+    {
+     "title": "비 (날씨)",
+     "revid": 41310384,
+     "sha256": "23a22e9c3787a54c32adc445cb05496691895003a2b9b2b89ab6ba2e7fffa4e2"
+    },
+    {
+     "title": "눈 (날씨)",
+     "revid": 42173114,
+     "sha256": "0022ee21a887ca0823e2b8cb1b8c70dfb622db4957cfeca0c5c690c59b652ef6"
+    },
+    {
+     "title": "구름",
+     "revid": 42741518,
+     "sha256": "a3d2a16a4ab55a8c4626d64593db329479de6ed8c7a976148946f96c3455aac6"
+    },
+    {
+     "title": "기상",
+     "revid": 41881898,
+     "sha256": "1c76f552d06386ac5c6f17b5f5ad3ffc574bf1614db6feaa14d1076379d0921b"
+    },
+    {
+     "title": "기후",
+     "revid": 40754007,
+     "sha256": "61b604f22b0f808804b81f294c9d88a7756441225eac997b284a2663220955e8"
+    },
+    {
+     "title": "나무",
+     "revid": 42724058,
+     "sha256": "2daf97d9ca1ea0e422815dabadab9b76268dc5a3044ee659bfa901c2b61b4c59"
+    },
+    {
+     "title": "꽃",
+     "revid": 42147822,
+     "sha256": "91a1368cd259eb7157b51ebc2138e3b33b935c98efe24f861a5cd60e369f94c1"
+    },
+    {
+     "title": "잎",
+     "revid": 42392394,
+     "sha256": "b2763837f5d270c30bee7788f74415eb4da52b2ec53779100e03d9ab7d50e939"
+    },
+    {
+     "title": "열매",
+     "revid": 40034835,
+     "sha256": "77475bb5d3556ab85763f41d3a81b7aaf026316431af41caad3f3c15c3af58e4"
+    },
+    {
+     "title": "사과",
+     "revid": 42728557,
+     "sha256": "9d64f6332896701188932c4addc94fac00952586a38a7eee37412d47f3bf90af"
+    },
+    {
+     "title": "바나나",
+     "revid": 42614913,
+     "sha256": "0ca51f3cb0971c1b0d6b67ba580616932d134cfa497bd80efdf9fc04705e248e"
+    },
+    {
+     "title": "포도",
+     "revid": 42644530,
+     "sha256": "14809ee818febb2c47d723c330ac8935ee7aa67c12a468a790792ac4a21dca58"
+    },
+    {
+     "title": "쌀",
+     "revid": 41439155,
+     "sha256": "8d1fb08993ad925238a9e744e1479edafab06d212835dca6893e4952a95eddf8"
+    },
+    {
+     "title": "밀",
+     "revid": 42619239,
+     "sha256": "2536f01d6b43b92b9e376c182fb1a130eb00b4f5655d58efa661725faa558db7"
+    },
+    {
+     "title": "치즈",
+     "revid": 42613194,
+     "sha256": "22634095325fbcdcc4be7e2eb25e19467777d94db7ab74778804361444f5c764"
+    },
+    {
+     "title": "젖",
+     "revid": 41492374,
+     "sha256": "8fa23e55b3ddac479cf14a93e0e07ede1aa80af91ab62f97a603d3664790a898"
+    },
+    {
+     "title": "커피",
+     "revid": 42647013,
+     "sha256": "9beb03e70b7e942803875cd054a4be22a82c58d918590755feacbf0f1037202c"
+    },
+    {
+     "title": "설탕",
+     "revid": 41076823,
+     "sha256": "7f3a83079d8ab0224ceb0356487610e35815add11e923470b61bed51e9f78480"
+    },
+    {
+     "title": "초콜릿",
+     "revid": 42420362,
+     "sha256": "7c8fdd360cbf8053b89573eb34c01cf02abadaf41becee9b82164d52451347d8"
+    },
+    {
+     "title": "벌꿀",
+     "revid": 42649754,
+     "sha256": "3ae91a4c1c880368600e8e7b63a9714cce71863d0ad5f0b2c577a1bf89a397cb"
+    },
+    {
+     "title": "피자",
+     "revid": 42236006,
+     "sha256": "216f5311f1cc18f7e6301c8c401cfc435335bf1b08309b5f5dbf66b0f852dd26"
+    },
+    {
+     "title": "국수",
+     "revid": 42096298,
+     "sha256": "fdd838d60aa1826e26300a21a909a7e2b10258d254d142654ef93bbc18d52cd9"
+    },
+    {
+     "title": "개",
+     "revid": 42081172,
+     "sha256": "47ee45911129ff05a6026b1e8c3c01c72708b8723f5670cb3e95dd6aeadf8393"
+    },
+    {
+     "title": "말 (동물)",
+     "revid": 42441653,
+     "sha256": "3402583c01f7caebd373824f04ce65d58435a74a35c49b897ae7ee6af4365e40"
+    },
+    {
+     "title": "소",
+     "revid": 42620932,
+     "sha256": "e46900f5be4d000744f5a851d8599e3477f5ce0e0cc6cdb3b267275d2f1abad7"
+    },
+    {
+     "title": "돼지",
+     "revid": 40517580,
+     "sha256": "1f508799998fa5a8412ad39f7040e080a3f0094e252ba58b5d2c3a627eca8e9e"
+    },
+    {
+     "title": "닭",
+     "revid": 42558617,
+     "sha256": "848676b8f87b19e00a4f414a374f73255227e4e46088156dcfb2dfb022febef0"
+    },
+    {
+     "title": "물고기",
+     "revid": 42149879,
+     "sha256": "905d27dbf393923c458cf2d4b1b701044e1102dec2bd4f073213a7047b1bb699"
+    },
+    {
+     "title": "새",
+     "revid": 41601560,
+     "sha256": "1a094d5b32954f6d31dcd5b82d09631e3da05d98c0cbcd4ed48b4e1b86f21dbb"
+    },
+    {
+     "title": "나비",
+     "revid": 42734726,
+     "sha256": "a8419272660935db5c9dae718aedc114290847a7d28ed4592ee92c97c82c279f"
+    },
+    {
+     "title": "거미",
+     "revid": 41475538,
+     "sha256": "9f0a0ba2eaca3024875464f9ce554af7abf9888c0a216e84428e28be7fe64d1b"
+    },
+    {
+     "title": "뱀",
+     "revid": 42485715,
+     "sha256": "89cff98194b4269011db0526be621a618f082fdea1e786468e9e44cabcd191da"
+    },
+    {
+     "title": "호랑이",
+     "revid": 42528812,
+     "sha256": "0d37aa76bbe6cfe6c240dcd5534f4d70c720f99165d36f5da97ac681f1b8f92b"
+    },
+    {
+     "title": "코끼리",
+     "revid": 42670599,
+     "sha256": "b3128e6a11774f5efe276bdb1af0f725c987ba631881a13c0bbfd36bb414c4f6"
+    },
+    {
+     "title": "상어",
+     "revid": 42738991,
+     "sha256": "dea4048ed97284213df4a4a80377cc28e6eb4f92a435bb7e4484a3510fe9350b"
+    },
+    {
+     "title": "뇌",
+     "revid": 42554595,
+     "sha256": "b98d6d7e0394bf533db6ed24b7bd3cf91cd3290bb20ea96b27f1bca57b915027"
+    },
+    {
+     "title": "심장",
+     "revid": 40119215,
+     "sha256": "7b309bb4289939a054e9e295a3bb6488f399e61c248ae52c462fa98e82e24ef2"
+    },
+    {
+     "title": "혈액",
+     "revid": 39765495,
+     "sha256": "a75c0fb59acb8d95794b461976f72cffbbd7912929fe1bdc5ae3792b250f7cf9"
+    },
+    {
+     "title": "피부",
+     "revid": 41796258,
+     "sha256": "a2436b9fb91b9cdf37d8dbecfb1bc847b8da35f33319dc23611870b81e3abc75"
+    },
+    {
+     "title": "눈 (해부학)",
+     "revid": 41816445,
+     "sha256": "235ce9fba5f0ee1da1caf766757dca2ead316cb7eb1f0c1fc1e941f3131edf93"
+    },
+    {
+     "title": "이 (몸)",
+     "revid": 39258012,
+     "sha256": "86e19f3a5fcdb154f1870b8e90e0fbd5f53fcdea1fe8fc076f027a2b398b8249"
+    },
+    {
+     "title": "꿈",
+     "revid": 41887012,
+     "sha256": "9d5f4754173edd094384eedf17688e38490654aa9b171a58d172e37d4a6fecf5"
+    },
+    {
+     "title": "언어",
+     "revid": 42425270,
+     "sha256": "457816453c398f8b3b20b14aba9dedd9cd4b232c1fdcf29264f7a04786f2b5de"
+    },
+    {
+     "title": "음소문자",
+     "revid": 40348838,
+     "sha256": "f99b3639cfd9a91d9bb3cc1c336dbf10d42638d46f2477e85ddedb213687d351"
+    },
+    {
+     "title": "도서관",
+     "revid": 41076656,
+     "sha256": "d49e5c19b90238227f3f2bc472f211139d9fd61264a07f44b4a859de83b67748"
+    },
+    {
+     "title": "학교",
+     "revid": 41848135,
+     "sha256": "492df8f9901d3207f31c82872fd2426e0fdc55a45fc75a3bc59faab658d7409b"
+    },
+    {
+     "title": "대학",
+     "revid": 42209348,
+     "sha256": "d3e151c9029cf26de30b86348cfdaf0261099a1a5d04350030a3437cc93f0487"
+    },
+    {
+     "title": "수학",
+     "revid": 42723997,
+     "sha256": "0798c9368fb149469b5106dcc6eab53fe0fa480c9651b3be68e65e84be5064f4"
+    },
+    {
+     "title": "수 (수학)",
+     "revid": 42208863,
+     "sha256": "e51b431224aac544e13b8a1a24634e0b385aacfb72634637c70d7f0d1ac62dec"
+    },
+    {
+     "title": "기하학",
+     "revid": 42472951,
+     "sha256": "76a14b092da0e79c9733f1f74d6997d2515546553ee0b8fc419da562c152567c"
+    },
+    {
+     "title": "피아노",
+     "revid": 42162526,
+     "sha256": "7ece615820df2fd79805ee31759fd93e37817db46bed4ffe33e49eac7268efe3"
+    },
+    {
+     "title": "기타",
+     "revid": 41076525,
+     "sha256": "aadcf9d9895e2ef8eefb5a0ffa9a4c384e1660872282402835675cfb139aa1bb"
+    },
+    {
+     "title": "노래",
+     "revid": 41662519,
+     "sha256": "1f5118af0653f5434247edec7a4951652b540bd4a012df6cc29384fa535fa043"
+    },
+    {
+     "title": "사진술",
+     "revid": 41744037,
+     "sha256": "ad3b0998704c6336e3fd48e47325bb65d618c22b7fd26f2d6ee294b4f0fd4532"
+    },
+    {
+     "title": "영화",
+     "revid": 42637312,
+     "sha256": "bf4b33e9c6cc920f1e87d484d10579634d612d240469b6d062a6d4b0d487692f"
+    },
+    {
+     "title": "연극",
+     "revid": 41666657,
+     "sha256": "1d02846f3c86deff8df9f14be663d52889941bda1ccf0706ae18ec8ae4087d55"
+    },
+    {
+     "title": "시 (문학)",
+     "revid": 41776942,
+     "sha256": "af9266fcdd2956d5384148d2b4de9e00b7256a283e07deda16330e67058dc400"
+    },
+    {
+     "title": "컴퓨터",
+     "revid": 42741532,
+     "sha256": "e294e7b4f98d4553d282014f8727defcddaf0fa8873fd7f51965944325501192"
+    },
+    {
+     "title": "인터넷",
+     "revid": 41801959,
+     "sha256": "985e0fcd253b260c25c2b4e4d39a36abe44ce0c6b7fd774b84474b38ce3eb2ba"
+    },
+    {
+     "title": "텔레비전",
+     "revid": 42165565,
+     "sha256": "1a5076189d5c528df92532b38156d25d24f8e818edc486299f7b7382346be38a"
+    },
+    {
+     "title": "라디오",
+     "revid": 42165567,
+     "sha256": "dfb8d3d7711599a8159bcd982926a49892f5195de23e4936e45c234c5ead671c"
+    },
+    {
+     "title": "사진기",
+     "revid": 41487241,
+     "sha256": "f1f11c87261303fef00a2e2fad09177062ba3253ca97fcccb872fbfadb6a34d2"
+    },
+    {
+     "title": "소프트웨어",
+     "revid": 41963751,
+     "sha256": "10a350619684fc4aaaf8e394a006ea76840c7c5382fe00a82821a32e62c7eb1b"
+    },
+    {
+     "title": "비디오 게임",
+     "revid": 42352627,
+     "sha256": "0495992c186ac2882637fbba6f8bbb8862c8025fb7d36ac74df1a43d755b9d8b"
+    },
+    {
+     "title": "전자우편",
+     "revid": 41263580,
+     "sha256": "82870b5fd3489f52818fb0b5d1079299b38f54fd35872df64fdf02edd17dba04"
+    },
+    {
+     "title": "자전거",
+     "revid": 42693763,
+     "sha256": "ad2b6e391c6fda1122b9280fdf693f0421f2d16032fc0944196cd708e614a460"
+    },
+    {
+     "title": "열차",
+     "revid": 42586981,
+     "sha256": "8d38fde7e745ce271e03ac26e0fa2377711b033d60b724d4431a65be6e0ea535"
+    },
+    {
+     "title": "비행기",
+     "revid": 40453508,
+     "sha256": "c4775c6b11e8c69a9372253d7276d876780c664f1c9d6f611879a70b089b7ef4"
+    },
+    {
+     "title": "교량",
+     "revid": 39025827,
+     "sha256": "35407e6b8973ab31d4f08dc5abee58a587347bb79125de4c975cebc87b5075b7"
+    },
+    {
+     "title": "도로",
+     "revid": 41743422,
+     "sha256": "a3f312a044cf001e6a7956efcbf22733e5e0eb34c7da2c1ab1a580473f2fd155"
+    },
+    {
+     "title": "도시",
+     "revid": 42602600,
+     "sha256": "98684cc19efd8689ebf69ae254c4ddc6eaf741b41b6453260e1683fbb6115232"
+    },
+    {
+     "title": "집",
+     "revid": 39874687,
+     "sha256": "6e30b497794cfabbb8872218641ac86bc4e68bbd5d2a749b26f400034fc771fc"
+    },
+    {
+     "title": "돈",
+     "revid": 41743545,
+     "sha256": "8c0e1fe8ce4d4d8b392a8d88f6f7538c95bf4f325f60571371b4f4a0d9067ea5"
+    },
+    {
+     "title": "은행",
+     "revid": 41645792,
+     "sha256": "81eae99d202e5680e66c20b0909cf77fa6fa495916e2b8dd97578dbb0ef753b3"
+    },
+    {
+     "title": "공장",
+     "revid": 40274074,
+     "sha256": "e95fea21f859f6a65a6b75ec5a9e8adf05d56977e42bbbf8913e2d1b5a2a94f0"
+    },
+    {
+     "title": "농장",
+     "revid": 42192868,
+     "sha256": "07d4238c017e37bb756bb39db1488206b624799bcdf1d21988dfa2f80ad09ebe"
+    },
+    {
+     "title": "병원",
+     "revid": 42622208,
+     "sha256": "9cd25f1c5dc39e1df5813f8c8b7d73e4d61a11809ded95daed002e1d0f9c9113"
+    },
+    {
+     "title": "백신",
+     "revid": 42276795,
+     "sha256": "6f01af2fe6dacfda8602614724a6bece561bcb6f7ea7e53db13db31331597e79"
+    },
+    {
+     "title": "풋볼",
+     "revid": 39064940,
+     "sha256": "41184520176fe8b2bb739b273d3536593be61c00c67a9fbf2f18f131ffc1a852"
+    },
+    {
+     "title": "농구",
+     "revid": 42535305,
+     "sha256": "ee02ac8e88db216d131e6f71ddb58315d66fbb47f08572015857074159577983"
+    },
+    {
+     "title": "수영",
+     "revid": 41609779,
+     "sha256": "2f49e464bd0d970f9c44f540133872e247b748ec36f27dce9379ab20d1b3f199"
+    },
+    {
+     "title": "체스",
+     "revid": 42225391,
+     "sha256": "949df13ebf7833bff30bd6cb3dc8f5e57600bc67bea95a01b3278a0633a48649"
+    },
+    {
+     "title": "올림픽",
+     "revid": 42715669,
+     "sha256": "6370fe27c48b329bf3934e68c9312942c9d61d4b81b81e911d68e3e531e1cc9f"
+    },
+    {
+     "title": "야구",
+     "revid": 42692490,
+     "sha256": "57d3e954e8b317af7527b39e32e18fa8ef59d0f33ffbd5ea359023adbb346b89"
+    },
+    {
+     "title": "골프",
+     "revid": 42250075,
+     "sha256": "8c034eabcf2fbe0f06ceebce678c1adb643a05e60bfbee42f258881f0eb6dc20"
+    },
+    {
+     "title": "권투",
+     "revid": 42383993,
+     "sha256": "de84850b7824378e54dd559bed075fdcd517d875bbe348ac06ba8da6fbf773e0"
+    },
+    {
+     "title": "과학",
+     "revid": 42584055,
+     "sha256": "32ee499e9e3c97fea050872645e537a0a616e8a55d3a52935f95263f69604351"
+    },
+    {
+     "title": "물리학",
+     "revid": 42263994,
+     "sha256": "482cbada066965a266f84d03e2db1e68b72375bf8c45815494b0de2b0755f9a9"
+    },
+    {
+     "title": "화학",
+     "revid": 41798456,
+     "sha256": "5b06a56649cc4fcbc7f35d36597eca6808412190fd852bdc25c629c7be1eb370"
+    },
+    {
+     "title": "철학",
+     "revid": 42089007,
+     "sha256": "8b8ae0274eef282306ce5d82d73f6ec0c8599eaf97fadced45a7995dd6be5aa1"
+    },
+    {
+     "title": "종교",
+     "revid": 42502915,
+     "sha256": "a67c6efe3b65edaf75b9928ec24ea1c1ba52bb4359e97c6e33b2b66058cf2fa7"
+    },
+    {
+     "title": "법",
+     "revid": 40478617,
+     "sha256": "d597686d9df7bee00d951d4c6189c613bb53b01a586dffd99a084f36fe85036c"
+    },
+    {
+     "title": "민주주의",
+     "revid": 42585114,
+     "sha256": "cd9ddcda20aacfcef653810ffc2fa516dacc667b07b4cb08f7fc4ac6bc821a4b"
+    },
+    {
+     "title": "가족",
+     "revid": 42697011,
+     "sha256": "733c8906d1f67c3634789dedf110dc5d7788e01a965e2fc3a88d1da9523168d8"
+    },
+    {
+     "title": "우정",
+     "revid": 39064467,
+     "sha256": "1cf4837f8eadd033ef10900fdf3cfdadca9e7afb2c5f87e3df8e0ac56726dc6f"
+    },
+    {
+     "title": "공포",
+     "revid": 42087567,
+     "sha256": "96f3f6c2bf46ebcebd35156b45c2bd418cb29a57c038049807024210b0e1bacc"
+    },
+    {
+     "title": "행복",
+     "revid": 42201739,
+     "sha256": "614ac1a7e1607e87f9bfa24686ed103fb99b0900cccdec5999dbd497d7fe5082"
+    },
+    {
+     "title": "시간",
+     "revid": 41697206,
+     "sha256": "f2bc47ab4a5f073c1cd4913d6fc5ddae1d3e23fbaed8e5a2e1c15926cd82796b"
+    },
+    {
+     "title": "역법",
+     "revid": 41346662,
+     "sha256": "38d37f27d5eb11219e80d0e2d2b2e1c67bc7a4cba8e440a90f87ae078c9ab400"
+    },
+    {
+     "title": "년",
+     "revid": 41993255,
+     "sha256": "1f16853552dc09a6142d532e9b87a06aa6cb5696a3c7f34cb8d59f3f31760927"
+    },
+    {
+     "title": "주 (시간)",
+     "revid": 41287489,
+     "sha256": "ecc60f6f732be39bea942d509678d77944d21d8917348aa847a43d425cd1f19d"
+    }
+   ]
+  },
+  "wiki-ko-test.txt": {
+   "sha256": "b8cbd36d366c4fb8169af759bebc6017d33d70e37817e9c1a4df6b562fd878e9",
+   "chars": 184103,
+   "bytes": 431206,
+   "articles": [
+    {
+     "title": "지구",
+     "revid": 42721736,
+     "sha256": "889ae1ff2d2a91dd4665833d7520cc9b5d8e28832c821d9ad8c549b1fe5e5e9e"
+    },
+    {
+     "title": "은하",
+     "revid": 42735422,
+     "sha256": "7a9e9cd9a729bc190c5bc164bc88891cf31d4f17ea597364fe6e0cb5d98c6bda"
+    },
+    {
+     "title": "전기",
+     "revid": 42726549,
+     "sha256": "ffe2254f2812db6b3a4464e932af20ebb4b5337f82fe0db66f5cef686116764a"
+    },
+    {
+     "title": "산소",
+     "revid": 42303578,
+     "sha256": "44d9fda35814284823b93f13e60d47fe7f68cb847f449f0e3499213efde728ce"
+    },
+    {
+     "title": "염",
+     "revid": 40415266,
+     "sha256": "602d0b72593512fc061484fd353d08abae830c01d058749cb0bd9836bd8e7d7c"
+    },
+    {
+     "title": "강",
+     "revid": 39023663,
+     "sha256": "8b993642d620b5179581eeb18ae09978a7d660d5037940e1ebdf7f78e4a98123"
+    },
+    {
+     "title": "섬",
+     "revid": 40037919,
+     "sha256": "8a4edca101168b41afbd58594a1c2be1724133f83c3903eef1d9807a111a2eb0"
+    },
+    {
+     "title": "바람",
+     "revid": 41080695,
+     "sha256": "c8275a1680bc3bfd1e3796460e0b9c49875148b14cb19434159f2800be78616f"
+    },
+    {
+     "title": "계절",
+     "revid": 42094758,
+     "sha256": "fd318cc8a947e262cb0d9b918d6cc38b9fc5cf2a951c8f1429edcf13fbbcffb0"
+    },
+    {
+     "title": "씨",
+     "revid": 41080732,
+     "sha256": "f34061cada2d1e81b81898f47a84ea9c9b2aef7aa2501ae39517addc856d95be"
+    },
+    {
+     "title": "오렌지",
+     "revid": 41671483,
+     "sha256": "280e82e53ab9bdd6e35938e1db5db4c4c74c567cc797c0143078381fea98cbd2"
+    },
+    {
+     "title": "빵",
+     "revid": 42294154,
+     "sha256": "8630fd83b708d4864ec46eb0267cf21ff14e3f661c737ca139fe04806f531484"
+    },
+    {
+     "title": "차 (음료)",
+     "revid": 41194072,
+     "sha256": "5ed02f061a1356ab34d6e6b7b8aaafcbc7fcd8b5fb800dd5bc687628cdfea5c3"
+    },
+    {
+     "title": "수프",
+     "revid": 42556656,
+     "sha256": "c881e63273e82ce93c64288c8440fc57e83fe4db4c3d0f013c3c110e5ee5d71f"
+    },
+    {
+     "title": "고양이",
+     "revid": 42707918,
+     "sha256": "4b25d56b532a5e23f0fcf43690fc1e542cbf2bb2583bcb12de8ef57ba6ba9264"
+    },
+    {
+     "title": "양",
+     "revid": 42353528,
+     "sha256": "1f5bd40d50cf03993656abaa7a4d35affebea126c546cf76fc6760ffb971e1a7"
+    },
+    {
+     "title": "개미",
+     "revid": 42330757,
+     "sha256": "449e57f33eaa80ebaa3090cc87b572584a37ef8ea75f82c997c50eb8184dcab1"
+    },
+    {
+     "title": "사자",
+     "revid": 42590917,
+     "sha256": "b90dc0a29f629a1b1fc4768ef218fd2f1659c6b966731984fd3c230e5a59e2de"
+    },
+    {
+     "title": "사람",
+     "revid": 42720291,
+     "sha256": "a54319b76ddbcf2b506dd4cf712eb55d48e26fde0e287faeacbb0b44f2d9c46d"
+    },
+    {
+     "title": "뼈",
+     "revid": 41592466,
+     "sha256": "193ca9971c604163a2c625e81351e024f1cfd36e10f37a1a04ed20ab976827f5"
+    },
+    {
+     "title": "잠",
+     "revid": 42666113,
+     "sha256": "ef363f33c2fda48a7460b39b7bd0e1b3d403cb61fb6da49911b7535779db29d3"
+    },
+    {
+     "title": "책",
+     "revid": 42682493,
+     "sha256": "ec3e917d494893be39c54b048f0ae0218b597ad3d8e4e9edda1cb586d1b4db32"
+    },
+    {
+     "title": "교사",
+     "revid": 41858294,
+     "sha256": "4b3cc230999df82ef50c772ea5256a3e378ebb1a3b3b9fff2637b0f98311c34c"
+    },
+    {
+     "title": "음악",
+     "revid": 42012009,
+     "sha256": "eddcefe61a112e5aab55e56c4089e90007b76518443732af9bc04283d32c21f2"
+    },
+    {
+     "title": "회화",
+     "revid": 40938231,
+     "sha256": "f7bb0ee0f809458d318d599904351699224ba3c1f0f9d06ca521855b136db2ec"
+    },
+    {
+     "title": "춤",
+     "revid": 41793412,
+     "sha256": "b3780d1a3f1ea4aafd0069f257fe0bb0efc0bdc067b4f8d225e0516eb3ff07be"
+    },
+    {
+     "title": "전화",
+     "revid": 42739425,
+     "sha256": "7f84601a3c7b1a551d61974289f27cb5f83dc69a4e7c33c762f7659a36a5daba"
+    },
+    {
+     "title": "로봇",
+     "revid": 40753555,
+     "sha256": "a9f7cbe665bb312df5d25c9dacf6ac00f627c67671893568f779db50269b0ed7"
+    },
+    {
+     "title": "자동차",
+     "revid": 42403637,
+     "sha256": "bb6e9ce4cb090213bf7d92ac4cb2a278e80d552276b0c8338436a14b45a21a20"
+    },
+    {
+     "title": "선박",
+     "revid": 42266667,
+     "sha256": "dea7de91cd65a44ac8db3ba9bdcee7982260a4b5d964ee20229e6b8e32956dbd"
+    },
+    {
+     "title": "촌락",
+     "revid": 39145104,
+     "sha256": "a72ba27f29221fcc30db290d54af96df1782bce9c46be43f43b010ea6ea4de56"
+    },
+    {
+     "title": "시장 (경제학)",
+     "revid": 39050276,
+     "sha256": "3dadd6cf87e6af2fc3717cce60758cbca5ab332bca877009566df8643f5283ce"
+    },
+    {
+     "title": "의학",
+     "revid": 42576184,
+     "sha256": "c0c03190290ae81ab55a8604e7978869a479891b15309a6c62b2c3e5d350563e"
+    },
+    {
+     "title": "테니스",
+     "revid": 42437207,
+     "sha256": "ee67f31b802ffa10f52002b204b109c7eb60bd9546a58e600dde5f5256f3f4ef"
+    },
+    {
+     "title": "달리기",
+     "revid": 41695984,
+     "sha256": "3db383f1836899bc1cc15cbc5db7fdb5b614f146b455c713b1d9d3e902719a25"
+    },
+    {
+     "title": "역사",
+     "revid": 42434661,
+     "sha256": "96a8faa457a7af015575578cbfa709d4048737bc71dd8d20db6a62ac61dbf07c"
+    },
+    {
+     "title": "생물학",
+     "revid": 42692518,
+     "sha256": "608e9d5b0489e611638d7cfbd0140513cd952998d5d59bcadd4eec550c305412"
+    },
+    {
+     "title": "정부",
+     "revid": 40348385,
+     "sha256": "6a07ec5102e66db7b1fa5e5b6d8e83fb9b1c9863a4b899c82673cc1d6392faf4"
+    },
+    {
+     "title": "사랑",
+     "revid": 41838741,
+     "sha256": "8a6745bfedf2a019214dd2ee6bda5ccb4925c08bc9d3728b440fc7f589cef8f4"
+    },
+    {
+     "title": "시계",
+     "revid": 42680761,
+     "sha256": "785889f9fae8ab0b378d93ce0135d708b80269e8365aafb6633403201f678907"
+    }
+   ]
+  },
+  "python-code.txt": {
+   "sha256": "a91787d3d7d72414bcf4df03dae6cdb1300ca1e4f3ffadf1ceca7107030d56bf",
+   "chars": 272427,
+   "bytes": 272497,
+   "source": "CPython v3.12.7 Lib/: textwrap.py, heapq.py, bisect.py, fractions.py, shlex.py, string.py, colorsys.py, statistics.py, calendar.py, difflib.py"
+  },
+  "flores-kor.txt": {
+   "sha256": "540972696230a56e888f1fbd04b7000135c436351f5e467f99ce67fdccd8df0f",
+   "chars": 66977,
+   "bytes": 158811,
+   "lines": 1012,
+   "source": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz :: ./flores200_dataset/devtest/kor_Hang.devtest"
+  },
+  "flores-eng.txt": {
+   "sha256": "612e9fbe87997617c0fa8fa8929654a4f49b728d96738112c2b86ef6a1d78d88",
+   "chars": 132978,
+   "bytes": 133108,
+   "lines": 1012,
+   "source": "https://dl.fbaipublicfiles.com/nllb/flores200_dataset.tar.gz :: ./flores200_dataset/devtest/eng_Latn.devtest"
+  }
+ },
+ "topics_requested": 170,
+ "topics_used": 163,
+ "flores_archive_sha256": "b8b0b76783024b85797e5cc75064eb83fc5288b41e9654dabc7be6ae944011f6"
+}
