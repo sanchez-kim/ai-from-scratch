@@ -1,0 +1,16 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-9.2.0, pluggy-1.7.0 -- ~/Desktop/projects/ai-from-scratch/07-causal-mask/.venv/bin/python3
+cachedir: .pytest_cache
+rootdir: ~/Desktop/projects/ai-from-scratch/07-causal-mask
+configfile: pyproject.toml
+testpaths: tests
+collecting ... collected 6 items
+
+tests/test_mask.py::test_mask_fills_the_future_with_minus_inf PASSED     [ 16%]
+tests/test_mask.py::test_causal_rows_sum_to_one_and_future_is_exactly_zero PASSED [ 33%]
+tests/test_mask.py::test_mask_after_softmax_leaves_rows_that_do_not_sum_to_one PASSED [ 50%]
+tests/test_mask.py::test_no_mask_rows_sum_to_one_but_read_the_future PASSED [ 66%]
+tests/test_mask.py::test_output_at_t_ignores_later_tokens_only_with_the_mask PASSED [ 83%]
+tests/test_mask.py::test_targets_are_inputs_shifted_by_one PASSED        [100%]
+
+============================== 6 passed in 1.04s ===============================

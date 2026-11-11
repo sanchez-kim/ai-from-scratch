@@ -1,0 +1,14 @@
+[project]
+name = "causal-mask-from-scratch"
+version = "0.1.0"
+description = "A small character-level transformer trained with and without a causal mask"
+requires-python = ">=3.12"
+# numpy only silences a torch import warning; the code does not use it.
+dependencies = ["torch>=2.5", "numpy>=2"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
