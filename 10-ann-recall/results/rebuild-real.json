@@ -1,0 +1,29 @@
+{
+  "uptime": "23:55  up 11 days, 13:33, 19 users, load averages: 16.31 12.88 9.95",
+  "set": "real",
+  "M": 16,
+  "ef_construction": 200,
+  "random_seed": 100,
+  "build_threads": 1,
+  "c_build_started": "2026-11-02 23:52:10 KST",
+  "c_build_finished": "2026-11-02 23:55:45 KST",
+  "pid": 1978,
+  "files": {
+    "real-a.bin": {
+      "sha256": "9f95c65b4cd8d1d294367d69efc78d2c163b12273b4a2f4a68e28f2fc7f64aef",
+      "bytes": 322065624,
+      "mtime": "2026-11-02 22:17:30 KST"
+    },
+    "real-b.bin": {
+      "sha256": "9f95c65b4cd8d1d294367d69efc78d2c163b12273b4a2f4a68e28f2fc7f64aef",
+      "bytes": 322065624,
+      "mtime": "2026-11-02 22:17:30 KST"
+    },
+    "real-c.bin": {
+      "sha256": "9f95c65b4cd8d1d294367d69efc78d2c163b12273b4a2f4a68e28f2fc7f64aef",
+      "bytes": 322065624,
+      "mtime": "2026-11-02 23:55:45 KST"
+    }
+  },
+  "all_three_identical": true
+}

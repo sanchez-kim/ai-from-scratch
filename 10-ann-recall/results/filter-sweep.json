@@ -1,0 +1,232 @@
+{
+  "uptime": "22:20  up 11 days, 11:58, 19 users, load averages: 37.61 39.06 39.11",
+  "filter": "wiki_id % 100 < pct",
+  "k": 10,
+  "rows": [
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 10,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.0141,
+      "mean_results_returned": 0.14
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 10,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.12,
+      "mean_results_returned": 1.2
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 10,
+      "method": "callback",
+      "recall_at_10": 0.974,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 1872.3
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 40,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.0137,
+      "mean_results_returned": 0.14
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 40,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.12,
+      "mean_results_returned": 1.2
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 40,
+      "method": "callback",
+      "recall_at_10": 0.9978,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 6155.2
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 160,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.0138,
+      "mean_results_returned": 0.14
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 160,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.1215,
+      "mean_results_returned": 1.22
+    },
+    {
+      "pct": 1,
+      "corpus_passing": 1364,
+      "ef_search": 160,
+      "method": "callback",
+      "recall_at_10": 0.9996,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 20091.3
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 10,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.1045,
+      "mean_results_returned": 1.05
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 10,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.7878,
+      "mean_results_returned": 8.1
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 10,
+      "method": "callback",
+      "recall_at_10": 0.9311,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 276.5
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 40,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.1051,
+      "mean_results_returned": 1.05
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 40,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.7878,
+      "mean_results_returned": 8.1
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 40,
+      "method": "callback",
+      "recall_at_10": 0.9906,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 868.3
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 160,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.1041,
+      "mean_results_returned": 1.04
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 160,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.8004,
+      "mean_results_returned": 8.11
+    },
+    {
+      "pct": 10,
+      "corpus_passing": 10817,
+      "ef_search": 160,
+      "method": "callback",
+      "recall_at_10": 0.9989,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 3047.6
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 10,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.4706,
+      "mean_results_returned": 4.91
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 10,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.9829,
+      "mean_results_returned": 10.0
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 10,
+      "method": "callback",
+      "recall_at_10": 0.8762,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 82.4
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 40,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.4899,
+      "mean_results_returned": 4.91
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 40,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.9829,
+      "mean_results_returned": 10.0
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 40,
+      "method": "callback",
+      "recall_at_10": 0.9785,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 230.6
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 160,
+      "method": "post_filter_k10",
+      "recall_at_10": 0.4943,
+      "mean_results_returned": 4.95
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 160,
+      "method": "post_filter_k100",
+      "recall_at_10": 0.9913,
+      "mean_results_returned": 10.0
+    },
+    {
+      "pct": 50,
+      "corpus_passing": 50505,
+      "ef_search": 160,
+      "method": "callback",
+      "recall_at_10": 0.9973,
+      "mean_results_returned": 10.0,
+      "filter_calls_per_query": 745.6
+    }
+  ]
+}

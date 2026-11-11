@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 330" width="460" height="330" role="img">
+<title>recall@10 by ef_search, real embeddings vs random vectors</title>
+<desc>hnswlib 0.8.0, M 16, ef_construction 200, 100,000 vectors of 768 dimensions, 1,000 held-out queries. Wikipedia: ef 10 0.843, ef 20 0.925, ef 40 0.967, ef 80 0.988, ef 160 0.993, ef 320 0.997. random: ef 10 0.012, ef 20 0.020, ef 40 0.039, ef 80 0.067, ef 160 0.117, ef 320 0.207.</desc>
+<style>
+  .bg{fill:#fcfcfb} .ink{fill:#0b0b0b} .mut{fill:#898781} .lab{fill:#0b0b0b}
+  .grid{stroke:#e1e0d9;stroke-width:1} .ln{fill:none;stroke-width:2;stroke:#eb6834}
+  .dash{stroke-dasharray:6 4}
+  .pt{stroke:#fcfcfb;stroke-width:2} .hn{fill:#eb6834} .hno{fill:#fcfcfb;stroke:#eb6834;stroke-width:2}
+  text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:13px}
+  .h{font-size:14px;font-weight:600} .sub{fill:#52514e}
+  @media (prefers-color-scheme: dark) {
+    .bg{fill:#1a1a19} .ink,.lab{fill:#f0efec} .grid{stroke:#2c2c2a} .sub{fill:#c3c2b7}
+    .ln{stroke:#d95926} .pt{stroke:#1a1a19} .hn{fill:#d95926} .hno{fill:#1a1a19;stroke:#d95926}
+  }
+</style>
+<rect class="bg" width="460" height="330"/>
+<text class="ink h" x="16" y="24">recall@10 as ef_search grows</text>
+<text class="sub" x="16" y="42">HNSW (hnswlib), M 16, 100,000 vectors, 768 dims</text>
+<line class="grid" x1="52" x2="330" y1="270.0" y2="270.0"/><text class="mut" x="46" y="274.0" text-anchor="end">0.0</text><line class="grid" x1="52" x2="330" y1="230.0" y2="230.0"/><text class="mut" x="46" y="234.0" text-anchor="end">0.2</text><line class="grid" x1="52" x2="330" y1="190.0" y2="190.0"/><text class="mut" x="46" y="194.0" text-anchor="end">0.4</text><line class="grid" x1="52" x2="330" y1="150.0" y2="150.0"/><text class="mut" x="46" y="154.0" text-anchor="end">0.6</text><line class="grid" x1="52" x2="330" y1="110.0" y2="110.0"/><text class="mut" x="46" y="114.0" text-anchor="end">0.8</text><line class="grid" x1="52" x2="330" y1="70.0" y2="70.0"/><text class="mut" x="46" y="74.0" text-anchor="end">1.0</text><text class="mut" x="52.0" y="288" text-anchor="middle">10</text><text class="mut" x="107.6" y="288" text-anchor="middle">20</text><text class="mut" x="163.2" y="288" text-anchor="middle">40</text><text class="mut" x="218.8" y="288" text-anchor="middle">80</text><text class="mut" x="274.4" y="288" text-anchor="middle">160</text><text class="mut" x="330.0" y="288" text-anchor="middle">320</text><text class="mut" x="191" y="308" text-anchor="middle">ef_search (log scale)</text><polyline class="ln" points="52.0,101.4 107.6,85.1 163.2,76.6 218.8,72.5 274.4,71.3 330.0,70.6"/><circle class="pt hn" cx="52.0" cy="101.4" r="4"/><circle class="pt hn" cx="107.6" cy="85.1" r="4"/><circle class="pt hn" cx="163.2" cy="76.6" r="4"/><circle class="pt hn" cx="218.8" cy="72.5" r="4"/><circle class="pt hn" cx="274.4" cy="71.3" r="4"/><circle class="pt hn" cx="330.0" cy="70.6" r="4"/><text class="lab" x="340.0" y="74.6">Wikipedia</text><text class="lab" x="340.0" y="91.6">0.997</text><text class="lab" x="54.0" y="121.4">0.843</text><polyline class="ln dash" points="52.0,267.6 107.6,266.0 163.2,262.1 218.8,256.6 274.4,246.7 330.0,228.6"/><circle class="hno" cx="52.0" cy="267.6" r="4"/><circle class="hno" cx="107.6" cy="266.0" r="4"/><circle class="hno" cx="163.2" cy="262.1" r="4"/><circle class="hno" cx="218.8" cy="256.6" r="4"/><circle class="hno" cx="274.4" cy="246.7" r="4"/><circle class="hno" cx="330.0" cy="228.6" r="4"/><text class="lab" x="340.0" y="232.6">random</text><text class="lab" x="340.0" y="249.6">0.207</text><text class="lab" x="54.0" y="257.6">0.012</text>
+</svg>

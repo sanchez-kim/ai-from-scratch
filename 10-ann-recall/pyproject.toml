@@ -1,0 +1,13 @@
+[project]
+name = "ann-recall-from-scratch"
+version = "0.1.0"
+description = "Exact search and random-hyperplane LSH in small Python, plus an hnswlib recall sweep on 100K real embeddings"
+requires-python = ">=3.12"
+dependencies = ["numpy>=2", "hnswlib==0.8.0", "pyarrow>=17"]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

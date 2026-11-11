@@ -1,0 +1,36 @@
+{
+  "uptime": "14:11  up 12 days,  3:49, 19 users, load averages: 3.94 7.52 8.54",
+  "machine": "macOS-26.7.1-arm64-arm-64bit",
+  "set": "random",
+  "n": 100000,
+  "queries": 1000,
+  "smoke": false,
+  "build_seconds_1_thread": 327.38,
+  "exact_numpy_qps": 1487.2,
+  "hnsw_qps_1_thread": [
+    {
+      "ef_search": 10,
+      "qps": 6341.3
+    },
+    {
+      "ef_search": 20,
+      "qps": 3569.6
+    },
+    {
+      "ef_search": 40,
+      "qps": 1957.6
+    },
+    {
+      "ef_search": 80,
+      "qps": 1075.6
+    },
+    {
+      "ef_search": 160,
+      "qps": 581.4
+    },
+    {
+      "ef_search": 320,
+      "qps": 315.5
+    }
+  ]
+}

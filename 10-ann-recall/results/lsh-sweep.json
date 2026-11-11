@@ -1,0 +1,108 @@
+{
+  "uptime": "22:24  up 11 days, 12:02, 19 users, load averages: 31.89 36.20 37.90",
+  "n_bits": 16,
+  "seed": 0,
+  "k": 10,
+  "sets": {
+    "real": [
+      {
+        "tables": 1,
+        "recall_at_10": 0.0312,
+        "median_vectors_scored": 145,
+        "mean_share_of_corpus_scored": 0.0033,
+        "largest_bucket_table_0": 2031,
+        "formula_chance_for_median_10th_neighbour": 0.058
+      },
+      {
+        "tables": 2,
+        "recall_at_10": 0.1357,
+        "median_vectors_scored": 1325,
+        "mean_share_of_corpus_scored": 0.0267,
+        "largest_bucket_table_0": 2031,
+        "formula_chance_for_median_10th_neighbour": 0.1126
+      },
+      {
+        "tables": 4,
+        "recall_at_10": 0.2511,
+        "median_vectors_scored": 3925,
+        "mean_share_of_corpus_scored": 0.0511,
+        "largest_bucket_table_0": 2031,
+        "formula_chance_for_median_10th_neighbour": 0.2126
+      },
+      {
+        "tables": 8,
+        "recall_at_10": 0.3876,
+        "median_vectors_scored": 6373,
+        "mean_share_of_corpus_scored": 0.0741,
+        "largest_bucket_table_0": 2031,
+        "formula_chance_for_median_10th_neighbour": 0.38
+      },
+      {
+        "tables": 16,
+        "recall_at_10": 0.6646,
+        "median_vectors_scored": 21375,
+        "mean_share_of_corpus_scored": 0.2122,
+        "largest_bucket_table_0": 2031,
+        "formula_chance_for_median_10th_neighbour": 0.6156
+      },
+      {
+        "tables": 32,
+        "recall_at_10": 0.8773,
+        "median_vectors_scored": 40031,
+        "mean_share_of_corpus_scored": 0.3883,
+        "largest_bucket_table_0": 2031,
+        "formula_chance_for_median_10th_neighbour": 0.8522
+      }
+    ],
+    "random": [
+      {
+        "tables": 1,
+        "recall_at_10": 0.0,
+        "median_vectors_scored": 1,
+        "mean_share_of_corpus_scored": 0.0,
+        "largest_bucket_table_0": 10,
+        "formula_chance_for_median_10th_neighbour": 0.0001
+      },
+      {
+        "tables": 2,
+        "recall_at_10": 0.0001,
+        "median_vectors_scored": 3,
+        "mean_share_of_corpus_scored": 0.0,
+        "largest_bucket_table_0": 10,
+        "formula_chance_for_median_10th_neighbour": 0.0001
+      },
+      {
+        "tables": 4,
+        "recall_at_10": 0.0002,
+        "median_vectors_scored": 6,
+        "mean_share_of_corpus_scored": 0.0001,
+        "largest_bucket_table_0": 10,
+        "formula_chance_for_median_10th_neighbour": 0.0002
+      },
+      {
+        "tables": 8,
+        "recall_at_10": 0.0003,
+        "median_vectors_scored": 13,
+        "mean_share_of_corpus_scored": 0.0001,
+        "largest_bucket_table_0": 10,
+        "formula_chance_for_median_10th_neighbour": 0.0005
+      },
+      {
+        "tables": 16,
+        "recall_at_10": 0.0009,
+        "median_vectors_scored": 26,
+        "mean_share_of_corpus_scored": 0.0003,
+        "largest_bucket_table_0": 10,
+        "formula_chance_for_median_10th_neighbour": 0.0009
+      },
+      {
+        "tables": 32,
+        "recall_at_10": 0.0021,
+        "median_vectors_scored": 52,
+        "mean_share_of_corpus_scored": 0.0005,
+        "largest_bucket_table_0": 10,
+        "formula_chance_for_median_10th_neighbour": 0.0018
+      }
+    ]
+  }
+}
